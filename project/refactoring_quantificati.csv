@@ -1,0 +1,13 @@
+Tipo Refactoring,Occorrenze
+Rename Method,13
+Change Method Access Modifier,17
+Add Method Annotation,17
+Extract Method,26
+Remove Method Annotation,2
+Change Return Type,15
+Change Parameter Type,9
+Add Parameter,4
+Remove Parameter,3
+Extract And Move Method,55
+Split Method,1
+Push Down Method,3

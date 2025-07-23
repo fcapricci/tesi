@@ -1,0 +1,28 @@
+
+
+===== ESECUZIONE 1 DI 2 =====
+Timestamp: 2025-04-24 22:37:33
+Comando: mvn clean test
+
+--- OUTPUT COMANDO + PERF ---
+[1745527053855] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745527053856] [GPU] PPT = 2.00 W
+The JAVA_HOME environment variable is not defined correctly,
+this environment variable is needed to run this program.
+#           time             counts   unit events
+     0.021064023               0,05 Joules power/energy-pkg/                                                     
+--- FINE ESECUZIONE 1 ---
+
+
+===== ESECUZIONE 2 DI 2 =====
+Timestamp: 2025-04-24 22:37:53
+Comando: mvn clean test
+
+--- OUTPUT COMANDO + PERF ---
+[1745527073927] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1745527073927] [GPU] PPT = 2.00 W
+The JAVA_HOME environment variable is not defined correctly,
+this environment variable is needed to run this program.
+#           time             counts   unit events
+     0.021292196               0,05 Joules power/energy-pkg/                                                     
+--- FINE ESECUZIONE 2 ---

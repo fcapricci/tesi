@@ -1,0 +1,125 @@
+
+
+===== ESECUZIONE 1 DI 2 =====
+Timestamp: 2025-04-24 22:36:09
+Comando: mvn clean test
+
+--- OUTPUT COMANDO + PERF ---
+[1745526969895] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526969895] [GPU] PPT = 2.00 W
+[1745526970007] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526970119] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526970090] [GPU] PPT = 2.00 W
+[1745526970233] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526970239] [GPU] PPT = 2.00 W
+[1745526970346] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526970380] [GPU] PPT = 2.00 W
+[1745526970458] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526970571] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526970538] [GPU] PPT = 2.00 W
+[1745526970683] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526970686] [GPU] PPT = 2.00 W
+[1745526970795] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526970845] [GPU] PPT = 2.00 W
+[1745526970906] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526971018] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526970998] [GPU] PPT = 2.00 W
+[1745526971130] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526971135] [GPU] PPT = 2.00 W
+[1745526971243] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526971274] [GPU] PPT = 1000.00 W
+[1745526971357] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526971416] [GPU] PPT = 2.00 W
+[1745526971468] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526971579] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526971575] [GPU] PPT = 2.00 W
+[1745526971691] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526971733] [GPU] PPT = 2.00 W
+[1745526971804] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526971917] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526971891] [GPU] PPT = 2.00 W
+[1745526972028] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526972030] [GPU] PPT = 2.00 W
+[1745526972139] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526972189] [GPU] PPT = 0.00 W
+[1745526972251] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526972333] [GPU] PPT = 2.00 W
+[1745526972363] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526972474] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526972473] [GPU] PPT = 2.00 W
+[1745526972586] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526972609] [GPU] PPT = 2.00 W
+[1745526972698] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526972810] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526972783] [GPU] PPT = 2.00 W
+[1745526972923] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526972958] [GPU] PPT = 3.00 W
+[1745526973034] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526973147] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526973132] [GPU] PPT = 2.00 W
+[1745526973258] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526973307] [GPU] PPT = 2.00 W
+[1745526973370] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1745526973480] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526973480] [GPU] PPT = 2.00 W
+[1745526973593] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526973611] [GPU] PPT = 1000.00 W
+[1745526973706] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526973750] [GPU] PPT = 2.00 W
+[1745526973818] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526973890] [GPU] PPT = 2.00 W
+[1745526973930] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526974042] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526974021] [GPU] PPT = 2.00 W
+[1745526974155] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526974163] [GPU] PPT = 2.00 W
+[1745526974266] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526974321] [GPU] PPT = 2.00 W
+[1745526974378] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526974490] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526974464] [GPU] PPT = 2.00 W
+[1745526974601] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526974620] [GPU] PPT = 1000.00 W
+[1745526974714] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526974779] [GPU] PPT = 2.00 W
+[1745526974825] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526974937] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 6000 mW
+[1745526974936] [GPU] PPT = 2.00 W
+[1745526975049] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526975086] [GPU] PPT = 1000.00 W
+[1745526975161] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526975274] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1745526975240] [GPU] PPT = 2.00 W
+[1745526975385] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526975386] [GPU] PPT = 2.00 W
+[1745526975497] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526975544] [GPU] PPT = 2.00 W
+[1745526975608] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526975720] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526975697] [GPU] PPT = 2.00 W
+[1745526975833] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526975846] [GPU] PPT = 1000.00 W
+[1745526975945] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526976005] [GPU] PPT = 2.00 W
+[1745526976057] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1745526976168] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 1000 mW
+[1745526976163] [GPU] PPT = 2.00 W
+[1745526976280] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+#           time             counts   unit events
+     0.000087163               0,00 Joules power/energy-pkg/                                                     
+     0.001411230               0,00 Joules power/energy-pkg/                                                     
+Workload failed: No such file or directory
+--- FINE ESECUZIONE 1 ---
+
+
+===== ESECUZIONE 2 DI 2 =====
+Timestamp: 2025-04-24 22:36:36
+Comando: mvn clean test
+
+--- OUTPUT COMANDO + PERF ---
+[1745526996354] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+#           time             counts   unit events
+     0.000082344               0,00 Joules power/energy-pkg/                                                     
+     0.001524863               0,00 Joules power/energy-pkg/                                                     
+Workload failed: No such file or directory
+--- FINE ESECUZIONE 2 ---

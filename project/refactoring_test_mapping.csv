@@ -1,0 +1,38 @@
+TestClass,Tipi di Refactoring associati
+org.jgrapht.alg.flow.GusfieldEquivalentFlowTreeTest,Rename Method
+org.jgrapht.alg.flow.GusfieldGomoryHuCutTreeTest,Rename Method
+org.jgrapht.alg.cycle.HierholzerEulerianCycleTest,Change Method Access Modifier
+org.jgrapht.alg.shortestpath.DijkstraClosestFirstIteratorTest,Extract Method
+org.jgrapht.alg.matching.blossom.v5.BlossomVStateTest,Add Parameter
+org.jgrapht.alg.matching.blossom.v5.BlossomVInitializerTest,Change Return Type;Extract And Move Method
+org.jgrapht.alg.matching.blossom.v5.KolmogorovWeightedPerfectMatchingTest,Extract Method;Rename Method
+org.jgrapht.graph.DirectedAcyclicGraphTest,Extract Method
+org.jgrapht.alg.cycle.HawickJamesSimpleCyclesTest,Change Parameter Type;Extract Method;Remove Parameter
+org.jgrapht.alg.util.PairTest,Add Method Annotation
+org.jgrapht.alg.shortestpath.AllPairsShortestPathsTest,Add Method Annotation
+org.jgrapht.GraphMetricsTest,Extract And Move Method
+org.jgrapht.alg.clique.ChordalGraphMaxCliqueFinderTest,Extract And Move Method
+org.jgrapht.alg.color.BrownBacktrackColoringTest,Extract And Move Method
+org.jgrapht.alg.color.ChordalGraphColoringTest,Extract And Move Method
+org.jgrapht.alg.color.ColorRefinementAlgorithmTest,Extract And Move Method
+org.jgrapht.alg.color.LargestDegreeFirstColoringTest,Extract And Move Method
+org.jgrapht.alg.color.SaturationDegreeColoringTest,Extract And Move Method
+org.jgrapht.alg.color.SmallestDegreeLastColoringTest,Extract And Move Method
+org.jgrapht.alg.cycle.ChordalGraphMinimalVertexSeparatorFinderTest,Extract And Move Method
+org.jgrapht.alg.cycle.WeakChordalityInspectorTest,Extract And Move Method
+org.jgrapht.alg.cycle.ChordalityInspectorTest,Extract And Move Method
+org.jgrapht.alg.flow.mincost.CapacityScalingMinimumCostFlowTest,Extract And Move Method
+org.jgrapht.alg.isomorphism.AHURootedTreeIsomorphismInspectorTest,Extract And Move Method
+org.jgrapht.alg.isomorphism.IsomorphicGraphMappingTest,Extract And Move Method
+org.jgrapht.alg.matching.SparseEdmondsMaximumCardinalityMatchingTest,Extract And Move Method
+org.jgrapht.alg.spanning.GreedyMultiplicativeSpannerTest,Extract And Move Method
+org.jgrapht.generate.GnpRandomGraphGeneratorTest,Extract And Move Method
+org.jgrapht.generate.GnmRandomGraphGeneratorTest,Extract And Move Method
+org.jgrapht.generate.GnmRandomBipartiteGraphGeneratorTest,Extract And Move Method
+org.jgrapht.generate.GnpRandomBipartiteGraphGeneratorTest,Extract And Move Method
+org.jgrapht.generate.WattsStrogatzGraphGeneratorTest,Extract And Move Method
+org.jgrapht.alg.matching.DenseEdmondsMaximumCardinalityMatchingTest,Extract And Move Method
+org.jgrapht.alg.spanning.PrimMinimumSpanningTreeTest,Extract And Move Method
+org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest,Extract And Move Method
+org.jgrapht.alg.tour.TwoApproxMetricTSPTest,Extract And Move Method
+org.jgrapht.alg.lca.NaiveLCAFinderTest,Change Return Type;Extract Method

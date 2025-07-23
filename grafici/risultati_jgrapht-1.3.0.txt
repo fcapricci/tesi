@@ -1,0 +1,158 @@
+
+
+===== ESECUZIONE 1 DI 2 =====
+Timestamp: 2025-07-22 10:20:11
+Comando: mvn -Dtest=org.jgrapht.GraphMetricsTest,org.jgrapht.GraphTestsTest,org.jgrapht.GraphsTest,org.jgrapht.alg.StoerWagnerMinimumCutTest,org.jgrapht.alg.TransitiveClosureTest,org.jgrapht.alg.TransitiveReductionTest,org.jgrapht.alg.clique.AllVariantsBronKerboschCliqueFinderTest,org.jgrapht.alg.clique.BronKerboschCliqueFinderTest,org.jgrapht.alg.clique.ChordalGraphMaxCliqueFinderTest,org.jgrapht.alg.clique.CliqueMinimalSeparatorDecompositionTest,org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinderTest,org.jgrapht.alg.clique.PivotBronKerboschCliqueFinderTest,org.jgrapht.alg.clustering.KSpanningTreeClusteringTest,org.jgrapht.alg.clustering.LabelPropagationClusteringTest,org.jgrapht.alg.color.BrownBacktrackColoringTest,org.jgrapht.alg.color.ChordalGraphColoringTest,org.jgrapht.alg.color.ColorRefinementAlgorithmTest,org.jgrapht.alg.color.GreedyColoringTest,org.jgrapht.alg.color.LargestDegreeFirstColoringTest,org.jgrapht.alg.color.RandomGreedyColoring2Test,org.jgrapht.alg.color.RandomGreedyColoringTest,org.jgrapht.alg.color.SaturationDegreeColoringTest,org.jgrapht.alg.color.SmallestDegreeLastColoringTest,org.jgrapht.alg.connectivity.BiconnectivityInspectorTest,org.jgrapht.alg.connectivity.BlockCutpointGraphTest,org.jgrapht.alg.connectivity.ConnectivityInspectorTest,org.jgrapht.alg.connectivity.StrongConnectivityAlgorithmTest,org.jgrapht.alg.connectivity.TreeDynamicConnectivityTest,org.jgrapht.alg.cycle.AhujaOrlinSharmaCyclicExchangeLocalAugmentationTest,org.jgrapht.alg.cycle.BergeGraphInspectorTest,org.jgrapht.alg.cycle.ChinesePostmanTest,org.jgrapht.alg.cycle.ChordalGraphMinimalVertexSeparatorFinderTest,org.jgrapht.alg.cycle.ChordalityInspectorTest,org.jgrapht.alg.cycle.CycleDetectorTest,org.jgrapht.alg.cycle.CyclesTest,org.jgrapht.alg.cycle.DirectedSimpleCyclesTest,org.jgrapht.alg.cycle.HawickJamesSimpleCyclesTest,org.jgrapht.alg.cycle.HierholzerEulerianCycleTest,org.jgrapht.alg.cycle.JohnsonSimpleCyclesTest,org.jgrapht.alg.cycle.PatonCycleBaseTest,org.jgrapht.alg.cycle.QueueBFSFundamentalCycleBasisTest,org.jgrapht.alg.cycle.StackBFSFundamentalCycleBasisTest,org.jgrapht.alg.cycle.WeakChordalityInspectorTest,org.jgrapht.alg.decomposition.DulmageMendelsohnDecompositionTest,org.jgrapht.alg.decomposition.HeavyPathDecompositionTest,org.jgrapht.alg.densesubgraph.GoldbergMaximumDensitySubgraphAlgorithmNodeWeightsPerEdgeTest,org.jgrapht.alg.densesubgraph.GoldbergMaximumDensitySubgraphAlgorithmNodeWeightsTest,org.jgrapht.alg.densesubgraph.GoldbergMaximumDensitySubgraphAlgorithmTest,org.jgrapht.alg.drawing.CircularLayoutAlgorithm2DTest,org.jgrapht.alg.drawing.FRLayoutAlgorithm2DTest,org.jgrapht.alg.drawing.FRQuadTreeTest,org.jgrapht.alg.drawing.IndexedFRLayoutAlgorithm2DTest,org.jgrapht.alg.drawing.RandomLayoutAlgorithm2DTest,org.jgrapht.alg.drawing.model.Box2DTest,org.jgrapht.alg.drawing.model.BoxesTest,org.jgrapht.alg.drawing.model.ListenableLayoutModel2DTest,org.jgrapht.alg.drawing.model.MapLayoutModel2DTest,org.jgrapht.alg.drawing.model.Point2DTest,org.jgrapht.alg.drawing.model.PointsTest,org.jgrapht.alg.flow.DinicMFImplTest,org.jgrapht.alg.flow.EdmondsKarpMFImplTest,org.jgrapht.alg.flow.EdmondsKarpMinimumSTCutTest,org.jgrapht.alg.flow.GusfieldEquivalentFlowTreeTest,org.jgrapht.alg.flow.GusfieldGomoryHuCutTreeTest,org.jgrapht.alg.flow.PadbergRaoOddMinimumCutsetTest,org.jgrapht.alg.flow.PushRelabelMFImplTest,org.jgrapht.alg.flow.PushRelabelMinimumSTCutTest,org.jgrapht.alg.flow.mincost.CapacityScalingMinimumCostFlowTest,org.jgrapht.alg.independentset.ChordalGraphIndependentSetFinderTest,org.jgrapht.alg.isomorphism.AHUForestIsomorphismInspectorTest,org.jgrapht.alg.isomorphism.AHURootedTreeIsomorphismInspectorTest,org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspectorTest,org.jgrapht.alg.isomorphism.ColorRefinementIsomorphismInspectorTest,org.jgrapht.alg.isomorphism.GraphOrderingTest,org.jgrapht.alg.isomorphism.IsomorphicGraphMappingTest,org.jgrapht.alg.isomorphism.VF2GraphIsomorphismInspectorTest,org.jgrapht.alg.isomorphism.VF2SubgraphIsomorphismInspectorTest,org.jgrapht.alg.lca.BinaryLiftingLCAFinderTest,org.jgrapht.alg.lca.EulerTourRMQLCAFinderTest,org.jgrapht.alg.lca.HeavyPathLCAFinderTest,org.jgrapht.alg.lca.NaiveLCAFinderTest,org.jgrapht.alg.lca.TarjanLCAFinderTest,org.jgrapht.alg.matching.DenseEdmondsMaximumCardinalityMatchingTest,org.jgrapht.alg.matching.GreedyMaximumCardinalityMatchingTest,org.jgrapht.alg.matching.GreedyWeightedMatchingTest,org.jgrapht.alg.matching.HopcroftKarpMaximumCardinalityBipartiteMatchingTest,org.jgrapht.alg.matching.KuhnMunkresMinimalWeightBipartitePerfectMatchingTest,org.jgrapht.alg.matching.MaximumWeightBipartiteMatchingTest,org.jgrapht.alg.matching.NoHeuristicsPathGrowingWeightedMatchingTest,org.jgrapht.alg.matching.PathGrowingWeightedMatchingTest,org.jgrapht.alg.matching.SparseEdmondsMaximumCardinalityMatchingTest,org.jgrapht.alg.matching.blossom.v5.BlossomVDualUpdaterTest,org.jgrapht.alg.matching.blossom.v5.BlossomVInitializerTest,org.jgrapht.alg.matching.blossom.v5.BlossomVNodeTest,org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdaterTest,org.jgrapht.alg.matching.blossom.v5.BlossomVStateTest,org.jgrapht.alg.matching.blossom.v5.BlossomVTreeEdgeTest,org.jgrapht.alg.matching.blossom.v5.BlossomVTreeTest,org.jgrapht.alg.matching.blossom.v5.KolmogorovWeightedMatchingTest,org.jgrapht.alg.matching.blossom.v5.KolmogorovWeightedPerfectMatchingTest,org.jgrapht.alg.partition.BipartitePartitioningTest,org.jgrapht.alg.planar.BoyerMyrvoldPlanarityInspectorTest,org.jgrapht.alg.scoring.AlphaCentralityTest,org.jgrapht.alg.scoring.BetweennessCentralityTest,org.jgrapht.alg.scoring.ClosenessCentralityTest,org.jgrapht.alg.scoring.ClusteringCoefficientTest,org.jgrapht.alg.scoring.CorenessTest,org.jgrapht.alg.scoring.HarmonicCentralityTest,org.jgrapht.alg.scoring.PageRankTest,org.jgrapht.alg.shortestpath.ALTAdmissibleHeuristicTest,org.jgrapht.alg.shortestpath.AStarShortestPathTest,org.jgrapht.alg.shortestpath.AllDirectedPathsTest,org.jgrapht.alg.shortestpath.AllPairsShortestPathsTest,org.jgrapht.alg.shortestpath.BFSShortestPathTest,org.jgrapht.alg.shortestpath.BellmanFordShortestPathTest,org.jgrapht.alg.shortestpath.BhandariKDisjointShortestPathsTest,org.jgrapht.alg.shortestpath.BidirectionalAStarShortestPathTest,org.jgrapht.alg.shortestpath.BidirectionalDijkstraShortestPathTest,org.jgrapht.alg.shortestpath.CHManyToManyShortestPathsTest,org.jgrapht.alg.shortestpath.ContractionHierarchyBidirectionalDijkstraTest,org.jgrapht.alg.shortestpath.ContractionHierarchyPrecomputationTest,org.jgrapht.alg.shortestpath.DefaultManyToManyShortestPathsTest,org.jgrapht.alg.shortestpath.DeltaSteppingShortestPathTest,org.jgrapht.alg.shortestpath.DijkstraClosestFirstIteratorTest,org.jgrapht.alg.shortestpath.DijkstraManyToManyShortestPathsTest,org.jgrapht.alg.shortestpath.DijkstraShortestPathTest,org.jgrapht.alg.shortestpath.EppsteinKShortestPathTest,org.jgrapht.alg.shortestpath.EppsteinShortestPathIteratorTest,org.jgrapht.alg.shortestpath.FloydWarshallPseudographsTest,org.jgrapht.alg.shortestpath.FloydWarshallShortestPathsTest,org.jgrapht.alg.shortestpath.GraphMeasurerTest,org.jgrapht.alg.shortestpath.IntVertexDijkstraShortestPathTest,org.jgrapht.alg.shortestpath.JohnsonShortestPathsTest,org.jgrapht.alg.shortestpath.KSPDiscardsValidPathsTest,org.jgrapht.alg.shortestpath.KSPExampleTest,org.jgrapht.alg.shortestpath.KSPPathValidatorTest,org.jgrapht.alg.shortestpath.KShortestPathCostTest,org.jgrapht.alg.shortestpath.KShortestPathKValuesTest,org.jgrapht.alg.shortestpath.ListSingleSourcePathsTest,org.jgrapht.alg.shortestpath.MartinShortestPathTest,org.jgrapht.alg.shortestpath.SuurballeKDisjointShortestPathsTest,org.jgrapht.alg.shortestpath.TreeMeasurerTest,org.jgrapht.alg.shortestpath.TreeSingleSourcePathsTest,org.jgrapht.alg.shortestpath.YenKShortestPathTest,org.jgrapht.alg.shortestpath.YenShortestPathIteratorTest,org.jgrapht.alg.spanning.AhujaOrlinSharmaCapacitatedMinimumSpanningTreeTest,org.jgrapht.alg.spanning.BoruvkaMinimumSpanningTreeTest,org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTreeTest,org.jgrapht.alg.spanning.GreedyMultiplicativeSpannerTest,org.jgrapht.alg.spanning.KruskalMinimumSpanningTreeTest,org.jgrapht.alg.spanning.PrimMinimumSpanningTreeTest,org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest,org.jgrapht.alg.tour.NearestNeighborHeuristicTSPTest,org.jgrapht.alg.tour.PalmerHamiltonianCycleTest,org.jgrapht.alg.tour.TwoApproxMetricTSPTest,org.jgrapht.alg.transform.LineGraphConverterTest,org.jgrapht.alg.util.AliasMethodSamplerTest,org.jgrapht.alg.util.FixedSizeIntegerQueueTest,org.jgrapht.alg.util.NeighborCacheTest,org.jgrapht.alg.util.PairTest,org.jgrapht.alg.util.UnionFindTest,org.jgrapht.alg.util.VertexDegreeComparatorTest,org.jgrapht.alg.vertexcover.BarYehudaEvenTwoApproxVCImplTest,org.jgrapht.alg.vertexcover.ClarksonTwoApproxVCImplTest,org.jgrapht.alg.vertexcover.EdgeBasedTwoApproxVCImplTest,org.jgrapht.alg.vertexcover.GreedyVCImplTest,org.jgrapht.alg.vertexcover.RecursiveExactVCImplTest,org.jgrapht.generate.BarabasiAlbertForestGeneratorTest,org.jgrapht.generate.BarabasiAlbertGraphGeneratorTest,org.jgrapht.generate.ComplementGraphGeneratorTest,org.jgrapht.generate.DirectedScaleFreeGraphGeneratorTest,org.jgrapht.generate.GeneralizedPetersenGraphGeneratorTest,org.jgrapht.generate.GnmRandomBipartiteGraphGeneratorTest,org.jgrapht.generate.GnmRandomGraphGeneratorTest,org.jgrapht.generate.GnpRandomBipartiteGraphGeneratorTest,org.jgrapht.generate.GnpRandomGraphGeneratorTest,org.jgrapht.generate.GraphGeneratorTest,org.jgrapht.generate.KleinbergSmallWorldGraphGeneratorTest,org.jgrapht.generate.LinearizedChordDiagramGraphGeneratorTest,org.jgrapht.generate.NamedGraphGeneratorTest,org.jgrapht.generate.PlantedPartitionGraphGeneratorTest,org.jgrapht.generate.PruferTreeGeneratorTest,org.jgrapht.generate.RandomRegularGraphGeneratorTest,org.jgrapht.generate.WattsStrogatzGraphGeneratorTest,org.jgrapht.generate.WindmillGraphsGeneratorTest,org.jgrapht.graph.AsGraphUnionTest,org.jgrapht.graph.AsSubgraphTest,org.jgrapht.graph.AsUndirectedGraphTest,org.jgrapht.graph.AsUnweightedGraphTest,org.jgrapht.graph.CloneTest,org.jgrapht.graph.DirectedAcyclicGraphTest,org.jgrapht.graph.DirectedGraphTest,org.jgrapht.graph.EqualsAndHashCodeTest,org.jgrapht.graph.GenericGraphsTest,org.jgrapht.graph.GraphWalkTest,org.jgrapht.graph.IncomingOutgoingEdgesTest,org.jgrapht.graph.ListenableGraphTest,org.jgrapht.graph.MaskEdgeSetTest,org.jgrapht.graph.MaskSubgraphTest,org.jgrapht.graph.MaskVertexSetTest,org.jgrapht.graph.SerializationTest,org.jgrapht.graph.SimpleDirectedGraphTest,org.jgrapht.graph.SimpleIdentityDirectedGraphTest,org.jgrapht.graph.UnweightedGraphAsWeightedGraphTest,org.jgrapht.graph.WeightedGraphAsWeightedGraphTest,org.jgrapht.graph.WeightedGraphTest,org.jgrapht.graph.builder.GraphBuilderTest,org.jgrapht.graph.builder.GraphTypeBuilderTest,org.jgrapht.graph.concurrent.AsSynchronizedGraphTest,org.jgrapht.interfaces.AStarAdmissibleHeuristicTest test
+
+--- OUTPUT COMANDO + PERF ---
+[1753172411495] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 16000 mW
+[1753172411495] [GPU] PPT = 6.00 W
+[1753172411605] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172411625] [GPU] PPT = 3.00 W
+[1753172411714] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172411754] [GPU] PPT = 3.00 W
+[1753172411823] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172411932] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 6000 mW
+[1753172411906] [GPU] PPT = 2.00 W
+[1753172412039] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172412053] [GPU] PPT = 2.00 W
+[1753172412148] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172412188] [GPU] PPT = 1000.00 W
+[1753172412256] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172412365] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172412340] [GPU] PPT = 2.00 W
+[1753172412474] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172412485] [GPU] PPT = 2.00 W
+[1753172412583] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172412637] [GPU] PPT = 3.00 W
+[1753172412692] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172412801] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172412773] [GPU] PPT = 2.00 W
+[1753172412911] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172412924] [GPU] PPT = 2.00 W
+[1753172413022] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172413077] [GPU] PPT = 3.00 W
+[1753172413130] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172413239] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172413213] [GPU] PPT = 4.00 W
+[1753172413348] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172413363] [GPU] PPT = 2.00 W
+[1753172413458] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172413567] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 4000 mW
+[1753172413506] [GPU] PPT = 2.00 W
+[1753172413676] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172413693] [GPU] PPT = 2.00 W
+[1753172413787] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172413896] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172413870] [GPU] PPT = 2.00 W
+[1753172414006] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172414116] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172414048] [GPU] PPT = 3.00 W
+[1753172414226] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172414235] [GPU] PPT = 2.00 W
+[1753172414334] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172414441] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 6000 mW
+[1753172414422] [GPU] PPT = 2.00 W
+[1753172414550] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172414660] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172414609] [GPU] PPT = 3.00 W
+[1753172414770] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172414779] [GPU] PPT = 15.00 W
+[1753172414881] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172414909] [GPU] PPT = 2.00 W
+[1753172414990] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172415100] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172415060] [GPU] PPT = 3.00 W
+[1753172415210] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172415211] [GPU] PPT = 2.00 W
+[1753172415320] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172415349] [GPU] PPT = 2.00 W
+[1753172415429] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172415502] [GPU] PPT = 3.00 W
+[1753172415537] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172415646] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172415641] [GPU] PPT = 3.00 W
+[1753172415756] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172415777] [GPU] PPT = 3.00 W
+[1753172415866] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 2000 mW
+[1753172415923] [GPU] PPT = 2.00 W
+[1753172415976] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+[1753172416085] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 4000 mW
+[1753172416071] [GPU] PPT = 2.00 W
+[1753172416194] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 9000 mW
+[1753172416221] [GPU] PPT = 2.00 W
+[1753172416301] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 5000 mW
+#           time             counts   unit events
+     0.100166193               0,45 Joules power/energy-pkg/                                                     
+[1753172416359] [GPU] PPT = 16.00 W
+[1753172416407] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 7000 mW
+     0.201108955               0,62 Joules power/energy-pkg/                                                     
+[1753172416513] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 5000 mW
+[1753172416502] [GPU] PPT = 5.00 W
+     0.301332392               0,88 Joules power/energy-pkg/                                                     
+[1753172416620] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 16000 mW
+[1753172416627] [GPU] PPT = 7.00 W
+     0.401616076               1,19 Joules power/energy-pkg/                                                     
+[1753172416727] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 17000 mW
+     0.501837139               1,43 Joules power/energy-pkg/                                                     
+[1753172416752] [GPU] PPT = 22.00 W
+[1753172416835] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 13000 mW
+     0.602027766               1,31 Joules power/energy-pkg/                                                     
+[1753172416879] [GPU] PPT = 6.00 W
+[1753172416941] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 20000 mW
+     0.702267119               1,64 Joules power/energy-pkg/                                                     
+[1753172417019] [GPU] PPT = 16.00 W
+[1753172417048] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 18000 mW
+     0.802503591               1,54 Joules power/energy-pkg/                                                     
+     0.902711865               1,09 Joules power/energy-pkg/                                                     
+[1753172417155] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 13000 mW
+[1753172417147] [GPU] PPT = 7.00 W
+     1.002940245               1,04 Joules power/energy-pkg/                                                     
+[1753172417263] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 14000 mW
+[1753172417280] [GPU] PPT = 3.00 W
+     1.103171626               1,27 Joules power/energy-pkg/                                                     
+[1753172417370] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 20000 mW
+     1.203390023               1,42 Joules power/energy-pkg/                                                     
+[1753172417421] [GPU] PPT = 12.00 W
+[1753172417476] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 16000 mW
+     1.295025238               1,14 Joules power/energy-pkg/                                                     
+--- FINE ESECUZIONE 1 ---
+
+
+===== ESECUZIONE 2 DI 2 =====
+Timestamp: 2025-07-22 10:20:17
+Comando: mvn -Dtest=org.jgrapht.GraphMetricsTest,org.jgrapht.GraphTestsTest,org.jgrapht.GraphsTest,org.jgrapht.alg.StoerWagnerMinimumCutTest,org.jgrapht.alg.TransitiveClosureTest,org.jgrapht.alg.TransitiveReductionTest,org.jgrapht.alg.clique.AllVariantsBronKerboschCliqueFinderTest,org.jgrapht.alg.clique.BronKerboschCliqueFinderTest,org.jgrapht.alg.clique.ChordalGraphMaxCliqueFinderTest,org.jgrapht.alg.clique.CliqueMinimalSeparatorDecompositionTest,org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinderTest,org.jgrapht.alg.clique.PivotBronKerboschCliqueFinderTest,org.jgrapht.alg.clustering.KSpanningTreeClusteringTest,org.jgrapht.alg.clustering.LabelPropagationClusteringTest,org.jgrapht.alg.color.BrownBacktrackColoringTest,org.jgrapht.alg.color.ChordalGraphColoringTest,org.jgrapht.alg.color.ColorRefinementAlgorithmTest,org.jgrapht.alg.color.GreedyColoringTest,org.jgrapht.alg.color.LargestDegreeFirstColoringTest,org.jgrapht.alg.color.RandomGreedyColoring2Test,org.jgrapht.alg.color.RandomGreedyColoringTest,org.jgrapht.alg.color.SaturationDegreeColoringTest,org.jgrapht.alg.color.SmallestDegreeLastColoringTest,org.jgrapht.alg.connectivity.BiconnectivityInspectorTest,org.jgrapht.alg.connectivity.BlockCutpointGraphTest,org.jgrapht.alg.connectivity.ConnectivityInspectorTest,org.jgrapht.alg.connectivity.StrongConnectivityAlgorithmTest,org.jgrapht.alg.connectivity.TreeDynamicConnectivityTest,org.jgrapht.alg.cycle.AhujaOrlinSharmaCyclicExchangeLocalAugmentationTest,org.jgrapht.alg.cycle.BergeGraphInspectorTest,org.jgrapht.alg.cycle.ChinesePostmanTest,org.jgrapht.alg.cycle.ChordalGraphMinimalVertexSeparatorFinderTest,org.jgrapht.alg.cycle.ChordalityInspectorTest,org.jgrapht.alg.cycle.CycleDetectorTest,org.jgrapht.alg.cycle.CyclesTest,org.jgrapht.alg.cycle.DirectedSimpleCyclesTest,org.jgrapht.alg.cycle.HawickJamesSimpleCyclesTest,org.jgrapht.alg.cycle.HierholzerEulerianCycleTest,org.jgrapht.alg.cycle.JohnsonSimpleCyclesTest,org.jgrapht.alg.cycle.PatonCycleBaseTest,org.jgrapht.alg.cycle.QueueBFSFundamentalCycleBasisTest,org.jgrapht.alg.cycle.StackBFSFundamentalCycleBasisTest,org.jgrapht.alg.cycle.WeakChordalityInspectorTest,org.jgrapht.alg.decomposition.DulmageMendelsohnDecompositionTest,org.jgrapht.alg.decomposition.HeavyPathDecompositionTest,org.jgrapht.alg.densesubgraph.GoldbergMaximumDensitySubgraphAlgorithmNodeWeightsPerEdgeTest,org.jgrapht.alg.densesubgraph.GoldbergMaximumDensitySubgraphAlgorithmNodeWeightsTest,org.jgrapht.alg.densesubgraph.GoldbergMaximumDensitySubgraphAlgorithmTest,org.jgrapht.alg.drawing.CircularLayoutAlgorithm2DTest,org.jgrapht.alg.drawing.FRLayoutAlgorithm2DTest,org.jgrapht.alg.drawing.FRQuadTreeTest,org.jgrapht.alg.drawing.IndexedFRLayoutAlgorithm2DTest,org.jgrapht.alg.drawing.RandomLayoutAlgorithm2DTest,org.jgrapht.alg.drawing.model.Box2DTest,org.jgrapht.alg.drawing.model.BoxesTest,org.jgrapht.alg.drawing.model.ListenableLayoutModel2DTest,org.jgrapht.alg.drawing.model.MapLayoutModel2DTest,org.jgrapht.alg.drawing.model.Point2DTest,org.jgrapht.alg.drawing.model.PointsTest,org.jgrapht.alg.flow.DinicMFImplTest,org.jgrapht.alg.flow.EdmondsKarpMFImplTest,org.jgrapht.alg.flow.EdmondsKarpMinimumSTCutTest,org.jgrapht.alg.flow.GusfieldEquivalentFlowTreeTest,org.jgrapht.alg.flow.GusfieldGomoryHuCutTreeTest,org.jgrapht.alg.flow.PadbergRaoOddMinimumCutsetTest,org.jgrapht.alg.flow.PushRelabelMFImplTest,org.jgrapht.alg.flow.PushRelabelMinimumSTCutTest,org.jgrapht.alg.flow.mincost.CapacityScalingMinimumCostFlowTest,org.jgrapht.alg.independentset.ChordalGraphIndependentSetFinderTest,org.jgrapht.alg.isomorphism.AHUForestIsomorphismInspectorTest,org.jgrapht.alg.isomorphism.AHURootedTreeIsomorphismInspectorTest,org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspectorTest,org.jgrapht.alg.isomorphism.ColorRefinementIsomorphismInspectorTest,org.jgrapht.alg.isomorphism.GraphOrderingTest,org.jgrapht.alg.isomorphism.IsomorphicGraphMappingTest,org.jgrapht.alg.isomorphism.VF2GraphIsomorphismInspectorTest,org.jgrapht.alg.isomorphism.VF2SubgraphIsomorphismInspectorTest,org.jgrapht.alg.lca.BinaryLiftingLCAFinderTest,org.jgrapht.alg.lca.EulerTourRMQLCAFinderTest,org.jgrapht.alg.lca.HeavyPathLCAFinderTest,org.jgrapht.alg.lca.NaiveLCAFinderTest,org.jgrapht.alg.lca.TarjanLCAFinderTest,org.jgrapht.alg.matching.DenseEdmondsMaximumCardinalityMatchingTest,org.jgrapht.alg.matching.GreedyMaximumCardinalityMatchingTest,org.jgrapht.alg.matching.GreedyWeightedMatchingTest,org.jgrapht.alg.matching.HopcroftKarpMaximumCardinalityBipartiteMatchingTest,org.jgrapht.alg.matching.KuhnMunkresMinimalWeightBipartitePerfectMatchingTest,org.jgrapht.alg.matching.MaximumWeightBipartiteMatchingTest,org.jgrapht.alg.matching.NoHeuristicsPathGrowingWeightedMatchingTest,org.jgrapht.alg.matching.PathGrowingWeightedMatchingTest,org.jgrapht.alg.matching.SparseEdmondsMaximumCardinalityMatchingTest,org.jgrapht.alg.matching.blossom.v5.BlossomVDualUpdaterTest,org.jgrapht.alg.matching.blossom.v5.BlossomVInitializerTest,org.jgrapht.alg.matching.blossom.v5.BlossomVNodeTest,org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdaterTest,org.jgrapht.alg.matching.blossom.v5.BlossomVStateTest,org.jgrapht.alg.matching.blossom.v5.BlossomVTreeEdgeTest,org.jgrapht.alg.matching.blossom.v5.BlossomVTreeTest,org.jgrapht.alg.matching.blossom.v5.KolmogorovWeightedMatchingTest,org.jgrapht.alg.matching.blossom.v5.KolmogorovWeightedPerfectMatchingTest,org.jgrapht.alg.partition.BipartitePartitioningTest,org.jgrapht.alg.planar.BoyerMyrvoldPlanarityInspectorTest,org.jgrapht.alg.scoring.AlphaCentralityTest,org.jgrapht.alg.scoring.BetweennessCentralityTest,org.jgrapht.alg.scoring.ClosenessCentralityTest,org.jgrapht.alg.scoring.ClusteringCoefficientTest,org.jgrapht.alg.scoring.CorenessTest,org.jgrapht.alg.scoring.HarmonicCentralityTest,org.jgrapht.alg.scoring.PageRankTest,org.jgrapht.alg.shortestpath.ALTAdmissibleHeuristicTest,org.jgrapht.alg.shortestpath.AStarShortestPathTest,org.jgrapht.alg.shortestpath.AllDirectedPathsTest,org.jgrapht.alg.shortestpath.AllPairsShortestPathsTest,org.jgrapht.alg.shortestpath.BFSShortestPathTest,org.jgrapht.alg.shortestpath.BellmanFordShortestPathTest,org.jgrapht.alg.shortestpath.BhandariKDisjointShortestPathsTest,org.jgrapht.alg.shortestpath.BidirectionalAStarShortestPathTest,org.jgrapht.alg.shortestpath.BidirectionalDijkstraShortestPathTest,org.jgrapht.alg.shortestpath.CHManyToManyShortestPathsTest,org.jgrapht.alg.shortestpath.ContractionHierarchyBidirectionalDijkstraTest,org.jgrapht.alg.shortestpath.ContractionHierarchyPrecomputationTest,org.jgrapht.alg.shortestpath.DefaultManyToManyShortestPathsTest,org.jgrapht.alg.shortestpath.DeltaSteppingShortestPathTest,org.jgrapht.alg.shortestpath.DijkstraClosestFirstIteratorTest,org.jgrapht.alg.shortestpath.DijkstraManyToManyShortestPathsTest,org.jgrapht.alg.shortestpath.DijkstraShortestPathTest,org.jgrapht.alg.shortestpath.EppsteinKShortestPathTest,org.jgrapht.alg.shortestpath.EppsteinShortestPathIteratorTest,org.jgrapht.alg.shortestpath.FloydWarshallPseudographsTest,org.jgrapht.alg.shortestpath.FloydWarshallShortestPathsTest,org.jgrapht.alg.shortestpath.GraphMeasurerTest,org.jgrapht.alg.shortestpath.IntVertexDijkstraShortestPathTest,org.jgrapht.alg.shortestpath.JohnsonShortestPathsTest,org.jgrapht.alg.shortestpath.KSPDiscardsValidPathsTest,org.jgrapht.alg.shortestpath.KSPExampleTest,org.jgrapht.alg.shortestpath.KSPPathValidatorTest,org.jgrapht.alg.shortestpath.KShortestPathCostTest,org.jgrapht.alg.shortestpath.KShortestPathKValuesTest,org.jgrapht.alg.shortestpath.ListSingleSourcePathsTest,org.jgrapht.alg.shortestpath.MartinShortestPathTest,org.jgrapht.alg.shortestpath.SuurballeKDisjointShortestPathsTest,org.jgrapht.alg.shortestpath.TreeMeasurerTest,org.jgrapht.alg.shortestpath.TreeSingleSourcePathsTest,org.jgrapht.alg.shortestpath.YenKShortestPathTest,org.jgrapht.alg.shortestpath.YenShortestPathIteratorTest,org.jgrapht.alg.spanning.AhujaOrlinSharmaCapacitatedMinimumSpanningTreeTest,org.jgrapht.alg.spanning.BoruvkaMinimumSpanningTreeTest,org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTreeTest,org.jgrapht.alg.spanning.GreedyMultiplicativeSpannerTest,org.jgrapht.alg.spanning.KruskalMinimumSpanningTreeTest,org.jgrapht.alg.spanning.PrimMinimumSpanningTreeTest,org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest,org.jgrapht.alg.tour.NearestNeighborHeuristicTSPTest,org.jgrapht.alg.tour.PalmerHamiltonianCycleTest,org.jgrapht.alg.tour.TwoApproxMetricTSPTest,org.jgrapht.alg.transform.LineGraphConverterTest,org.jgrapht.alg.util.AliasMethodSamplerTest,org.jgrapht.alg.util.FixedSizeIntegerQueueTest,org.jgrapht.alg.util.NeighborCacheTest,org.jgrapht.alg.util.PairTest,org.jgrapht.alg.util.UnionFindTest,org.jgrapht.alg.util.VertexDegreeComparatorTest,org.jgrapht.alg.vertexcover.BarYehudaEvenTwoApproxVCImplTest,org.jgrapht.alg.vertexcover.ClarksonTwoApproxVCImplTest,org.jgrapht.alg.vertexcover.EdgeBasedTwoApproxVCImplTest,org.jgrapht.alg.vertexcover.GreedyVCImplTest,org.jgrapht.alg.vertexcover.RecursiveExactVCImplTest,org.jgrapht.generate.BarabasiAlbertForestGeneratorTest,org.jgrapht.generate.BarabasiAlbertGraphGeneratorTest,org.jgrapht.generate.ComplementGraphGeneratorTest,org.jgrapht.generate.DirectedScaleFreeGraphGeneratorTest,org.jgrapht.generate.GeneralizedPetersenGraphGeneratorTest,org.jgrapht.generate.GnmRandomBipartiteGraphGeneratorTest,org.jgrapht.generate.GnmRandomGraphGeneratorTest,org.jgrapht.generate.GnpRandomBipartiteGraphGeneratorTest,org.jgrapht.generate.GnpRandomGraphGeneratorTest,org.jgrapht.generate.GraphGeneratorTest,org.jgrapht.generate.KleinbergSmallWorldGraphGeneratorTest,org.jgrapht.generate.LinearizedChordDiagramGraphGeneratorTest,org.jgrapht.generate.NamedGraphGeneratorTest,org.jgrapht.generate.PlantedPartitionGraphGeneratorTest,org.jgrapht.generate.PruferTreeGeneratorTest,org.jgrapht.generate.RandomRegularGraphGeneratorTest,org.jgrapht.generate.WattsStrogatzGraphGeneratorTest,org.jgrapht.generate.WindmillGraphsGeneratorTest,org.jgrapht.graph.AsGraphUnionTest,org.jgrapht.graph.AsSubgraphTest,org.jgrapht.graph.AsUndirectedGraphTest,org.jgrapht.graph.AsUnweightedGraphTest,org.jgrapht.graph.CloneTest,org.jgrapht.graph.DirectedAcyclicGraphTest,org.jgrapht.graph.DirectedGraphTest,org.jgrapht.graph.EqualsAndHashCodeTest,org.jgrapht.graph.GenericGraphsTest,org.jgrapht.graph.GraphWalkTest,org.jgrapht.graph.IncomingOutgoingEdgesTest,org.jgrapht.graph.ListenableGraphTest,org.jgrapht.graph.MaskEdgeSetTest,org.jgrapht.graph.MaskSubgraphTest,org.jgrapht.graph.MaskVertexSetTest,org.jgrapht.graph.SerializationTest,org.jgrapht.graph.SimpleDirectedGraphTest,org.jgrapht.graph.SimpleIdentityDirectedGraphTest,org.jgrapht.graph.UnweightedGraphAsWeightedGraphTest,org.jgrapht.graph.WeightedGraphAsWeightedGraphTest,org.jgrapht.graph.WeightedGraphTest,org.jgrapht.graph.builder.GraphBuilderTest,org.jgrapht.graph.builder.GraphTypeBuilderTest,org.jgrapht.graph.concurrent.AsSynchronizedGraphTest,org.jgrapht.interfaces.AStarAdmissibleHeuristicTest test
+
+--- OUTPUT COMANDO + PERF ---
+[1753172417559] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 14000 mW
+[1753172417559] [GPU] PPT = 8.00 W
+[1753172417665] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 16000 mW
+#           time             counts   unit events
+     0.100131760               0,90 Joules power/energy-pkg/                                                     
+[1753172417683] [GPU] PPT = 10.00 W
+[1753172417773] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 14000 mW
+     0.200773915               1,28 Joules power/energy-pkg/                                                     
+[1753172417813] [GPU] PPT = 14.00 W
+     0.300989101               1,40 Joules power/energy-pkg/                                                     
+[1753172417880] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 18000 mW
+     0.401236120               1,30 Joules power/energy-pkg/                                                     
+[1753172417986] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 23000 mW
+[1753172417960] [GPU] PPT = 19.00 W
+     0.503812451               1,70 Joules power/energy-pkg/                                                     
+[1753172418094] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 17000 mW
+[1753172418107] [GPU] PPT = 12.00 W
+     0.604069153               1,47 Joules power/energy-pkg/                                                     
+[1753172418201] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 8000 mW
+[1753172418237] [GPU] PPT = 6.00 W
+     0.704817203               1,09 Joules power/energy-pkg/                                                     
+[1753172418310] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 16000 mW
+     0.808782410               0,92 Joules power/energy-pkg/                                                     
+[1753172418416] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 22000 mW
+[1753172418384] [GPU] PPT = 16.00 W
+     0.909793240               1,38 Joules power/energy-pkg/                                                     
+[1753172418522] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 16000 mW
+[1753172418529] [GPU] PPT = 16.00 W
+     1.010010358               1,40 Joules power/energy-pkg/                                                     
+[1753172418628] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 11000 mW
+     1.084036925               0,76 Joules power/energy-pkg/                                                     
+--- FINE ESECUZIONE 2 ---

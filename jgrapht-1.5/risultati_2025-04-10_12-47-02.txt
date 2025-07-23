@@ -1,0 +1,84 @@
+=== Esecuzione 1 di 4 ===
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcom.example:jgrapht-test[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding jgrapht-test 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.1.0:java[m [1m(default-cli)[m @ [36mjgrapht-test[0;1m ---[m
+Percorso più breve da A a C: [(A : B), (B : C)]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.247 s
+[[1;34mINFO[m] Finished at: 2025-04-10T12:47:03+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+The JAVA_HOME environment variable is not defined correctly,
+this environment variable is needed to run this program.
+#           time             counts   unit events
+     0.025411653               0,10 Joules power/energy-pkg/                                                     
+Consumo energetico GPU (W): 1000.00
+Consumo energetico (da /sys/class/hwmon/hwmon5/power1_input): 5000 mW
+=== Esecuzione 2 di 4 ===
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcom.example:jgrapht-test[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding jgrapht-test 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.1.0:java[m [1m(default-cli)[m @ [36mjgrapht-test[0;1m ---[m
+Percorso più breve da A a C: [(A : B), (B : C)]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.275 s
+[[1;34mINFO[m] Finished at: 2025-04-10T12:47:13+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+The JAVA_HOME environment variable is not defined correctly,
+this environment variable is needed to run this program.
+#           time             counts   unit events
+     0.011213060               0,07 Joules power/energy-pkg/                                                     
+Consumo energetico GPU (W): 2.00
+Consumo energetico (da /sys/class/hwmon/hwmon5/power1_input): 5000 mW
+=== Esecuzione 3 di 4 ===
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcom.example:jgrapht-test[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding jgrapht-test 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.1.0:java[m [1m(default-cli)[m @ [36mjgrapht-test[0;1m ---[m
+Percorso più breve da A a C: [(A : B), (B : C)]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.250 s
+[[1;34mINFO[m] Finished at: 2025-04-10T12:47:19+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+The JAVA_HOME environment variable is not defined correctly,
+this environment variable is needed to run this program.
+#           time             counts   unit events
+     0.010911133               0,07 Joules power/energy-pkg/                                                     
+Consumo energetico GPU (W): 2.00
+Consumo energetico (da /sys/class/hwmon/hwmon5/power1_input): 6000 mW
+=== Esecuzione 4 di 4 ===
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcom.example:jgrapht-test[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding jgrapht-test 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.1.0:java[m [1m(default-cli)[m @ [36mjgrapht-test[0;1m ---[m
+Percorso più breve da A a C: [(A : B), (B : C)]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.303 s
+[[1;34mINFO[m] Finished at: 2025-04-10T12:47:25+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+The JAVA_HOME environment variable is not defined correctly,
+this environment variable is needed to run this program.
+#           time             counts   unit events
+     0.010110604               0,07 Joules power/energy-pkg/                                                     
+Consumo energetico GPU (W): 4.00
+Consumo energetico (da /sys/class/hwmon/hwmon5/power1_input): 6000 mW

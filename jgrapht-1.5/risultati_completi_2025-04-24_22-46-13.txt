@@ -1,0 +1,10 @@
+=== Esecuzione 1 di 2 ===
+#           time             counts   unit events
+     0.000071518               0,00 Joules power/energy-pkg/                                                     
+     0.001403266               0,00 Joules power/energy-pkg/                                                     
+Workload failed: No such file or directory
+=== Esecuzione 2 di 2 ===
+#           time             counts   unit events
+     0.000071868               0,00 Joules power/energy-pkg/                                                     
+     0.001403545               0,01 Joules power/energy-pkg/                                                     
+Workload failed: No such file or directory

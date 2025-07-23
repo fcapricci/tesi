@@ -1,0 +1,99 @@
+=== Esecuzione 1 di 3 ===
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcom.example:jgrapht-test[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding jgrapht-test 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mjgrapht-test[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/federico/JGraphT_Test/jgrapht-test/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mjgrapht-test[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/federico/JGraphT_Test/jgrapht-test/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mjgrapht-test[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 1 source file to /home/federico/JGraphT_Test/jgrapht-test/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.1.0:java[m [1m(default-cli)[m @ [36mjgrapht-test[0;1m ---[m
+Percorso più breve da A a C: [(A : B), (B : C)]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.615 s
+[[1;34mINFO[m] Finished at: 2025-04-09T15:22:59+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+The JAVA_HOME environment variable is not defined correctly,
+this environment variable is needed to run this program.
+#           time             counts   unit events
+     0.020933408               0,05 Joules power/energy-pkg/                                                     
+Consumo energetico GPU (W): 2.00
+Consumo energetico (da /sys/class/hwmon/hwmon5/power1_input): 2000 mW
+=== Esecuzione 2 di 3 ===
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcom.example:jgrapht-test[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding jgrapht-test 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mjgrapht-test[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/federico/JGraphT_Test/jgrapht-test/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mjgrapht-test[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/federico/JGraphT_Test/jgrapht-test/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mjgrapht-test[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 1 source file to /home/federico/JGraphT_Test/jgrapht-test/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.1.0:java[m [1m(default-cli)[m @ [36mjgrapht-test[0;1m ---[m
+Percorso più breve da A a C: [(A : B), (B : C)]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.575 s
+[[1;34mINFO[m] Finished at: 2025-04-09T15:23:41+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+The JAVA_HOME environment variable is not defined correctly,
+this environment variable is needed to run this program.
+#           time             counts   unit events
+     0.020709563               0,06 Joules power/energy-pkg/                                                     
+Consumo energetico GPU (W): 2.00
+Consumo energetico (da /sys/class/hwmon/hwmon5/power1_input): 2000 mW
+=== Esecuzione 3 di 3 ===
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcom.example:jgrapht-test[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding jgrapht-test 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mjgrapht-test[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/federico/JGraphT_Test/jgrapht-test/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mjgrapht-test[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/federico/JGraphT_Test/jgrapht-test/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mjgrapht-test[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 1 source file to /home/federico/JGraphT_Test/jgrapht-test/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.1.0:java[m [1m(default-cli)[m @ [36mjgrapht-test[0;1m ---[m
+Percorso più breve da A a C: [(A : B), (B : C)]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.607 s
+[[1;34mINFO[m] Finished at: 2025-04-09T15:23:54+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+The JAVA_HOME environment variable is not defined correctly,
+this environment variable is needed to run this program.
+#           time             counts   unit events
+     0.019438503               0,06 Joules power/energy-pkg/                                                     
+Consumo energetico GPU (W): 2.00
+Consumo energetico (da /sys/class/hwmon/hwmon5/power1_input): 2000 mW

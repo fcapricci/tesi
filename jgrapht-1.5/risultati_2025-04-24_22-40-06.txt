@@ -1,0 +1,26 @@
+
+
+===== ESECUZIONE 1 DI 2 =====
+Timestamp: 2025-04-24 22:40:06
+Comando: mvn clean test
+
+--- OUTPUT COMANDO + PERF ---
+[1745527206058] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+#           time             counts   unit events
+     0.000101829               0,00 Joules power/energy-pkg/                                                     
+     0.001483096               0,00 Joules power/energy-pkg/                                                     
+Workload failed: No such file or directory
+--- FINE ESECUZIONE 1 ---
+
+
+===== ESECUZIONE 2 DI 2 =====
+Timestamp: 2025-04-24 22:40:26
+Comando: mvn clean test
+
+--- OUTPUT COMANDO + PERF ---
+[1745527226106] [HWMON] /sys/class/hwmon/hwmon5/power1_input = 3000 mW
+#           time             counts   unit events
+     0.000085277               0,00 Joules power/energy-pkg/                                                     
+     0.002030099               0,01 Joules power/energy-pkg/                                                     
+Workload failed: No such file or directory
+--- FINE ESECUZIONE 2 ---
