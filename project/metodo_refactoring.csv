@@ -1,0 +1,157 @@
+Metodo,Refactoring,Classe
+"public calculateMaximumFlow(source V, sink V) : double",Rename Method,jgrapht-core.src.main.org.jgrapht.alg.flow.GusfieldEquivalentFlowTree
+"public calculateMaximumFlow(source V, sink V) : double",Rename Method,jgrapht-core.src.main.org.jgrapht.alg.flow.GusfieldGomoryHuCutTree
+"private initialize(g Graph<V,E>) : void",Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.alg.cycle.HierholzerEulerianCycle
+private cleanup() : void,Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.alg.cycle.HierholzerEulerianCycle
+"private computePartialCycle() : Pair<EdgeNode,EdgeNode>",Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.alg.cycle.HierholzerEulerianCycle
+"private updateGraphAndInsertLocations(partialCycle Pair<EdgeNode,EdgeNode>, partialCycleSourceVertex VertexNode) : void",Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.alg.cycle.HierholzerEulerianCycle
+"private buildWalk() : GraphWalk<V,E>",Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.alg.cycle.HierholzerEulerianCycle
+"private addEdge(sNode VertexNode, tNode VertexNode, e E) : void",Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.alg.cycle.HierholzerEulerianCycle
+private unlink(vNode VertexNode) : void,Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.alg.cycle.HierholzerEulerianCycle
+private moveToFront(vNode VertexNode) : void,Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.alg.cycle.HierholzerEulerianCycle
+private unlink(eNode EdgeNode) : void,Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.alg.cycle.HierholzerEulerianCycle
+"private getOppositeVertex(v VertexNode, e EdgeNode) : VertexNode",Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.alg.cycle.HierholzerEulerianCycle
+"package EdgeNode(sourceNode VertexNode, targetNode VertexNode, prev EdgeNode, e E, reverse EdgeNode, next EdgeNode)",Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.alg.cycle.HierholzerEulerianCycle
+"package VertexNode(prev VertexNode, v V, next VertexNode)",Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.alg.cycle.HierholzerEulerianCycle
+public addEdgeToTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.DirectedSpecifics
+public removeEdgeFromTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.DirectedSpecifics
+public addEdgeToTouchingVertices(e E) : void,Rename Method,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupDirectedSpecifics
+public removeEdgeFromTouchingVertices(e E) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupDirectedSpecifics
+public removeEdgeFromTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupDirectedSpecifics
+public addEdgeToTouchingVertices(e E) : void,Remove Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupDirectedSpecifics
+public addEdgeToTouchingVertices(e E) : void,Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupDirectedSpecifics
+public addEdgeToTouchingVertices(e E) : void,Rename Method,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupUndirectedSpecifics
+public removeEdgeFromTouchingVertices(e E) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupUndirectedSpecifics
+public removeEdgeFromTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupUndirectedSpecifics
+public addEdgeToTouchingVertices(e E) : void,Remove Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupUndirectedSpecifics
+public addEdgeToTouchingVertices(e E) : void,Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupUndirectedSpecifics
+public addEdgeToTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.Specifics
+public removeEdgeFromTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.Specifics
+public addEdgeToTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.UndirectedSpecifics
+public removeEdgeFromTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.UndirectedSpecifics
+"private createHrefGraph() : Graph<URL,DefaultEdge>",Change Return Type,jgrapht-demo.src.main.org.jgrapht.demo.HelloJGraphT
+"public ClosestFirstIterator(g Graph<V,E>, startVertex V, radius double)",Extract Method,jgrapht-core.src.main.org.jgrapht.traverse.ClosestFirstIterator
+"public ClosestFirstIterator(g Graph<V,E>, startVertices Iterable<V>, radius double)",Extract Method,jgrapht-core.src.main.org.jgrapht.traverse.ClosestFirstIterator
+"public BlossomVState(graph Graph<V,E>, nodes BlossomVNode[], edges BlossomVEdge[], nodeNum int, edgeNum int, treeNum int, graphVertices List<V>, graphEdges List<E>, options BlossomVOptions)",Add Parameter,jgrapht-core.src.main.org.jgrapht.alg.matching.blossom.v5.BlossomVState
+private initGraph() : void,Change Return Type,jgrapht-core.src.main.org.jgrapht.alg.matching.blossom.v5.BlossomVInitializer
+private lazyComputeMinimumWeightPerfectMatching() : void,Rename Method,jgrapht-core.src.main.org.jgrapht.alg.matching.blossom.v5.KolmogorovMinimumWeightPerfectMatching
+"public KolmogorovMinimumWeightPerfectMatching(graph Graph<V,E>, options BlossomVOptions)",Extract Method,jgrapht-core.src.main.org.jgrapht.alg.matching.blossom.v5.KolmogorovMinimumWeightPerfectMatching
+"public CrossComponentIterator(g Graph<V,E>, startVertices Iterable<V>)",Extract Method,jgrapht-core.src.main.org.jgrapht.traverse.CrossComponentIterator
+public hasNext() : boolean,Extract Method,jgrapht-core.src.main.org.jgrapht.traverse.CrossComponentIterator
+public DirectedAcyclicGraph(edgeClass Class<? extends E>),Extract Method,jgrapht-core.src.main.org.jgrapht.graph.DirectedAcyclicGraph
+"protected DirectedAcyclicGraph(vertexSupplier Supplier<V>, edgeSupplier Supplier<E>, visitedStrategyFactory VisitedStrategyFactory, topoOrderMap TopoOrderMap<V>, weighted boolean)",Extract Method,jgrapht-core.src.main.org.jgrapht.graph.DirectedAcyclicGraph
+public UnionIterator(),Add Parameter,jgrapht-core.src.main.org.jgrapht.util.UnmodifiableUnionSet
+public UnionIterator(),Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.util.UnmodifiableUnionSet
+public size() : int,Extract Method,jgrapht-core.src.main.org.jgrapht.util.UnmodifiableUnionSet
+private addUnseenChildrenOf(vertex V) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.traverse.CrossComponentIterator
+public findSimpleCycles() : List<List<V>>,Extract Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.HawickJamesSimpleCycles
+public printSimpleCycles() : void,Extract Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.HawickJamesSimpleCycles
+public countSimpleCycles() : long,Extract Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.HawickJamesSimpleCycles
+private initState(o Operation) : void,Remove Parameter,jgrapht-core.src.main.org.jgrapht.alg.cycle.HawickJamesSimpleCycles
+public getFlow() : Flow,Change Return Type,jgrapht-core.src.main.org.jgrapht.alg.interfaces.FlowAlgorithm
+public hasElement(e E) : boolean,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.alg.util.Pair
+"public getNumberOfTriangles(graph Graph<V,E>) : long",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.GraphMetrics
+"private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.clique.ChordalGraphMaxCliqueFinder
+"public BrownBacktrackColoring(graph Graph<V,E>)",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.BrownBacktrackColoring
+private lazyComputeColoring() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.ChordalGraphColoring
+"private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.ChordalGraphColoring
+"public ColoringRepresentation(graph Graph<V,E>, alpha Coloring<V>)",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.ColorRefinementAlgorithm
+"public ColoringRepresentation(graph Graph<V,E>, alpha Coloring<V>)",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.ColorRefinementAlgorithm
+protected getVertexOrdering() : Iterable<V>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.LargestDegreeFirstColoring
+public getColoring() : Coloring<V>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.SaturationDegreeColoring
+public getColoring() : Coloring<V>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.SaturationDegreeColoring
+public getColoring() : Coloring<V>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.SaturationDegreeColoring
+public getColoring() : Coloring<V>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.SaturationDegreeColoring
+protected getVertexOrdering() : Iterable<V>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.SmallestDegreeLastColoring
+private createVertexNumber() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.connectivity.GabowStrongConnectivityInspector
+private createVertexData() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector
+"private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.ChordalGraphMinimalVertexSeparatorFinder
+"private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.ChordalityInspector
+"private findHole(a V, b V, c V) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.ChordalityInspector
+private initMappings() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.WeakChordalityInspector
+private initMappings() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.WeakChordalityInspector
+"private findHole(graph Graph<V,E>, sourceInSeparator V, source V, target V, targetInSeparator V) : GraphPath<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.WeakChordalityInspector
+"private findSeparators(graph Graph<V,E>, edge E) : List<Set<V>>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.WeakChordalityInspector
+private init() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.flow.mincost.CapacityScalingMinimumCostFlow
+private finish() : MinimumCostFlow<E>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.flow.mincost.CapacityScalingMinimumCostFlow
+"private matchVerticesWithSameLabel(root1 V, root2 V, canonicalName Map<V,Integer>[]) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.AHURootedTreeIsomorphismInspector
+"private isomorphismExists(root1 V, root2 V) : boolean",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.AHURootedTreeIsomorphismInspector
+"private isomorphismExists(root1 V, root2 V) : boolean",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.AHURootedTreeIsomorphismInspector
+"public compose(otherMapping IsomorphicGraphMapping<V,E>) : IsomorphicGraphMapping<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.IsomorphicGraphMapping
+"public compose(otherMapping IsomorphicGraphMapping<V,E>) : IsomorphicGraphMapping<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.IsomorphicGraphMapping
+"public identity(graph Graph<V,E>) : IsomorphicGraphMapping<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.IsomorphicGraphMapping
+"public identity(graph Graph<V,E>) : IsomorphicGraphMapping<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.IsomorphicGraphMapping
+private initialize() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.matching.SparseEdmondsMaximumCardinalityMatching
+private initGraph() : double,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.matching.blossom.v5.BlossomVInitializer
+public UnweightedSpannerAlgorithm(),Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.spanning.GreedyMultiplicativeSpanner
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.GnpRandomGraphGenerator
+package BucketList(vertices Collection<V>),Extract And Move Method,jgrapht-core.src.main.org.jgrapht.traverse.LexBreadthFirstIterator
+"public MaximumCardinalityIterator(graph Graph<V,E>)",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.traverse.MaximumCardinalityIterator
+public VertexToIntegerMapping(vertices Set<V>),Extract And Move Method,jgrapht-core.src.main.org.jgrapht.util.VertexToIntegerMapping
+public VertexToIntegerMapping(vertices List<V>),Extract And Move Method,jgrapht-core.src.main.org.jgrapht.util.VertexToIntegerMapping
+public VertexToIntegerMapping(vertices Collection<V>),Extract And Move Method,jgrapht-core.src.main.org.jgrapht.util.VertexToIntegerMapping
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.GnmRandomGraphGenerator
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.GnmRandomBipartiteGraphGenerator
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.GnmRandomBipartiteGraphGenerator
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.GnpRandomBipartiteGraphGenerator
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.GnpRandomBipartiteGraphGenerator
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.WattsStrogatzGraphGenerator
+private lazyComputeColoring() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.ChordalGraphColoring
+"private computeCoConnectedComponents(graph Graph<V,E>, separator List<Pair<Integer,Integer>>) : List<List<Integer>>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.WeakChordalityInspector
+private SimpleMatching(n int),Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.matching.DenseEdmondsMaximumCardinalityMatching
+public getSpanningTree() : SpanningTree<E>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.spanning.PrimMinimumSpanningTree
+"public getTour(graph Graph<V,E>) : GraphPath<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP
+"public getTour(graph Graph<V,E>) : GraphPath<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.tour.TwoApproxMetricTSP
+"private calculateColorDegrees(refiningColor int, rep ColoringRepresentation) : Set<Integer>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.ColorRefinementAlgorithm
+"public CompleteBipartiteGraphGenerator(partitionA int, partitionB int)",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.CompleteBipartiteGraphGenerator
+"public CompleteBipartiteGraphGenerator(partitionA int, partitionB int)",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.CompleteBipartiteGraphGenerator
+"public TwoOptHeuristicTSP(k int, rng Random)",Extract Method,jgrapht-core.src.main.org.jgrapht.alg.tour.TwoOptHeuristicTSP
+"public improveTour(tour GraphPath<V,E>) : GraphPath<V,E>",Add Method Annotation,jgrapht-core.src.main.org.jgrapht.alg.tour.TwoOptHeuristicTSP
+private createRandomTour() : int[],Rename Method,jgrapht-core.src.main.org.jgrapht.alg.tour.TwoOptHeuristicTSP
+public add(value E) : ListNode<E>,Rename Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public remove(node ListNode<E>) : void,Rename Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public getFirstElement() : E,Split Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public getLastElement() : E,Rename Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public getNode(element E) : ListNode<E>,Rename Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+private unlink(target ListNode<E>) : void,Rename Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+"private linkBefore(node ListNode<E>, target ListNode<E>) : void",Rename Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public invert() : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public append(list DoublyLinkedList<E>) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public append(list DoublyLinkedList<E>) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public append(list DoublyLinkedList<E>) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public prepend(list DoublyLinkedList<E>) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public prepend(list DoublyLinkedList<E>) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public prepend(list DoublyLinkedList<E>) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public addLast(value E) : ListNode<E>,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public addLast(value E) : ListNode<E>,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public addLast(value E) : ListNode<E>,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public isEmpty() : boolean,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public size() : int,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public iterator() : Iterator<E>,Change Return Type,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public listIterator() : ListIterator<E>,Change Return Type,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public listIterator() : ListIterator<E>,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public addLast(value E) : ListNode<E>,Change Return Type,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public addLast(value E) : ListNode<E>,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public addFirst(value E) : ListNode<E>,Change Return Type,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public addFirst(value E) : ListNode<E>,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public add(value E) : ListNode<E>,Change Return Type,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public remove(node ListNode<E>) : void,Change Return Type,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public remove(node ListNode<E>) : void,Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public getLastElement() : E,Change Return Type,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public getNode(element E) : ListNode<E>,Change Return Type,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public getNode(element E) : ListNode<E>,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+private unlink(target ListNode<E>) : void,Change Return Type,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+"package ListIteratorImpl(start ListNode<E>, reversed boolean)",Change Method Access Modifier,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public nextNode() : ListNode<E>,Change Return Type,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+"package ListIteratorImpl(start ListNode<E>, reversed boolean)",Add Parameter,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+"package ListIteratorImpl(start ListNode<E>, reversed boolean)",Add Parameter,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+"package ListIteratorImpl(start ListNode<E>, reversed boolean)",Remove Parameter,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+"package ListIteratorImpl(start ListNode<E>, reversed boolean)",Remove Parameter,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public toString() : String,Push Down Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public getValue() : V,Push Down Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public getValue() : V,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+package ListNode(value V),Push Down Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public reverseIteratorFrom(element E) : Iterator<E>,Rename Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public reverseIteratorFrom(element E) : Iterator<E>,Change Return Type,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+"public getLCA(a V, b V) : V",Extract Method,jgrapht-core.src.main.org.jgrapht.alg.lca.NaiveLCAFinder
+"private doubleBfs(a V, b V, visitedSets Set<V>[]) : void",Change Return Type,jgrapht-core.src.main.org.jgrapht.alg.lca.NaiveLCAFinder

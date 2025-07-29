@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # === CONFIGURAZIONE ===
-file_r1 = 'risultati_release1.txt'
-file_r2 = 'risultati_release2.txt'
-threshold = 1  # Δ Joule per considerare un picco
+file_r1 = '/home/federico/JGraphT_Test/project/grafici/risultati_jgrapht-1.3.0_refactoring.txt'
+file_r2 = '/home/federico/JGraphT_Test/project/grafici/risultati_1.4.0_refactoring.txt'
+threshold = 0.7 # Δ Joule per considerare un picco
 output_dir = 'grafici'
 os.makedirs(output_dir, exist_ok=True)
 
@@ -68,5 +68,5 @@ plt.ylabel("Energia media (Joule)")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, 'differenza_campionamenti_base.png'))
-print("Grafico salvato in: grafici/differenza_campionamenti.png ✅")
+plt.savefig(os.path.join(output_dir, 'differenza_campionamenti_refactoring.png'))
+print("Grafico salvato in: grafici/differenza_campionamenti_refactoring.png ✅")

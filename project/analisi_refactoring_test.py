@@ -1,52 +1,44 @@
-import json
-import csv
+import os
+import xml.etree.ElementTree as ET
 
-# === INPUT ===
-refactoring_file = 'filtered_refactorings.json'
-tests_file = 'tests_involved.txt'
+# === CONFIG ===
+JACOCO_DIR = "jacoco_reports"  # cartella con jacoco_<test>.xml
+METHODS_FILE = "refactored_methods.txt"
+OUTPUT = "tests_involved.txt"
 
-# === OUTPUT ===
-summary_csv = 'refactoring_quantificati.csv'
-mapping_csv = 'refactoring_test_mapping.csv'
+# === Carica metodi refactorati ===
+with open(METHODS_FILE) as f:
+    methods = set(tuple(line.strip().rsplit(".", 1)) for line in f if line.strip())
 
-# === Carica lista test coinvolti ===
-with open(tests_file, 'r') as f:
-    test_classes = {line.strip() for line in f if line.strip()}
+involved = set()
 
-# === Carica refactoring ===
-with open(refactoring_file, 'r', encoding='utf-8') as f:
-    data = json.load(f)
+for file in os.listdir(JACOCO_DIR):
+    if not file.endswith(".xml"):
+        continue
 
-# 1️⃣ Quantifica refactoring per tipo
-quantita = {}
-# 2️⃣ Mapping: test_class → [list of refactoring types touching metodi coperti]
-mapping = {}
+    path = os.path.join(JACOCO_DIR, file)
+    test_class = file.replace("jacoco_", "").replace(".xml", "").replace("_", ".")
 
-for commit in data.get('commits', []):
-    for ref in commit.get('refactorings', []):
-        tipo = ref.get('type', 'N/D')
-        quantita[tipo] = quantita.get(tipo, 0) + 1
+    try:
+        tree = ET.parse(path)
+        root = tree.getroot()
+    except Exception:
+        continue
 
-        for loc in ref.get('rightSideLocations', []):
-            class_path = loc.get('filePath', '')
-            class_name = class_path.replace('/', '.').replace('.java', '')
+    for package in root.findall(".//package"):
+        pkg = package.get("name").replace("/", ".")
+        for cls in package.findall("class"):
+            class_name = cls.get("name").replace("/", ".")
+            full_class = class_name
+            for method in cls.findall("method"):
+                method_name = method.get("name")
+                if (full_class, method_name) in methods:
+                    involved.add(test_class)
+                    break  # basta una corrispondenza
 
-            for test in test_classes:
-                if class_name.split('.')[-1] in test:  # usa solo nome semplice (es. DijkstraShortestPath)
-                    mapping.setdefault(test, []).append(tipo)
+# === Scrivi il file ===
+with open(OUTPUT, "w") as f:
+    for t in sorted(involved):
+        f.write(t + "\n")
 
-# === Scrivi quantificazione ===
-with open(summary_csv, 'w', newline='') as f:
-    writer = csv.writer(f)
-    writer.writerow(['Tipo Refactoring', 'Occorrenze'])
-    for tipo, count in quantita.items():
-        writer.writerow([tipo, count])
-
-# === Scrivi mapping ===
-with open(mapping_csv, 'w', newline='') as f:
-    writer = csv.writer(f)
-    writer.writerow(['TestClass', 'Tipi di Refactoring associati'])
-    for test, tipi in mapping.items():
-        writer.writerow([test, ';'.join(sorted(set(tipi)))])
-
-print(f"✅ Creati:\n • {summary_csv}\n • {mapping_csv}")
+print(f"✅ Salvati {len(involved)} test in {OUTPUT}")

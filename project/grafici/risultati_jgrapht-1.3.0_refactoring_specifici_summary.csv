@@ -1,0 +1,22 @@
+ClasseDiTest,Esecuzione,Energia media CPU (J)
+org.jgrapht.GraphMetricsTest,1,7,65217
+org.jgrapht.GraphMetricsTest,2,7,85455
+org.jgrapht.GraphTestsTest,1,7,45223
+org.jgrapht.GraphTestsTest,2,7,40385
+org.jgrapht.GraphsTest,1,7,45223
+org.jgrapht.GraphsTest,2,7,2549
+org.jgrapht.alg.StoerWagnerMinimumCutTest,1,7,26452
+org.jgrapht.alg.StoerWagnerMinimumCutTest,2,7,40385
+org.jgrapht.alg.TransitiveClosureTest,1,7,40385
+org.jgrapht.alg.TransitiveClosureTest,2,7,40385
+org.jgrapht.alg.TransitiveReductionTest,1,7,40385
+org.jgrapht.alg.TransitiveReductionTest,2,7
+org.jgrapht.alg.clique.AllVariantsBronKerboschCliqueFinderTest,1,7,35484
+org.jgrapht.alg.clique.AllVariantsBronKerboschCliqueFinderTest,2,7,7037
+org.jgrapht.alg.clique.BronKerboschCliqueFinderTest,1,7,54717
+org.jgrapht.alg.clique.BronKerboschCliqueFinderTest,2,7,6
+org.jgrapht.alg.clique.ChordalGraphMaxCliqueFinderTest,1,7,80488
+org.jgrapht.alg.clique.ChordalGraphMaxCliqueFinderTest,2,8,20349
+org.jgrapht.alg.clique.CliqueMinimalSeparatorDecompositionTest,1,7,65217
+org.jgrapht.alg.clique.CliqueMinimalSeparatorDecompositionTest,2,8,37143
+org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinderTest,1,8,04734

@@ -18,17 +18,15 @@ cd "$repo_path" || exit 1
 # === CONFIGURAZIONE ===
 numero_esecuzioni=2
 intervallo=100
-# Leggi i test coinvolti, rimuovi righe vuote, uniscili con virgole
-test_classes=$(grep -v '^$' "/home/federico/JGraphT_Test/project/tests_involved.txt" | paste -sd, -)
+tempo_attesa=0
+tests_file="/home/federico/JGraphT_Test/project/test_involved.txt"
 
-if [ -z "$test_classes" ]; then
-  echo "❌ Nessun test trovato in tests_involved.txt"
+if [ ! -f "$tests_file" ]; then
+  echo "❌ File $tests_file mancante"
   exit 1
 fi
 
-comando="mvn -Dtest=${test_classes} -DfailIfNoTests=false test"
-tempo_attesa=0
-
+# === Output ===
 mkdir -p ../grafici
 timestamp=$(date '+%Y-%m-%d_%H-%M-%S')
 file_output="../grafici/risultati_${tag}_refactoring.txt"
@@ -60,21 +58,28 @@ monitor_gpu_power() {
   done
 }
 
+# === Leggi tutte le classi di test in una riga, separate da virgola ===
+test_classes=$(grep '^org.*Test$' "$tests_file" | paste -sd, -)
+
+if [ -z "$test_classes" ]; then
+  echo "❌ Nessuna classe di test valida trovata nel file."
+  exit 1
+fi
+
 # === Esecuzioni ===
 for ((i = 1; i <= numero_esecuzioni; i++)); do
-  echo "Inizio esecuzione $i di $numero_esecuzioni..."
   echo -e "\n\n===== ESECUZIONE $i DI $numero_esecuzioni =====" >> "$file_output"
   echo "Timestamp: $(date '+%Y-%m-%d %H:%M:%S')" >> "$file_output"
-  echo "Comando: $comando" >> "$file_output"
+  echo "▶️ Eseguo tutte le classi: $test_classes" >> "$file_output"
 
   monitor_hwmon & PID_HWMON=$!
   monitor_gpu_power & PID_GPU=$!
 
-  echo -e "\n--- OUTPUT COMANDO + PERF ---" >> "$file_output"
   sudo perf stat -I $intervallo -e power/energy-pkg/ \
     env JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64" \
     PATH="/usr/lib/jvm/java-11-openjdk-amd64/bin:$PATH" \
-    $comando 2>> "$file_output"
+    mvn -Dtest="$test_classes" -DfailIfNoTests=false test \
+    2>> "$file_output"
 
   kill $PID_HWMON $PID_GPU 2>/dev/null
   wait $PID_HWMON $PID_GPU 2>/dev/null
@@ -86,8 +91,8 @@ for ((i = 1; i <= numero_esecuzioni; i++)); do
   fi
 done
 
-# === Generazione grafici + CSV ===
+# === Generazione grafici (opzionale) ===
 cd .. || exit 1
-python3 grafici.py grafici/risultati_${tag}.txt
+python3 grafici.py "grafici/risultati_${tag}_refactoring.txt"
 
-echo -e "\n✅ Misura completata per release $tag. Output: grafici/risultati_${tag}_refactoring.txt"
+echo -e "\n✅ Misura completata per release $tag (esecuzione unica per tutti i test)."

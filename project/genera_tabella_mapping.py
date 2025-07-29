@@ -1,66 +1,63 @@
 import os
 import xml.etree.ElementTree as ET
-import json
 import csv
 
-# === CONFIG ===
-JACOCO_DIR = "jacoco_reports"
+# === Percorsi ===
+JACOCO_DIR = "jacoco_reports"  # Cartella con i report .xml
+REFACTORED_METHODS = "refactored_methods.txt"
 REFACTORINGS_JSON = "filtered_refactorings.json"
-TESTS_INVOLVED = "tests_involved.txt"
-OUTPUT_CSV = "metodo_refactoring_test.csv"
+OUTPUT_CSV = "mapping_metodo_refactoring_test.csv"
 
-# === 1. Carica classi di test coinvolte ===
-with open(TESTS_INVOLVED, "r") as f:
-    test_classes = set(line.strip() for line in f if line.strip())
+# === STEP 1: carica metodi refactorati (formato completo class.method)
+refactored_methods = set()
+with open(REFACTORED_METHODS) as f:
+    for line in f:
+        method = line.strip()
+        if method:
+            refactored_methods.add(method)
 
-# === 2. Estrai metodi refactorati ===
-refactored_methods = dict()  # key: (class_name, method_name) -> set(refactoring_type)
+# === STEP 2: crea mappa metodo -> tipo di refactoring
+refactoring_map = {}  # class.method -> tipo
+with open(REFACTORINGS_JSON) as f:
+    for line in f:
+        line = line.strip().strip('",')
+        if "::" in line and "#" in line:
+            left, tipo = line.rsplit("#", 1)
+            class_name, method_name = left.split("::")
+            full = f"{class_name}.{method_name}"
+            refactoring_map[full] = tipo
 
-def extract_class_from_path(path):
-    return path.replace("jgrapht-core/src/main/java/", "").replace(".java", "").replace("/", ".")
+# === STEP 3: scorri tutti i file JaCoCo
+mappatura = []
 
-with open(REFACTORINGS_JSON, "r") as f:
-    data = json.load(f)
-    for commit in data.get("commits", []):
-        for ref in commit.get("refactorings", []):
-            ref_type = ref.get("type")
-            for location in ref.get("rightSideLocations", []):
-                if location.get("codeElementType") != "METHOD_DECLARATION":
-                    continue
-                method_signature = location["codeElement"]
-                method_name = method_signature.split()[1].split("(")[0]  # es: getMaximumFlowValue
-                class_name = extract_class_from_path(location["filePath"])
-                key = (class_name, method_name)
-                refactored_methods.setdefault(key, set()).add(ref_type)
+for root_dir, _, files in os.walk(JACOCO_DIR):
+    for file in files:
+        if not file.endswith(".xml"):
+            continue
 
-# === 3. Scansiona i report JaCoCo ===
-result_rows = []
+        test_class = file.replace("jacoco_", "").replace(".xml", "").replace("_", ".")
+        path = os.path.join(root_dir, file)
 
-for test_class in test_classes:
-    report_name = f"jacoco_{test_class.replace('.', '_')}.xml"
-    report_path = os.path.join(JACOCO_DIR, report_name)
-    if not os.path.exists(report_path):
-        continue
+        try:
+            root = ET.parse(path).getroot()
+        except Exception:
+            continue
 
-    tree = ET.parse(report_path)
-    root = tree.getroot()
+        for package in root.findall(".//package"):
+            for cls in package.findall("class"):
+                class_name = cls.get("name").replace("/", ".")
+                for method in cls.findall("method"):
+                    method_name = method.get("name")
+                    full = f"{class_name}.{method_name}"
 
-    for package in root.findall(".//package"):
-        package_name = package.get("name").replace("/", ".")
-        for class_ in package.findall("class"):
-            class_name = class_.get("name").replace("/", ".")
-            full_class = f"{package_name}.{class_name}"
-            for method in class_.findall("method"):
-                method_name = method.get("name")
-                key = (full_class, method_name)
-                if key in refactored_methods:
-                    for ref_type in refactored_methods[key]:
-                        result_rows.append([f"{full_class}.{method_name}", ref_type, test_class])
+                    if full in refactored_methods:
+                        refactoring = refactoring_map.get(full, "UNKNOWN")
+                        mappatura.append([full, refactoring, test_class])
 
-# === 4. Scrivi il CSV ===
+# === STEP 4: salva CSV
 with open(OUTPUT_CSV, "w", newline="") as f:
     writer = csv.writer(f)
-    writer.writerow(["Metodo", "Refactoring", "ClasseDiTest"])
-    writer.writerows(result_rows)
+    writer.writerow(["MetodoRefactorato", "Refactoring", "ClasseDiTest"])
+    writer.writerows(mappatura)
 
-print(f"✅ CSV generato: {OUTPUT_CSV} ({len(result_rows)} righe)")
+print(f"✅ Mappatura creata: {OUTPUT_CSV} ({len(mappatura)} righe)")
