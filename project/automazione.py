@@ -75,11 +75,9 @@ for i in range(len(releases) - 1):
         analizza_refactoring(tag1, tag2)
 
         # Misura energetica solo sui test coinvolti nei refactoring
-        #print("⚡ Avvio misura mirata sui test coinvolti nei refactoring...")
-        #subprocess.run([script_misura2, tag1, repo_path], check=True)
-        #subprocess.run([script_misura2, tag2, repo_path], check=True)
-        subprocess.run([script_misura3, tag1, repo_path], check=True)
-        subprocess.run([script_misura3, tag1, repo_path], check=True)
+        print("⚡ Avvio misura mirata sui test coinvolti nei refactoring...")
+        subprocess.run([script_misura2, tag1, repo_path], check=True)
+        subprocess.run([script_misura2, tag2, repo_path], check=True)
 
 
 

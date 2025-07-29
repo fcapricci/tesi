@@ -59,7 +59,7 @@ monitor_gpu_power() {
 }
 
 # === Leggi tutte le classi di test in una riga, separate da virgola ===
-test_classes=$(grep '^org.*Test$' "$tests_file" | paste -sd, -)
+test_classes=$(sed 's/^jacoco_//' "$tests_file" | sed 's/_/./g' | paste -sd, -)
 
 if [ -z "$test_classes" ]; then
   echo "❌ Nessuna classe di test valida trovata nel file."
