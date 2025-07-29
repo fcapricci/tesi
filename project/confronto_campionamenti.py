@@ -2,15 +2,29 @@ import re
 import os
 import matplotlib.pyplot as plt
 import numpy as np
+import sys
 
-# === CONFIGURAZIONE ===
-file_r1 = '/home/federico/JGraphT_Test/project/grafici/risultati_jgrapht-1.3.0_refactoring.txt'
-file_r2 = '/home/federico/JGraphT_Test/project/grafici/risultati_1.4.0_refactoring.txt'
-threshold = 0.7 # Δ Joule per considerare un picco
+if len(sys.argv) != 3:
+    print("Uso: python confronto_campionamenti.py <file_release1> <file_release2>")
+    sys.exit(1)
+
+file_r1 = sys.argv[1]
+file_r2 = sys.argv[2]
+
+threshold = 0.7  # Δ Joule per considerare un picco
 output_dir = 'grafici'
 os.makedirs(output_dir, exist_ok=True)
 
-# === FUNZIONI ===
+# Nome file output dinamico
+nome_output = os.path.join(
+    output_dir,
+    f'differenza_campionamenti_{os.path.basename(file_r1)}_vs_{os.path.basename(file_r2)}.png'
+)
+
+# Se il grafico esiste, non rigenerarlo
+if os.path.exists(nome_output):
+    print(f"✅ Grafico già presente: {nome_output}.")
+    sys.exit(0)
 
 def estrai_energie_per_esecuzioni(filepath):
     esecuzioni = []
@@ -37,8 +51,6 @@ def calcola_media_allineata(esecuzioni):
     trimmed = [e[:min_len] for e in esecuzioni]
     return np.mean(trimmed, axis=0)
 
-# === ESTRAZIONE ===
-
 esecuzioni_r1 = estrai_energie_per_esecuzioni(file_r1)
 esecuzioni_r2 = estrai_energie_per_esecuzioni(file_r2)
 
@@ -49,14 +61,7 @@ min_len = min(len(media_r1), len(media_r2))
 differenze = [media_r2[i] - media_r1[i] for i in range(min_len)]
 picchi = [(i, d) for i, d in enumerate(differenze) if abs(d) > threshold]
 
-# === RISULTATI ===
-print(f"Esecuzioni trovate - Release 1: {len(esecuzioni_r1)}, Release 2: {len(esecuzioni_r2)}")
-print(f"Campioni medi analizzati: {min_len}")
-print(f"Picchi rilevati (Δ > {threshold} Joule):")
-for i, d in picchi:
-    print(f" - Campione {i}: Δ = {d:.2f} J {'↑' if d > 0 else '↓'}")
 
-# === GRAFICO ===
 plt.figure(figsize=(12, 6))
 plt.plot(range(min_len), media_r1[:min_len], label='Media Release 1')
 plt.plot(range(min_len), media_r2[:min_len], label='Media Release 2')
@@ -68,5 +73,5 @@ plt.ylabel("Energia media (Joule)")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, 'differenza_campionamenti_refactoring.png'))
-print("Grafico salvato in: grafici/differenza_campionamenti_refactoring.png ✅")
+plt.savefig(nome_output)
+print(f"Grafico salvato in: {nome_output} ✅")

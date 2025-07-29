@@ -1,10 +1,15 @@
-
 import json
 import csv
+import os
 
 # === CONFIGURAZIONE ===
 json_path = "/home/federico/JGraphT_Test/project/filtered_refactorings.json"
 csv_output = "metodo_refactoring.csv"
+
+# === SALTA SE OUTPUT GIÀ ESISTE ===
+if os.path.exists(csv_output):
+    print(f"✅ Output già presente: {csv_output}")
+    exit(0)
 
 # === LETTURA JSON ===
 with open(json_path, "r") as f:

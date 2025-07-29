@@ -1,8 +1,14 @@
 import json
+import os
 
 # === CONFIG ===
-REFACTORINGS_JSON = "filtered_refactorings.json"  # percorso al tuo JSON
-OUTPUT_METHODS = "refactored_methods.txt"         # output: lista classe.metodo
+REFACTORINGS_JSON = "filtered_refactorings.json"
+OUTPUT_METHODS = "refactored_methods.txt"
+
+# Se l'output esiste, non rigenerare
+if os.path.exists(OUTPUT_METHODS):
+    print(f"✅ Output già presente: {OUTPUT_METHODS}")
+    exit(0)
 
 def extract_class_from_path(path):
     return path.replace("jgrapht-core/src/main/java/", "").replace(".java", "").replace("/", ".")

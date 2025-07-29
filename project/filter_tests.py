@@ -1,19 +1,19 @@
 import pandas as pd
 import os
-import tarfile
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 
 # === Percorsi file ===
-JACOCO_TAR = "jacoco_reports.tar.gz"
+JACOCO_DIR = "jacoco_reports"
 REFACTORED_METHODS = "refactored_methods.txt"
 REFACTORING_CSV = "metodo_refactoring.csv"
+OUTPUT_TESTS = "test_involved.txt"
+OUTPUT_TABLE = "tabella_metodo_refactoring_test.csv"
 
-# === Estrai i report JaCoCo ===
-EXTRACT_DIR = "jacoco_extracted"
-if not os.path.exists(EXTRACT_DIR):
-    with tarfile.open(JACOCO_TAR, "r:gz") as tar:
-        tar.extractall(path=EXTRACT_DIR)
+# === Skip se output già presente ===
+if os.path.exists(OUTPUT_TESTS):
+    print(f"✅ {OUTPUT_TESTS} già presente, skip generazione.")
+    exit(0)
 
 # === Carica metodi refactorati e deduci le classi ===
 refactored_classes = set()
@@ -27,7 +27,7 @@ with open(REFACTORED_METHODS) as f:
 # === Estrai coperture JaCoCo: RefactoredClass -> TestClass ===
 coverage_map = defaultdict(set)
 
-for root, _, files in os.walk(EXTRACT_DIR):
+for root, _, files in os.walk(JACOCO_DIR):
     for file in files:
         if file.endswith(".xml"):
             path = os.path.join(root, file)
@@ -72,11 +72,11 @@ df_final = df_merged.groupby(
 
 # === Salva TestClass uniche in un file .txt ===
 unique_tests = sorted(set(df_merged["TestClass"].dropna()))
-with open("test_involved.txt", "w") as f:
+with open(OUTPUT_TESTS, "w") as f:
     for test in unique_tests:
         f.write(test + "\n")
 
 # === Salva tabella compatta in CSV (opzionale) ===
-df_final.to_csv("tabella_metodo_refactoring_test.csv", index=False)
+df_final.to_csv(OUTPUT_TABLE, index=False)
 
-print("Fatto: generati tabella e test_involved.txt")
+print(f"✅ Generati {len(unique_tests)} test coinvolti in {OUTPUT_TESTS}")
