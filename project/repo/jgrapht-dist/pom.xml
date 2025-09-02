@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.jgrapht</groupId>
         <artifactId>jgrapht</artifactId>
-        <version>1.5.0</version>
+        <version>1.5.3-SNAPSHOT</version>
     </parent>
     <artifactId>jgrapht-dist</artifactId>
     <name>JGraphT - Distributable Archives</name>
@@ -48,6 +48,10 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>jgrapht-opt</artifactId>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>jgrapht-unimi-dsi</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -83,12 +87,10 @@
                     </archive>
                 </configuration>
             </plugin>
-            <!--
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
             </plugin>
-            -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>

@@ -1,0 +1,4 @@
+org/jgrapht/opt/graph/fastutil/IncomingOutgoingEdgesTest.class
+org/jgrapht/opt/graph/sparse/SparseIntGraphTest.class
+org/jgrapht/opt/graph/fastutil/FastUtilMapIntVertexGraphTest.class
+org/jgrapht/opt/graph/fastutil/FastUtilMapGraphTest.class

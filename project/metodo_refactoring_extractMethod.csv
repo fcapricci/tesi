@@ -1,0 +1,27 @@
+Metodo,Refactoring,Classe
+public removeEdgeFromTouchingVertices(e E) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupDirectedSpecifics
+public removeEdgeFromTouchingVertices(e E) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupUndirectedSpecifics
+"public ClosestFirstIterator(g Graph<V,E>, startVertex V, radius double)",Extract Method,jgrapht-core.src.main.org.jgrapht.traverse.ClosestFirstIterator
+"public ClosestFirstIterator(g Graph<V,E>, startVertices Iterable<V>, radius double)",Extract Method,jgrapht-core.src.main.org.jgrapht.traverse.ClosestFirstIterator
+"public KolmogorovMinimumWeightPerfectMatching(graph Graph<V,E>, options BlossomVOptions)",Extract Method,jgrapht-core.src.main.org.jgrapht.alg.matching.blossom.v5.KolmogorovMinimumWeightPerfectMatching
+"public CrossComponentIterator(g Graph<V,E>, startVertices Iterable<V>)",Extract Method,jgrapht-core.src.main.org.jgrapht.traverse.CrossComponentIterator
+public hasNext() : boolean,Extract Method,jgrapht-core.src.main.org.jgrapht.traverse.CrossComponentIterator
+public DirectedAcyclicGraph(edgeClass Class<? extends E>),Extract Method,jgrapht-core.src.main.org.jgrapht.graph.DirectedAcyclicGraph
+"protected DirectedAcyclicGraph(vertexSupplier Supplier<V>, edgeSupplier Supplier<E>, visitedStrategyFactory VisitedStrategyFactory, topoOrderMap TopoOrderMap<V>, weighted boolean)",Extract Method,jgrapht-core.src.main.org.jgrapht.graph.DirectedAcyclicGraph
+public size() : int,Extract Method,jgrapht-core.src.main.org.jgrapht.util.UnmodifiableUnionSet
+private addUnseenChildrenOf(vertex V) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.traverse.CrossComponentIterator
+public findSimpleCycles() : List<List<V>>,Extract Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.HawickJamesSimpleCycles
+public printSimpleCycles() : void,Extract Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.HawickJamesSimpleCycles
+public countSimpleCycles() : long,Extract Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.HawickJamesSimpleCycles
+"public TwoOptHeuristicTSP(k int, rng Random)",Extract Method,jgrapht-core.src.main.org.jgrapht.alg.tour.TwoOptHeuristicTSP
+public invert() : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public append(list DoublyLinkedList<E>) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public append(list DoublyLinkedList<E>) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public append(list DoublyLinkedList<E>) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public prepend(list DoublyLinkedList<E>) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public prepend(list DoublyLinkedList<E>) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public prepend(list DoublyLinkedList<E>) : void,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public addLast(value E) : ListNode<E>,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public addLast(value E) : ListNode<E>,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public addLast(value E) : ListNode<E>,Extract Method,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+"public getLCA(a V, b V) : V",Extract Method,jgrapht-core.src.main.org.jgrapht.alg.lca.NaiveLCAFinder

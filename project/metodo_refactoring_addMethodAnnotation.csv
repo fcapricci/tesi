@@ -1,0 +1,18 @@
+Metodo,Refactoring,Classe
+public addEdgeToTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.DirectedSpecifics
+public removeEdgeFromTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.DirectedSpecifics
+public removeEdgeFromTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupDirectedSpecifics
+public removeEdgeFromTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.FastLookupUndirectedSpecifics
+public addEdgeToTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.Specifics
+public removeEdgeFromTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.Specifics
+public addEdgeToTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.UndirectedSpecifics
+public removeEdgeFromTouchingVertices(e E) : void,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.graph.specifics.UndirectedSpecifics
+public hasElement(e E) : boolean,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.alg.util.Pair
+"public improveTour(tour GraphPath<V,E>) : GraphPath<V,E>",Add Method Annotation,jgrapht-core.src.main.org.jgrapht.alg.tour.TwoOptHeuristicTSP
+public isEmpty() : boolean,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public size() : int,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public listIterator() : ListIterator<E>,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public addLast(value E) : ListNode<E>,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public addFirst(value E) : ListNode<E>,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public getNode(element E) : ListNode<E>,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+public getValue() : V,Add Method Annotation,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList

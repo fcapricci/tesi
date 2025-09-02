@@ -1,0 +1,56 @@
+Metodo,Refactoring,Classe
+"public getNumberOfTriangles(graph Graph<V,E>) : long",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.GraphMetrics
+"private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.clique.ChordalGraphMaxCliqueFinder
+"public BrownBacktrackColoring(graph Graph<V,E>)",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.BrownBacktrackColoring
+private lazyComputeColoring() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.ChordalGraphColoring
+"private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.ChordalGraphColoring
+"public ColoringRepresentation(graph Graph<V,E>, alpha Coloring<V>)",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.ColorRefinementAlgorithm
+"public ColoringRepresentation(graph Graph<V,E>, alpha Coloring<V>)",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.ColorRefinementAlgorithm
+protected getVertexOrdering() : Iterable<V>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.LargestDegreeFirstColoring
+public getColoring() : Coloring<V>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.SaturationDegreeColoring
+public getColoring() : Coloring<V>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.SaturationDegreeColoring
+public getColoring() : Coloring<V>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.SaturationDegreeColoring
+public getColoring() : Coloring<V>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.SaturationDegreeColoring
+protected getVertexOrdering() : Iterable<V>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.SmallestDegreeLastColoring
+private createVertexNumber() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.connectivity.GabowStrongConnectivityInspector
+private createVertexData() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector
+"private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.ChordalGraphMinimalVertexSeparatorFinder
+"private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.ChordalityInspector
+"private findHole(a V, b V, c V) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.ChordalityInspector
+private initMappings() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.WeakChordalityInspector
+private initMappings() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.WeakChordalityInspector
+"private findHole(graph Graph<V,E>, sourceInSeparator V, source V, target V, targetInSeparator V) : GraphPath<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.WeakChordalityInspector
+"private findSeparators(graph Graph<V,E>, edge E) : List<Set<V>>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.WeakChordalityInspector
+private init() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.flow.mincost.CapacityScalingMinimumCostFlow
+private finish() : MinimumCostFlow<E>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.flow.mincost.CapacityScalingMinimumCostFlow
+"private matchVerticesWithSameLabel(root1 V, root2 V, canonicalName Map<V,Integer>[]) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.AHURootedTreeIsomorphismInspector
+"private isomorphismExists(root1 V, root2 V) : boolean",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.AHURootedTreeIsomorphismInspector
+"private isomorphismExists(root1 V, root2 V) : boolean",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.AHURootedTreeIsomorphismInspector
+"public compose(otherMapping IsomorphicGraphMapping<V,E>) : IsomorphicGraphMapping<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.IsomorphicGraphMapping
+"public compose(otherMapping IsomorphicGraphMapping<V,E>) : IsomorphicGraphMapping<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.IsomorphicGraphMapping
+"public identity(graph Graph<V,E>) : IsomorphicGraphMapping<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.IsomorphicGraphMapping
+"public identity(graph Graph<V,E>) : IsomorphicGraphMapping<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.isomorphism.IsomorphicGraphMapping
+private initialize() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.matching.SparseEdmondsMaximumCardinalityMatching
+private initGraph() : double,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.matching.blossom.v5.BlossomVInitializer
+public UnweightedSpannerAlgorithm(),Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.spanning.GreedyMultiplicativeSpanner
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.GnpRandomGraphGenerator
+package BucketList(vertices Collection<V>),Extract And Move Method,jgrapht-core.src.main.org.jgrapht.traverse.LexBreadthFirstIterator
+"public MaximumCardinalityIterator(graph Graph<V,E>)",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.traverse.MaximumCardinalityIterator
+public VertexToIntegerMapping(vertices Set<V>),Extract And Move Method,jgrapht-core.src.main.org.jgrapht.util.VertexToIntegerMapping
+public VertexToIntegerMapping(vertices List<V>),Extract And Move Method,jgrapht-core.src.main.org.jgrapht.util.VertexToIntegerMapping
+public VertexToIntegerMapping(vertices Collection<V>),Extract And Move Method,jgrapht-core.src.main.org.jgrapht.util.VertexToIntegerMapping
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.GnmRandomGraphGenerator
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.GnmRandomBipartiteGraphGenerator
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.GnmRandomBipartiteGraphGenerator
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.GnpRandomBipartiteGraphGenerator
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.GnpRandomBipartiteGraphGenerator
+"public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.WattsStrogatzGraphGenerator
+private lazyComputeColoring() : void,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.ChordalGraphColoring
+"private computeCoConnectedComponents(graph Graph<V,E>, separator List<Pair<Integer,Integer>>) : List<List<Integer>>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.cycle.WeakChordalityInspector
+private SimpleMatching(n int),Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.matching.DenseEdmondsMaximumCardinalityMatching
+public getSpanningTree() : SpanningTree<E>,Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.spanning.PrimMinimumSpanningTree
+"public getTour(graph Graph<V,E>) : GraphPath<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP
+"public getTour(graph Graph<V,E>) : GraphPath<V,E>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.tour.TwoApproxMetricTSP
+"private calculateColorDegrees(refiningColor int, rep ColoringRepresentation) : Set<Integer>",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.alg.color.ColorRefinementAlgorithm
+"public CompleteBipartiteGraphGenerator(partitionA int, partitionB int)",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.CompleteBipartiteGraphGenerator
+"public CompleteBipartiteGraphGenerator(partitionA int, partitionB int)",Extract And Move Method,jgrapht-core.src.main.org.jgrapht.generate.CompleteBipartiteGraphGenerator

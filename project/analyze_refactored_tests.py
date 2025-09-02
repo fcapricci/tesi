@@ -2,8 +2,8 @@ import json
 import os
 
 # === CONFIG ===
-REFACTORINGS_JSON = "filtered_refactorings.json"
-OUTPUT_METHODS = "refactored_methods.txt"
+REFACTORINGS_JSON = "estratti_extract_and_move_method.json"
+OUTPUT_METHODS = "refactored_methods_extractAndMoveMethod.txt"
 
 # Se l'output esiste, non rigenerare
 if os.path.exists(OUTPUT_METHODS):

@@ -1,0 +1,3968 @@
+{
+  "commits": [
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "bd2661d286f4e02ce3d67cc24642835862c29f90",
+      "refactorings": [
+        {
+          "type": "Extract Method",
+          "description": "Extract Method protected removeFromIndex(sourceVertex V, targetVertex V, e E) : void extracted from public removeEdgeFromTouchingVertices(e E) : void in class org.jgrapht.graph.specifics.FastLookupDirectedSpecifics",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 124,
+              "endLine": 148,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 140,
+              "endLine": 140,
+              "startColumn": 9,
+              "endColumn": 60,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 141,
+              "endLine": 141,
+              "startColumn": 9,
+              "endColumn": 68,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 143,
+              "endLine": 143,
+              "startColumn": 13,
+              "endColumn": 31,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 145,
+              "endLine": 145,
+              "startColumn": 17,
+              "endColumn": 62,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 144,
+              "endLine": 146,
+              "startColumn": 13,
+              "endColumn": 14,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 142,
+              "endLine": 147,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 144,
+              "endLine": 146,
+              "startColumn": 36,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 142,
+              "endLine": 147,
+              "startColumn": 30,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 175,
+              "endLine": 192,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "protected removeFromIndex(sourceVertex V, targetVertex V, e E) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 184,
+              "endLine": 184,
+              "startColumn": 9,
+              "endColumn": 72,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 185,
+              "endLine": 185,
+              "startColumn": 9,
+              "endColumn": 68,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 187,
+              "endLine": 187,
+              "startColumn": 13,
+              "endColumn": 31,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 189,
+              "endLine": 189,
+              "startColumn": 17,
+              "endColumn": 62,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 188,
+              "endLine": 190,
+              "startColumn": 13,
+              "endColumn": 14,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 186,
+              "endLine": 191,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 188,
+              "endLine": 190,
+              "startColumn": 36,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 186,
+              "endLine": 191,
+              "startColumn": 30,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 136,
+              "endLine": 145,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 144,
+              "endLine": 144,
+              "startColumn": 9,
+              "endColumn": 43,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "removeFromIndex(source,target,e)"
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method protected removeFromIndex(sourceVertex V, targetVertex V, e E) : void extracted from public removeEdgeFromTouchingVertices(e E) : void in class org.jgrapht.graph.specifics.FastLookupUndirectedSpecifics",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 129,
+              "endLine": 154,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 147,
+              "endLine": 147,
+              "startColumn": 9,
+              "endColumn": 69,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 148,
+              "endLine": 148,
+              "startColumn": 9,
+              "endColumn": 68,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 150,
+              "endLine": 150,
+              "startColumn": 13,
+              "endColumn": 31,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 152,
+              "endLine": 152,
+              "startColumn": 17,
+              "endColumn": 62,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 151,
+              "endLine": 152,
+              "startColumn": 13,
+              "endColumn": 62,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 149,
+              "endLine": 153,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 149,
+              "endLine": 153,
+              "startColumn": 30,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 177,
+              "endLine": 193,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "protected removeFromIndex(sourceVertex V, targetVertex V, e E) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 186,
+              "endLine": 186,
+              "startColumn": 9,
+              "endColumn": 81,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 187,
+              "endLine": 187,
+              "startColumn": 9,
+              "endColumn": 68,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 189,
+              "endLine": 189,
+              "startColumn": 13,
+              "endColumn": 31,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 191,
+              "endLine": 191,
+              "startColumn": 17,
+              "endColumn": 62,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 190,
+              "endLine": 191,
+              "startColumn": 13,
+              "endColumn": 62,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 188,
+              "endLine": 192,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 188,
+              "endLine": 192,
+              "startColumn": 30,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 138,
+              "endLine": 147,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 146,
+              "endLine": 146,
+              "startColumn": 9,
+              "endColumn": 43,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "removeFromIndex(source,target,e)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "b2355ffff22a965864bcea56a40f46a65fd19903",
+      "refactorings": [
+        {
+          "type": "Extract Method",
+          "description": "Extract Method public ClosestFirstIterator(g Graph<V,E>, startVertex V, radius double, heapSupplier Supplier<AddressableHeap<Double,QueueEntry<V,E>>>) extracted from public ClosestFirstIterator(g Graph<V,E>, startVertex V, radius double) in class org.jgrapht.traverse.ClosestFirstIterator",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 87,
+              "endLine": 102,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public ClosestFirstIterator(g Graph<V,E>, startVertex V, radius double)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 101,
+              "endLine": 101,
+              "startColumn": 9,
+              "endColumn": 94,
+              "codeElementType": "CONSTRUCTOR_INVOCATION",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 105,
+              "endLine": 120,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public ClosestFirstIterator(g Graph<V,E>, startVertex V, radius double, heapSupplier Supplier<AddressableHeap<Double,QueueEntry<V,E>>>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 119,
+              "endLine": 119,
+              "startColumn": 9,
+              "endColumn": 108,
+              "codeElementType": "CONSTRUCTOR_INVOCATION",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 89,
+              "endLine": 103,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public ClosestFirstIterator(g Graph<V,E>, startVertex V, radius double)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 102,
+              "endLine": 102,
+              "startColumn": 9,
+              "endColumn": 112,
+              "codeElementType": "CONSTRUCTOR_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "this(g,startVertex == null ? null : Collections.singletonList(startVertex),radius,PairingHeap::new)"
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method public ClosestFirstIterator(g Graph<V,E>, startVertices Iterable<V>, radius double, heapSupplier Supplier<AddressableHeap<Double,QueueEntry<V,E>>>) extracted from public ClosestFirstIterator(g Graph<V,E>, startVertices Iterable<V>, radius double) in class org.jgrapht.traverse.ClosestFirstIterator",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 104,
+              "endLine": 139,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public ClosestFirstIterator(g Graph<V,E>, startVertices Iterable<V>, radius double)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 120,
+              "endLine": 120,
+              "startColumn": 9,
+              "endColumn": 33,
+              "codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 121,
+              "endLine": 121,
+              "startColumn": 9,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 122,
+              "endLine": 122,
+              "startColumn": 9,
+              "endColumn": 59,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 123,
+              "endLine": 123,
+              "startColumn": 9,
+              "endColumn": 28,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 126,
+              "endLine": 126,
+              "startColumn": 13,
+              "endColumn": 23,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 127,
+              "endLine": 127,
+              "startColumn": 13,
+              "endColumn": 57,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 130,
+              "endLine": 130,
+              "startColumn": 17,
+              "endColumn": 29,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 134,
+              "endLine": 134,
+              "startColumn": 21,
+              "endColumn": 39,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 135,
+              "endLine": 135,
+              "startColumn": 21,
+              "endColumn": 46,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 133,
+              "endLine": 136,
+              "startColumn": 17,
+              "endColumn": 18,
+              "codeElementType": "WHILE_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 128,
+              "endLine": 137,
+              "startColumn": 13,
+              "endColumn": 14,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 124,
+              "endLine": 138,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 133,
+              "endLine": 136,
+              "startColumn": 40,
+              "endColumn": 18,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 128,
+              "endLine": 137,
+              "startColumn": 33,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 124,
+              "endLine": 138,
+              "startColumn": 39,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 140,
+              "endLine": 178,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public ClosestFirstIterator(g Graph<V,E>, startVertices Iterable<V>, radius double, heapSupplier Supplier<AddressableHeap<Double,QueueEntry<V,E>>>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 157,
+              "endLine": 157,
+              "startColumn": 9,
+              "endColumn": 33,
+              "codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 158,
+              "endLine": 158,
+              "startColumn": 9,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 161,
+              "endLine": 161,
+              "startColumn": 9,
+              "endColumn": 59,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 162,
+              "endLine": 162,
+              "startColumn": 9,
+              "endColumn": 28,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 165,
+              "endLine": 165,
+              "startColumn": 13,
+              "endColumn": 23,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 166,
+              "endLine": 166,
+              "startColumn": 13,
+              "endColumn": 57,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 169,
+              "endLine": 169,
+              "startColumn": 17,
+              "endColumn": 29,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 173,
+              "endLine": 173,
+              "startColumn": 21,
+              "endColumn": 39,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 174,
+              "endLine": 174,
+              "startColumn": 21,
+              "endColumn": 46,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 172,
+              "endLine": 175,
+              "startColumn": 17,
+              "endColumn": 18,
+              "codeElementType": "WHILE_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 167,
+              "endLine": 176,
+              "startColumn": 13,
+              "endColumn": 14,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 163,
+              "endLine": 177,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 172,
+              "endLine": 175,
+              "startColumn": 40,
+              "endColumn": 18,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 167,
+              "endLine": 176,
+              "startColumn": 33,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 163,
+              "endLine": 177,
+              "startColumn": 39,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 122,
+              "endLine": 138,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public ClosestFirstIterator(g Graph<V,E>, startVertices Iterable<V>, radius double)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 137,
+              "endLine": 137,
+              "startColumn": 9,
+              "endColumn": 58,
+              "codeElementType": "CONSTRUCTOR_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "this(g,startVertices,radius,PairingHeap::new)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 159,
+              "endLine": 159,
+              "startColumn": 9,
+              "endColumn": 78,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java",
+              "startLine": 160,
+              "endLine": 160,
+              "startColumn": 9,
+              "endColumn": 40,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "e8fbd8ba19ada2dc4524ff3fa0f5ba39adc0bdf5",
+      "refactorings": [
+        {
+          "type": "Extract Method",
+          "description": "Extract Method public KolmogorovWeightedPerfectMatching(graph Graph<V,E>, options BlossomVOptions, objectiveSense ObjectiveSense) extracted from public KolmogorovMinimumWeightPerfectMatching(graph Graph<V,E>, options BlossomVOptions) in class org.jgrapht.alg.matching.blossom.v5.KolmogorovWeightedPerfectMatching",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovMinimumWeightPerfectMatching.java",
+              "startLine": 155,
+              "endLine": 171,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public KolmogorovMinimumWeightPerfectMatching(graph Graph<V,E>, options BlossomVOptions)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovMinimumWeightPerfectMatching.java",
+              "startLine": 164,
+              "endLine": 164,
+              "startColumn": 9,
+              "endColumn": 39,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovMinimumWeightPerfectMatching.java",
+              "startLine": 166,
+              "endLine": 166,
+              "startColumn": 13,
+              "endColumn": 69,
+              "codeElementType": "THROW_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovMinimumWeightPerfectMatching.java",
+              "startLine": 168,
+              "endLine": 168,
+              "startColumn": 13,
+              "endColumn": 32,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovMinimumWeightPerfectMatching.java",
+              "startLine": 170,
+              "endLine": 170,
+              "startColumn": 9,
+              "endColumn": 56,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovMinimumWeightPerfectMatching.java",
+              "startLine": 165,
+              "endLine": 169,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovMinimumWeightPerfectMatching.java",
+              "startLine": 165,
+              "endLine": 167,
+              "startColumn": 50,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovMinimumWeightPerfectMatching.java",
+              "startLine": 167,
+              "endLine": 169,
+              "startColumn": 16,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 237,
+              "endLine": 258,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public KolmogorovWeightedPerfectMatching(graph Graph<V,E>, options BlossomVOptions, objectiveSense ObjectiveSense)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 247,
+              "endLine": 247,
+              "startColumn": 9,
+              "endColumn": 39,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 250,
+              "endLine": 250,
+              "startColumn": 13,
+              "endColumn": 69,
+              "codeElementType": "THROW_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 254,
+              "endLine": 254,
+              "startColumn": 13,
+              "endColumn": 32,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 257,
+              "endLine": 257,
+              "startColumn": 9,
+              "endColumn": 56,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 249,
+              "endLine": 255,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 249,
+              "endLine": 251,
+              "startColumn": 50,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 253,
+              "endLine": 255,
+              "startColumn": 16,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 226,
+              "endLine": 235,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public KolmogorovWeightedPerfectMatching(graph Graph<V,E>, options BlossomVOptions)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 234,
+              "endLine": 234,
+              "startColumn": 9,
+              "endColumn": 40,
+              "codeElementType": "CONSTRUCTOR_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "this(graph,options,MINIMIZE)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 248,
+              "endLine": 248,
+              "startColumn": 9,
+              "endColumn": 46,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 252,
+              "endLine": 252,
+              "startColumn": 13,
+              "endColumn": 98,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 256,
+              "endLine": 256,
+              "startColumn": 9,
+              "endColumn": 35,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 251,
+              "endLine": 253,
+              "startColumn": 48,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching.java",
+              "startLine": 251,
+              "endLine": 255,
+              "startColumn": 16,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "28e09943b3d7b6a17f0378fbdf3aad090aa95769",
+      "refactorings": [
+        {
+          "type": "Extract Method",
+          "description": "Extract Method protected getEntireGraphVertexIterator() : Iterator<V> extracted from public CrossComponentIterator(g Graph<V,E>, startVertices Iterable<V>) in class org.jgrapht.traverse.CrossComponentIterator",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 101,
+              "endLine": 141,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public CrossComponentIterator(g Graph<V,E>, startVertices Iterable<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 119,
+              "endLine": 119,
+              "startColumn": 9,
+              "endColumn": 71,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 206,
+              "endLine": 218,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "protected getEntireGraphVertexIterator() : Iterator<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 215,
+              "endLine": 215,
+              "startColumn": 13,
+              "endColumn": 70,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 101,
+              "endLine": 140,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public CrossComponentIterator(g Graph<V,E>, startVertices Iterable<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 129,
+              "endLine": 129,
+              "startColumn": 52,
+              "endColumn": 82,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "getEntireGraphVertexIterator()"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 214,
+              "endLine": 214,
+              "startColumn": 13,
+              "endColumn": 49,
+              "codeElementType": "ASSERT_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 217,
+              "endLine": 217,
+              "startColumn": 9,
+              "endColumn": 42,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 213,
+              "endLine": 216,
+              "startColumn": 48,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 213,
+              "endLine": 216,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method protected getEntireGraphVertexIterator() : Iterator<V> extracted from public hasNext() : boolean in class org.jgrapht.traverse.CrossComponentIterator",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 143,
+              "endLine": 177,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public hasNext() : boolean"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 158,
+              "endLine": 159,
+              "startColumn": 13,
+              "endColumn": 95,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 159,
+              "endLine": 159,
+              "startColumn": 17,
+              "endColumn": 44,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 206,
+              "endLine": 218,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "protected getEntireGraphVertexIterator() : Iterator<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 214,
+              "endLine": 214,
+              "startColumn": 13,
+              "endColumn": 49,
+              "codeElementType": "ASSERT_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 214,
+              "endLine": 214,
+              "startColumn": 20,
+              "endColumn": 47,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 142,
+              "endLine": 176,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public hasNext() : boolean"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 158,
+              "endLine": 158,
+              "startColumn": 47,
+              "endColumn": 77,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "getEntireGraphVertexIterator()"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 215,
+              "endLine": 215,
+              "startColumn": 13,
+              "endColumn": 70,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 217,
+              "endLine": 217,
+              "startColumn": 9,
+              "endColumn": 42,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 213,
+              "endLine": 216,
+              "startColumn": 48,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 213,
+              "endLine": 216,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "076bfacd7da3fee179dc840a82f8d9da62b42546",
+      "refactorings": [
+        {
+          "type": "Extract Method",
+          "description": "Extract Method public DirectedAcyclicGraph(vertexSupplier Supplier<V>, edgeSupplier Supplier<E>, weighted boolean, allowMultipleEdges boolean) extracted from public DirectedAcyclicGraph(edgeClass Class<? extends E>) in class org.jgrapht.graph.DirectedAcyclicGraph",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 86,
+              "endLine": 94,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public DirectedAcyclicGraph(edgeClass Class<? extends E>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 93,
+              "endLine": 93,
+              "startColumn": 9,
+              "endColumn": 67,
+              "codeElementType": "CONSTRUCTOR_INVOCATION",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 110,
+              "endLine": 124,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public DirectedAcyclicGraph(vertexSupplier Supplier<V>, edgeSupplier Supplier<E>, weighted boolean, allowMultipleEdges boolean)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 121,
+              "endLine": 123,
+              "startColumn": 9,
+              "endColumn": 43,
+              "codeElementType": "CONSTRUCTOR_INVOCATION",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 85,
+              "endLine": 93,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public DirectedAcyclicGraph(edgeClass Class<? extends E>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 92,
+              "endLine": 92,
+              "startColumn": 9,
+              "endColumn": 74,
+              "codeElementType": "CONSTRUCTOR_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "this(null,SupplierUtil.createSupplier(edgeClass),false,false)"
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method protected DirectedAcyclicGraph(vertexSupplier Supplier<V>, edgeSupplier Supplier<E>, visitedStrategyFactory VisitedStrategyFactory, topoOrderMap TopoOrderMap<V>, weighted boolean, allowMultipleEdges boolean) extracted from protected DirectedAcyclicGraph(vertexSupplier Supplier<V>, edgeSupplier Supplier<E>, visitedStrategyFactory VisitedStrategyFactory, topoOrderMap TopoOrderMap<V>, weighted boolean) in class org.jgrapht.graph.DirectedAcyclicGraph",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 111,
+              "endLine": 133,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "protected DirectedAcyclicGraph(vertexSupplier Supplier<V>, edgeSupplier Supplier<E>, visitedStrategyFactory VisitedStrategyFactory, topoOrderMap TopoOrderMap<V>, weighted boolean)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 128,
+              "endLine": 129,
+              "startColumn": 9,
+              "endColumn": 94,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 130,
+              "endLine": 131,
+              "startColumn": 9,
+              "endColumn": 90,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 132,
+              "endLine": 132,
+              "startColumn": 9,
+              "endColumn": 52,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 127,
+              "endLine": 127,
+              "startColumn": 9,
+              "endColumn": 55,
+              "codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 145,
+              "endLine": 176,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "protected DirectedAcyclicGraph(vertexSupplier Supplier<V>, edgeSupplier Supplier<E>, visitedStrategyFactory VisitedStrategyFactory, topoOrderMap TopoOrderMap<V>, weighted boolean, allowMultipleEdges boolean)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 171,
+              "endLine": 172,
+              "startColumn": 9,
+              "endColumn": 94,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 173,
+              "endLine": 174,
+              "startColumn": 9,
+              "endColumn": 90,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 175,
+              "endLine": 175,
+              "startColumn": 9,
+              "endColumn": 52,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 162,
+              "endLine": 170,
+              "startColumn": 9,
+              "endColumn": 27,
+              "codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 126,
+              "endLine": 143,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "protected DirectedAcyclicGraph(vertexSupplier Supplier<V>, edgeSupplier Supplier<E>, visitedStrategyFactory VisitedStrategyFactory, topoOrderMap TopoOrderMap<V>, weighted boolean)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java",
+              "startLine": 142,
+              "endLine": 142,
+              "startColumn": 9,
+              "endColumn": 99,
+              "codeElementType": "CONSTRUCTOR_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "this(vertexSupplier,edgeSupplier,visitedStrategyFactory,topoOrderMap,weighted,false)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "60c8a85da4051d9ac4225dbfbe13257e1762c57a",
+      "refactorings": [
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private orderSetsBySize() : SetSizeOrdering extracted from public size() : int in class org.jgrapht.util.UnmodifiableUnionSet",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 67,
+              "endLine": 82,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public size() : int"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 75,
+              "endLine": 75,
+              "startColumn": 9,
+              "endColumn": 34,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 86,
+              "endLine": 103,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private orderSetsBySize() : SetSizeOrdering"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 88,
+              "endLine": 88,
+              "startColumn": 9,
+              "endColumn": 38,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 61,
+              "endLine": 78,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public size() : int"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 69,
+              "endLine": 69,
+              "startColumn": 36,
+              "endColumn": 53,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "orderSetsBySize()"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 89,
+              "endLine": 89,
+              "startColumn": 9,
+              "endColumn": 40,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 91,
+              "endLine": 95,
+              "startColumn": 13,
+              "endColumn": 28,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 97,
+              "endLine": 101,
+              "startColumn": 13,
+              "endColumn": 29,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 90,
+              "endLine": 96,
+              "startColumn": 37,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 96,
+              "endLine": 102,
+              "startColumn": 16,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 90,
+              "endLine": 102,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "577148b3d5945317f11882cb7ec40d59eb183a1b",
+      "refactorings": [
+        {
+          "type": "Extract Method",
+          "description": "Extract Method protected selectOutgoingEdges(vertex V) : Set<E> extracted from private addUnseenChildrenOf(vertex V) : void in class org.jgrapht.traverse.CrossComponentIterator",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 311,
+              "endLine": 326,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private addUnseenChildrenOf(vertex V) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 313,
+              "endLine": 313,
+              "startColumn": 23,
+              "endColumn": 52,
+              "codeElementType": "ENHANCED_FOR_STATEMENT_EXPRESSION",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 311,
+              "endLine": 321,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "protected selectOutgoingEdges(vertex V) : Set<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 320,
+              "endLine": 320,
+              "startColumn": 9,
+              "endColumn": 46,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 323,
+              "endLine": 338,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private addUnseenChildrenOf(vertex V) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java",
+              "startLine": 325,
+              "endLine": 325,
+              "startColumn": 23,
+              "endColumn": 50,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "selectOutgoingEdges(vertex)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "f2e059a2cae1fc5a7e1b2f7f44e97fde27167b88",
+      "refactorings": [
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private analyzeCircuits() : void extracted from public findSimpleCycles() : List<List<V>> in class org.jgrapht.alg.cycle.HawickJamesSimpleCycles",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 266,
+              "endLine": 292,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public findSimpleCycles() : List<List<V>>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 281,
+              "endLine": 281,
+              "startColumn": 17,
+              "endColumn": 36,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 282,
+              "endLine": 282,
+              "startColumn": 17,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 285,
+              "endLine": 285,
+              "startColumn": 13,
+              "endColumn": 39,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 286,
+              "endLine": 286,
+              "startColumn": 13,
+              "endColumn": 49,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 280,
+              "endLine": 283,
+              "startColumn": 13,
+              "endColumn": 14,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 279,
+              "endLine": 287,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 280,
+              "endLine": 283,
+              "startColumn": 49,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 279,
+              "endLine": 287,
+              "startColumn": 45,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 280,
+              "endLine": 291,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private analyzeCircuits() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 284,
+              "endLine": 284,
+              "startColumn": 17,
+              "endColumn": 36,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 285,
+              "endLine": 285,
+              "startColumn": 17,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 288,
+              "endLine": 288,
+              "startColumn": 13,
+              "endColumn": 39,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 289,
+              "endLine": 289,
+              "startColumn": 13,
+              "endColumn": 31,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 283,
+              "endLine": 286,
+              "startColumn": 13,
+              "endColumn": 14,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 282,
+              "endLine": 290,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 283,
+              "endLine": 286,
+              "startColumn": 49,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 282,
+              "endLine": 290,
+              "startColumn": 45,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 221,
+              "endLine": 239,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public findSimpleCycles() : List<List<V>>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 235,
+              "endLine": 235,
+              "startColumn": 9,
+              "endColumn": 26,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "analyzeCircuits()"
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private analyzeCircuits() : void extracted from public printSimpleCycles() : void in class org.jgrapht.alg.cycle.HawickJamesSimpleCycles",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 294,
+              "endLine": 317,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public printSimpleCycles() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 308,
+              "endLine": 308,
+              "startColumn": 17,
+              "endColumn": 36,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 309,
+              "endLine": 309,
+              "startColumn": 17,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 312,
+              "endLine": 312,
+              "startColumn": 13,
+              "endColumn": 39,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 313,
+              "endLine": 313,
+              "startColumn": 13,
+              "endColumn": 50,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 307,
+              "endLine": 310,
+              "startColumn": 13,
+              "endColumn": 14,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 306,
+              "endLine": 314,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 307,
+              "endLine": 310,
+              "startColumn": 49,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 306,
+              "endLine": 314,
+              "startColumn": 45,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 280,
+              "endLine": 291,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private analyzeCircuits() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 284,
+              "endLine": 284,
+              "startColumn": 17,
+              "endColumn": 36,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 285,
+              "endLine": 285,
+              "startColumn": 17,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 288,
+              "endLine": 288,
+              "startColumn": 13,
+              "endColumn": 39,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 289,
+              "endLine": 289,
+              "startColumn": 13,
+              "endColumn": 31,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 283,
+              "endLine": 286,
+              "startColumn": 13,
+              "endColumn": 14,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 282,
+              "endLine": 290,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 283,
+              "endLine": 286,
+              "startColumn": 49,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 282,
+              "endLine": 290,
+              "startColumn": 45,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 241,
+              "endLine": 259,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public printSimpleCycles() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 257,
+              "endLine": 257,
+              "startColumn": 9,
+              "endColumn": 26,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "analyzeCircuits()"
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private analyzeCircuits() : void extracted from public countSimpleCycles() : long in class org.jgrapht.alg.cycle.HawickJamesSimpleCycles",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 319,
+              "endLine": 345,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public countSimpleCycles() : long"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 334,
+              "endLine": 334,
+              "startColumn": 17,
+              "endColumn": 36,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 335,
+              "endLine": 335,
+              "startColumn": 17,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 338,
+              "endLine": 338,
+              "startColumn": 13,
+              "endColumn": 39,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 339,
+              "endLine": 339,
+              "startColumn": 13,
+              "endColumn": 50,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 333,
+              "endLine": 336,
+              "startColumn": 13,
+              "endColumn": 14,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 332,
+              "endLine": 340,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 333,
+              "endLine": 336,
+              "startColumn": 49,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 332,
+              "endLine": 340,
+              "startColumn": 45,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 280,
+              "endLine": 291,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private analyzeCircuits() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 284,
+              "endLine": 284,
+              "startColumn": 17,
+              "endColumn": 36,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 285,
+              "endLine": 285,
+              "startColumn": 17,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 288,
+              "endLine": 288,
+              "startColumn": 13,
+              "endColumn": 39,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 289,
+              "endLine": 289,
+              "startColumn": 13,
+              "endColumn": 31,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 283,
+              "endLine": 286,
+              "startColumn": 13,
+              "endColumn": 14,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 282,
+              "endLine": 290,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 283,
+              "endLine": 286,
+              "startColumn": 49,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 282,
+              "endLine": 290,
+              "startColumn": 45,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 261,
+              "endLine": 278,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public countSimpleCycles() : long"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/HawickJamesSimpleCycles.java",
+              "startLine": 275,
+              "endLine": 275,
+              "startColumn": 9,
+              "endColumn": 26,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "analyzeCircuits()"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "c999d4d635b89601413e2ec6a4ee0c3dd24c29bb",
+      "refactorings": [
+        {
+          "type": "Extract Method",
+          "description": "Extract Method public TwoOptHeuristicTSP(k int, initializer HamiltonianCycleAlgorithm<V,E>, minCostImprovement double) extracted from public TwoOptHeuristicTSP(k int, rng Random) in class org.jgrapht.alg.tour.TwoOptHeuristicTSP",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 95,
+              "endLine": 108,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public TwoOptHeuristicTSP(k int, rng Random)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 104,
+              "endLine": 104,
+              "startColumn": 13,
+              "endColumn": 74,
+              "codeElementType": "THROW_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 106,
+              "endLine": 106,
+              "startColumn": 9,
+              "endColumn": 20,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 107,
+              "endLine": 107,
+              "startColumn": 9,
+              "endColumn": 90,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 103,
+              "endLine": 105,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 103,
+              "endLine": 105,
+              "startColumn": 20,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 143,
+              "endLine": 157,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public TwoOptHeuristicTSP(k int, initializer HamiltonianCycleAlgorithm<V,E>, minCostImprovement double)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 152,
+              "endLine": 152,
+              "startColumn": 13,
+              "endColumn": 74,
+              "codeElementType": "THROW_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 154,
+              "endLine": 154,
+              "startColumn": 9,
+              "endColumn": 20,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 155,
+              "endLine": 155,
+              "startColumn": 9,
+              "endColumn": 107,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 151,
+              "endLine": 153,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 151,
+              "endLine": 153,
+              "startColumn": 20,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 133,
+              "endLine": 141,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public TwoOptHeuristicTSP(k int, initializer HamiltonianCycleAlgorithm<V,E>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 140,
+              "endLine": 140,
+              "startColumn": 9,
+              "endColumn": 36,
+              "codeElementType": "CONSTRUCTOR_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "this(k,initializer,1e-8)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 156,
+              "endLine": 156,
+              "startColumn": 9,
+              "endColumn": 64,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "5462ee0943f573d9e15df423ef87dfc8f97e3cbc",
+      "refactorings": [
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private tail() : ListNodeImpl<E> extracted from public invert() : void in class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 119,
+              "endLine": 139,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public invert() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 129,
+              "endLine": 129,
+              "startColumn": 9,
+              "endColumn": 41,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 69,
+              "endLine": 72,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private tail() : ListNodeImpl<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 71,
+              "endLine": 71,
+              "startColumn": 9,
+              "endColumn": 26,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 886,
+              "endLine": 909,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public invert() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 897,
+              "endLine": 897,
+              "startColumn": 35,
+              "endColumn": 41,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "tail()"
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private linkListIntoThisBefore(index int, list DoublyLinkedList<E>) : void extracted from public append(list DoublyLinkedList<E>) : void in class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 141,
+              "endLine": 160,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public append(list DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 150,
+              "endLine": 150,
+              "startColumn": 17,
+              "endColumn": 34,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 156,
+              "endLine": 156,
+              "startColumn": 13,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 149,
+              "endLine": 151,
+              "startColumn": 28,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 216,
+              "endLine": 238,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private linkListIntoThisBefore(index int, list DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 233,
+              "endLine": 233,
+              "startColumn": 17,
+              "endColumn": 34,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 237,
+              "endLine": 237,
+              "startColumn": 9,
+              "endColumn": 26,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 232,
+              "endLine": 234,
+              "startColumn": 29,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 911,
+              "endLine": 925,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public moveFrom(index int, movedList DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 924,
+              "endLine": 924,
+              "startColumn": 9,
+              "endColumn": 49,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "linkListIntoThisBefore(index,movedList)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 219,
+              "endLine": 219,
+              "startColumn": 9,
+              "endColumn": 33,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 220,
+              "endLine": 220,
+              "startColumn": 9,
+              "endColumn": 32,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 226,
+              "endLine": 226,
+              "startColumn": 13,
+              "endColumn": 89,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 228,
+              "endLine": 228,
+              "startColumn": 13,
+              "endColumn": 52,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 229,
+              "endLine": 229,
+              "startColumn": 13,
+              "endColumn": 43,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 230,
+              "endLine": 230,
+              "startColumn": 13,
+              "endColumn": 37,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 224,
+              "endLine": 224,
+              "startColumn": 13,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 223,
+              "endLine": 225,
+              "startColumn": 32,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 232,
+              "endLine": 234,
+              "startColumn": 13,
+              "endColumn": 14,
+              "codeElementType": "IF_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 225,
+              "endLine": 235,
+              "startColumn": 16,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 223,
+              "endLine": 235,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private tail() : ListNodeImpl<E> extracted from public append(list DoublyLinkedList<E>) : void in class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 141,
+              "endLine": 160,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public append(list DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 157,
+              "endLine": 157,
+              "startColumn": 13,
+              "endColumn": 24,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 69,
+              "endLine": 72,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private tail() : ListNodeImpl<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 71,
+              "endLine": 71,
+              "startColumn": 9,
+              "endColumn": 26,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 911,
+              "endLine": 925,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public moveFrom(index int, movedList DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 228,
+              "endLine": 228,
+              "startColumn": 40,
+              "endColumn": 51,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "list.tail()"
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private moveAllListNodes(list DoublyLinkedList<E>) : void extracted from public append(list DoublyLinkedList<E>) : void in class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 141,
+              "endLine": 160,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public append(list DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 154,
+              "endLine": 154,
+              "startColumn": 13,
+              "endColumn": 31,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 155,
+              "endLine": 155,
+              "startColumn": 13,
+              "endColumn": 27,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 137,
+              "endLine": 154,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private moveAllListNodes(list DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 150,
+              "endLine": 150,
+              "startColumn": 9,
+              "endColumn": 27,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 151,
+              "endLine": 151,
+              "startColumn": 9,
+              "endColumn": 23,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 911,
+              "endLine": 925,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public moveFrom(index int, movedList DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 220,
+              "endLine": 220,
+              "startColumn": 9,
+              "endColumn": 31,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "moveAllListNodes(list)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 146,
+              "endLine": 146,
+              "startColumn": 13,
+              "endColumn": 50,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 147,
+              "endLine": 147,
+              "startColumn": 13,
+              "endColumn": 38,
+              "codeElementType": "ASSERT_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 152,
+              "endLine": 152,
+              "startColumn": 9,
+              "endColumn": 20,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 153,
+              "endLine": 153,
+              "startColumn": 9,
+              "endColumn": 25,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 148,
+              "endLine": 148,
+              "startColumn": 13,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 145,
+              "endLine": 149,
+              "startColumn": 89,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 145,
+              "endLine": 149,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private linkListIntoThisBefore(index int, list DoublyLinkedList<E>) : void extracted from public prepend(list DoublyLinkedList<E>) : void in class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 162,
+              "endLine": 180,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public prepend(list DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 173,
+              "endLine": 173,
+              "startColumn": 13,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 177,
+              "endLine": 177,
+              "startColumn": 13,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 169,
+              "endLine": 179,
+              "startColumn": 30,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 216,
+              "endLine": 238,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private linkListIntoThisBefore(index int, list DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 224,
+              "endLine": 224,
+              "startColumn": 13,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 237,
+              "endLine": 237,
+              "startColumn": 9,
+              "endColumn": 26,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 223,
+              "endLine": 225,
+              "startColumn": 32,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 911,
+              "endLine": 925,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public moveFrom(index int, movedList DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 924,
+              "endLine": 924,
+              "startColumn": 9,
+              "endColumn": 49,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "linkListIntoThisBefore(index,movedList)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 219,
+              "endLine": 219,
+              "startColumn": 9,
+              "endColumn": 33,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 220,
+              "endLine": 220,
+              "startColumn": 9,
+              "endColumn": 32,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 226,
+              "endLine": 226,
+              "startColumn": 13,
+              "endColumn": 89,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 228,
+              "endLine": 228,
+              "startColumn": 13,
+              "endColumn": 52,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 229,
+              "endLine": 229,
+              "startColumn": 13,
+              "endColumn": 43,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 230,
+              "endLine": 230,
+              "startColumn": 13,
+              "endColumn": 37,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 233,
+              "endLine": 233,
+              "startColumn": 17,
+              "endColumn": 34,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 232,
+              "endLine": 234,
+              "startColumn": 29,
+              "endColumn": 14,
+              "codeElementType": "BLOCK",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 232,
+              "endLine": 234,
+              "startColumn": 13,
+              "endColumn": 14,
+              "codeElementType": "IF_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 225,
+              "endLine": 235,
+              "startColumn": 16,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 223,
+              "endLine": 235,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private tail() : ListNodeImpl<E> extracted from public prepend(list DoublyLinkedList<E>) : void in class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 162,
+              "endLine": 180,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public prepend(list DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 178,
+              "endLine": 178,
+              "startColumn": 13,
+              "endColumn": 24,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 69,
+              "endLine": 72,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private tail() : ListNodeImpl<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 71,
+              "endLine": 71,
+              "startColumn": 9,
+              "endColumn": 26,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 911,
+              "endLine": 925,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public moveFrom(index int, movedList DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 228,
+              "endLine": 228,
+              "startColumn": 40,
+              "endColumn": 51,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "list.tail()"
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private moveAllListNodes(list DoublyLinkedList<E>) : void extracted from public prepend(list DoublyLinkedList<E>) : void in class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 162,
+              "endLine": 180,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public prepend(list DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 174,
+              "endLine": 174,
+              "startColumn": 13,
+              "endColumn": 31,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 176,
+              "endLine": 176,
+              "startColumn": 13,
+              "endColumn": 27,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 137,
+              "endLine": 154,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private moveAllListNodes(list DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 150,
+              "endLine": 150,
+              "startColumn": 9,
+              "endColumn": 27,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 151,
+              "endLine": 151,
+              "startColumn": 9,
+              "endColumn": 23,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 911,
+              "endLine": 925,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public moveFrom(index int, movedList DoublyLinkedList<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 220,
+              "endLine": 220,
+              "startColumn": 9,
+              "endColumn": 31,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "moveAllListNodes(list)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 146,
+              "endLine": 146,
+              "startColumn": 13,
+              "endColumn": 50,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 147,
+              "endLine": 147,
+              "startColumn": 13,
+              "endColumn": 38,
+              "codeElementType": "ASSERT_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 152,
+              "endLine": 152,
+              "startColumn": 9,
+              "endColumn": 20,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 153,
+              "endLine": 153,
+              "startColumn": 9,
+              "endColumn": 25,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 148,
+              "endLine": 148,
+              "startColumn": 13,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 145,
+              "endLine": 149,
+              "startColumn": 89,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 145,
+              "endLine": 149,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "FOR_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private linkLast(node ListNodeImpl<E>) : void extracted from public addLast(value E) : ListNode<E> in class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 182,
+              "endLine": 199,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public addLast(value E) : ListNode<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 194,
+              "endLine": 194,
+              "startColumn": 13,
+              "endColumn": 38,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 191,
+              "endLine": 195,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 191,
+              "endLine": 193,
+              "startColumn": 24,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 193,
+              "endLine": 195,
+              "startColumn": 16,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 204,
+              "endLine": 214,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private linkLast(node ListNodeImpl<E>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 212,
+              "endLine": 212,
+              "startColumn": 13,
+              "endColumn": 36,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 207,
+              "endLine": 213,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 207,
+              "endLine": 211,
+              "startColumn": 24,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 211,
+              "endLine": 213,
+              "startColumn": 16,
+              "endColumn": 10,
+              "codeElementType": "BLOCK",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 585,
+              "endLine": 601,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public addElementLast(element E) : ListNode<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 287,
+              "endLine": 287,
+              "startColumn": 13,
+              "endColumn": 31,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "linkLast(nodeImpl)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 208,
+              "endLine": 208,
+              "startColumn": 13,
+              "endColumn": 31,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 209,
+              "endLine": 209,
+              "startColumn": 13,
+              "endColumn": 30,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 210,
+              "endLine": 210,
+              "startColumn": 13,
+              "endColumn": 25,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private tail() : ListNodeImpl<E> extracted from public addLast(value E) : ListNode<E> in class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 182,
+              "endLine": 199,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public addLast(value E) : ListNode<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 196,
+              "endLine": 196,
+              "startColumn": 9,
+              "endColumn": 16,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 69,
+              "endLine": 72,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private tail() : ListNodeImpl<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 71,
+              "endLine": 71,
+              "startColumn": 9,
+              "endColumn": 26,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 585,
+              "endLine": 601,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public addElementLast(element E) : ListNode<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 426,
+              "endLine": 426,
+              "startColumn": 20,
+              "endColumn": 26,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "tail()"
+            }
+          ]
+        },
+        {
+          "type": "Extract Method",
+          "description": "Extract Method public addElementLast(element E) : ListNode<E> extracted from public addLast(value E) : ListNode<E> in class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 182,
+              "endLine": 199,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public addLast(value E) : ListNode<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 190,
+              "endLine": 190,
+              "startColumn": 9,
+              "endColumn": 52,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 198,
+              "endLine": 198,
+              "startColumn": 9,
+              "endColumn": 23,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 585,
+              "endLine": 601,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public addElementLast(element E) : ListNode<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 598,
+              "endLine": 598,
+              "startColumn": 9,
+              "endColumn": 56,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 600,
+              "endLine": 600,
+              "startColumn": 9,
+              "endColumn": 21,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 666,
+              "endLine": 673,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public addLast(e E) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 672,
+              "endLine": 672,
+              "startColumn": 9,
+              "endColumn": 26,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "addElementLast(e)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 599,
+              "endLine": 599,
+              "startColumn": 9,
+              "endColumn": 29,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 210,
+              "endLine": 210,
+              "startColumn": 13,
+              "endColumn": 25,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "added statement in extracted method declaration",
+              "codeElement": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "3ce95cf84e630fbb3aaf3dfd63fe4ae584496024",
+      "refactorings": [
+        {
+          "type": "Extract Method",
+          "description": "Extract Method private checkNodes(a V, b V) : void extracted from public getLCA(a V, b V) : V in class org.jgrapht.alg.lca.NaiveLCAFinder",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/lca/NaiveLCAFinder.java",
+              "startLine": 104,
+              "endLine": 119,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public getLCA(a V, b V) : V"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/lca/NaiveLCAFinder.java",
+              "startLine": 111,
+              "endLine": 111,
+              "startColumn": 13,
+              "endColumn": 72,
+              "codeElementType": "THROW_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/lca/NaiveLCAFinder.java",
+              "startLine": 114,
+              "endLine": 114,
+              "startColumn": 13,
+              "endColumn": 72,
+              "codeElementType": "THROW_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/lca/NaiveLCAFinder.java",
+              "startLine": 110,
+              "endLine": 111,
+              "startColumn": 9,
+              "endColumn": 72,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/lca/NaiveLCAFinder.java",
+              "startLine": 113,
+              "endLine": 114,
+              "startColumn": 9,
+              "endColumn": 72,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/lca/NaiveLCAFinder.java",
+              "startLine": 197,
+              "endLine": 209,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "private checkNodes(a V, b V) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/lca/NaiveLCAFinder.java",
+              "startLine": 205,
+              "endLine": 205,
+              "startColumn": 13,
+              "endColumn": 72,
+              "codeElementType": "THROW_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/lca/NaiveLCAFinder.java",
+              "startLine": 208,
+              "endLine": 208,
+              "startColumn": 13,
+              "endColumn": 72,
+              "codeElementType": "THROW_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/lca/NaiveLCAFinder.java",
+              "startLine": 204,
+              "endLine": 205,
+              "startColumn": 9,
+              "endColumn": 72,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/lca/NaiveLCAFinder.java",
+              "startLine": 207,
+              "endLine": 208,
+              "startColumn": 9,
+              "endColumn": 72,
+              "codeElementType": "IF_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/lca/NaiveLCAFinder.java",
+              "startLine": 104,
+              "endLine": 117,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public getLCA(a V, b V) : V"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/lca/NaiveLCAFinder.java",
+              "startLine": 110,
+              "endLine": 110,
+              "startColumn": 9,
+              "endColumn": 25,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "checkNodes(a,b)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

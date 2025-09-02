@@ -6,7 +6,7 @@ import shutil
 # === CONFIGURAZIONE ===
 repo_path = 'repo'  # cartella della repository Git locale
 releases = ['jgrapht-1.3.0','1.4.0','jgrapht-1.5.0']  # tag Git delle release da analizzare
-energia_threshold = 0.02  # soglia in Joule per differenza media
+energia_threshold = 0.2  # soglia in Joule per differenza media
 campione_threshold = 0.3  # soglia in Joule per singolo campione
 script_misura = './misura_consumo.sh'
 refactoringminer_bin = './RefactoringMiner/bin/RefactoringMiner'  # path all'eseguibile CLI
@@ -115,6 +115,23 @@ for i in range(len(releases) - 1):
             print(f"⚠️  Skip confronto: uno dei file refactoring non è presente.")
 
         subprocess.run(['python3', 'pre_post_refactoring.py', tag1, tag2], check=True)
+
+        subprocess.run(['python3', 'conteggio_refactoring.py'], check=True)
+
+        # python filtro_refactoring_per_tipologia.py filtered_refactorings.json "Extract And Move Method" estratti_extract_and_move_method.json
+
+        #python analyze_refactored_tests.py
+
+
+        # python refactoring_effettuati.py
+        # python filter_tests
+        #python trova_test_che_coprono_metodi.py
+        # python creazione_test_involved.py
+        # subprocess.run([script_misura2, tag1, repo_path], check=True)
+        #subprocess.run([script_misura2, tag2, repo_path], check=True)
+        #python confronto_campionamenti.py grafici/risultati_jgrapht-1.3.0_refactoring_extractAndMoveMethod.txt grafici/risultati_1.4.0_refactoring_extractAndMoveMethod.txt
+        #python pre_post_refactoring.py jgrapht-1.3.0 1.4.0
+
 
 
 

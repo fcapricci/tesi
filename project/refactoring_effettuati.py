@@ -3,8 +3,8 @@ import csv
 import os
 
 # === CONFIGURAZIONE ===
-json_path = "/home/federico/JGraphT_Test/project/filtered_refactorings.json"
-csv_output = "metodo_refactoring.csv"
+json_path = "/home/federico/JGraphT_Test/project/estratti_extract_and_move_method.json"
+csv_output = "metodo_refactoring_extractAndMoveMethod.csv"
 
 # === SALTA SE OUTPUT GIÀ ESISTE ===
 if os.path.exists(csv_output):

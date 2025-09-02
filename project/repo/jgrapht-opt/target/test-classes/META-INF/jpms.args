@@ -1,0 +1,6 @@
+--add-modules
+java.xml
+--patch-module
+org.jgrapht.opt=_
+--add-reads
+org.jgrapht.opt=ALL-UNNAMED

@@ -4,12 +4,13 @@
     <parent>
         <groupId>org.jgrapht</groupId>
         <artifactId>jgrapht</artifactId>
-        <version>1.5.0</version>
+        <version>1.5.3-SNAPSHOT</version>
     </parent>
     <artifactId>jgrapht-io</artifactId>
     <name>JGraphT - I/O</name>
     <properties>
         <main.basedir>${project.parent.basedir}</main.basedir>
+        <antlr4.version>4.13.1</antlr4.version>
     </properties>
     <licenses>
         <license>
@@ -38,16 +39,14 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
             </plugin>
-            <!--
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
             </plugin>
-            -->
             <plugin>
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr4-maven-plugin</artifactId>
-                <version>4.8-1</version>
+                <version>${antlr4.version}</version>
                 <executions>
                     <execution>
                         <id>antlr</id>
@@ -64,7 +63,6 @@
                      bound to the same phase (generate-sources). -->
                 <groupId>com.google.code.maven-replacer-plugin</groupId>
                 <artifactId>replacer</artifactId>
-                <version>1.5.3</version>
                 <executions>
                     <execution>
                         <phase>generate-sources</phase>
@@ -98,7 +96,6 @@
                 <plugin>
                     <groupId>org.eclipse.m2e</groupId>
                     <artifactId>lifecycle-mapping</artifactId>
-                    <version>1.0.0</version>
                     <configuration>
                         <lifecycleMappingMetadata>
                             <pluginExecutions>
@@ -141,19 +138,18 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.antlr</groupId>
             <artifactId>antlr4-runtime</artifactId>
-            <version>4.8-1</version>
+            <version>${antlr4.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-text</artifactId>
-            <version>1.8</version>
         </dependency>
     </dependencies>
 </project>

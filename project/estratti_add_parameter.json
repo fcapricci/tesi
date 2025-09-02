@@ -1,0 +1,174 @@
+{
+  "commits": [
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "e8fbd8ba19ada2dc4524ff3fa0f5ba39adc0bdf5",
+      "refactorings": [
+        {
+          "type": "Add Parameter",
+          "description": "Add Parameter minEdgeWeight : double in method public BlossomVState(graph Graph<V,E>, nodes BlossomVNode[], edges BlossomVEdge[], nodeNum int, edgeNum int, treeNum int, graphVertices List<V>, graphEdges List<E>, options BlossomVOptions, minEdgeWeight double) from class org.jgrapht.alg.matching.blossom.v5.BlossomVState",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/BlossomVState.java",
+              "startLine": 94,
+              "endLine": 123,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public BlossomVState(graph Graph<V,E>, nodes BlossomVNode[], edges BlossomVEdge[], nodeNum int, edgeNum int, treeNum int, graphVertices List<V>, graphEdges List<E>, options BlossomVOptions)"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/BlossomVState.java",
+              "startLine": 114,
+              "endLine": 114,
+              "startColumn": 90,
+              "endColumn": 110,
+              "codeElementType": "SINGLE_VARIABLE_DECLARATION",
+              "description": "added parameter",
+              "codeElement": "minEdgeWeight : double"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/BlossomVState.java",
+              "startLine": 97,
+              "endLine": 127,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added parameter",
+              "codeElement": "public BlossomVState(graph Graph<V,E>, nodes BlossomVNode[], edges BlossomVEdge[], nodeNum int, edgeNum int, treeNum int, graphVertices List<V>, graphEdges List<E>, options BlossomVOptions, minEdgeWeight double)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "60c8a85da4051d9ac4225dbfbe13257e1762c57a",
+      "refactorings": [
+        {
+          "type": "Add Parameter",
+          "description": "Add Parameter ordering : SetSizeOrdering in method package UnionIterator(ordering SetSizeOrdering) from class org.jgrapht.util.UnmodifiableUnionSet.UnionIterator",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 99,
+              "endLine": 104,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public UnionIterator()"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 138,
+              "endLine": 138,
+              "startColumn": 23,
+              "endColumn": 47,
+              "codeElementType": "SINGLE_VARIABLE_DECLARATION",
+              "description": "added parameter",
+              "codeElement": "ordering : SetSizeOrdering"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/UnmodifiableUnionSet.java",
+              "startLine": 138,
+              "endLine": 144,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added parameter",
+              "codeElement": "package UnionIterator(ordering SetSizeOrdering)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "5462ee0943f573d9e15df423ef87dfc8f97e3cbc",
+      "refactorings": [
+        {
+          "type": "Add Parameter",
+          "description": "Add Parameter startIndex : int in method private ListNodeIteratorImpl(startIndex int, startNode ListNodeImpl<E>) from class org.jgrapht.util.DoublyLinkedList.ListNodeIteratorImpl",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 402,
+              "endLine": 407,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "package ListIteratorImpl(start ListNode<E>, reversed boolean)"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 1164,
+              "endLine": 1164,
+              "startColumn": 38,
+              "endColumn": 52,
+              "codeElementType": "SINGLE_VARIABLE_DECLARATION",
+              "description": "added parameter",
+              "codeElement": "startIndex : int"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 1164,
+              "endLine": 1168,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added parameter",
+              "codeElement": "private ListNodeIteratorImpl(startIndex int, startNode ListNodeImpl<E>)"
+            }
+          ]
+        },
+        {
+          "type": "Add Parameter",
+          "description": "Add Parameter startNode : ListNodeImpl<E> in method private ListNodeIteratorImpl(startIndex int, startNode ListNodeImpl<E>) from class org.jgrapht.util.DoublyLinkedList.ListNodeIteratorImpl",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 402,
+              "endLine": 407,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "package ListIteratorImpl(start ListNode<E>, reversed boolean)"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 1164,
+              "endLine": 1164,
+              "startColumn": 54,
+              "endColumn": 79,
+              "codeElementType": "SINGLE_VARIABLE_DECLARATION",
+              "description": "added parameter",
+              "codeElement": "startNode : ListNodeImpl<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 1164,
+              "endLine": 1168,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added parameter",
+              "codeElement": "private ListNodeIteratorImpl(startIndex int, startNode ListNodeImpl<E>)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

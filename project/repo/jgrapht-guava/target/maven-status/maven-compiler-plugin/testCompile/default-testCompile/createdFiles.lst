@@ -1,0 +1,9 @@
+org/jgrapht/graph/guava/ImmutableGraphAdapterTest.class
+org/jgrapht/graph/guava/SerializationTestUtils.class
+org/jgrapht/graph/guava/MutableValueGraphAdapterTest$MyValue.class
+org/jgrapht/graph/guava/MutableValueGraphAdapterTest.class
+org/jgrapht/graph/guava/MutableNetworkAdapterTest.class
+org/jgrapht/graph/guava/ImmutableValueGraphAdapterTest$MyValue.class
+org/jgrapht/graph/guava/MutableGraphAdapterTest.class
+org/jgrapht/graph/guava/ImmutableValueGraphAdapterTest.class
+org/jgrapht/graph/guava/ImmutableNetworkAdapterTest.class

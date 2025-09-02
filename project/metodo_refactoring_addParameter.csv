@@ -1,0 +1,5 @@
+Metodo,Refactoring,Classe
+"public BlossomVState(graph Graph<V,E>, nodes BlossomVNode[], edges BlossomVEdge[], nodeNum int, edgeNum int, treeNum int, graphVertices List<V>, graphEdges List<E>, options BlossomVOptions)",Add Parameter,jgrapht-core.src.main.org.jgrapht.alg.matching.blossom.v5.BlossomVState
+public UnionIterator(),Add Parameter,jgrapht-core.src.main.org.jgrapht.util.UnmodifiableUnionSet
+"package ListIteratorImpl(start ListNode<E>, reversed boolean)",Add Parameter,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList
+"package ListIteratorImpl(start ListNode<E>, reversed boolean)",Add Parameter,jgrapht-core.src.main.org.jgrapht.util.DoublyLinkedList

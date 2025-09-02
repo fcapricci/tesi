@@ -1,11 +1,17 @@
 import json
 import csv
+import os
 
 # === INPUT ===
 refactoring_file = 'filtered_refactorings.json'
 
 # === OUTPUT ===
 summary_csv = 'refactoring_quantificati.csv'
+
+
+if os.path.exists(summary_csv):
+    print(f"✅ Output già presente: {summary_csv}")
+    exit(0)
 
 # === Carica refactoring ===
 with open(refactoring_file, 'r', encoding='utf-8') as f:

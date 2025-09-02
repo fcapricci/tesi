@@ -5,7 +5,7 @@
     <artifactId>jgrapht</artifactId>
     <packaging>pom</packaging>
     <name>JGraphT - Parent</name>
-    <version>1.5.0</version>
+    <version>1.5.3-SNAPSHOT</version>
     <description>A Java class library for graph-theory data structures and algorithms.</description>
     <url>http://www.jgrapht.org</url>
     <parent>
@@ -29,7 +29,7 @@
         <url>https://github.com/jgrapht/jgrapht.git</url>
         <connection>scm:git:git://github.com/jgrapht/jgrapht.git</connection>
         <developerConnection>scm:git:git@github.com:jgrapht/jgrapht.git</developerConnection>
-        <tag>jgrapht-1.5.0</tag>
+        <tag>jgrapht-1.5.2</tag>
     </scm>
     <issueManagement>
         <url>https://github.com/jgrapht/jgrapht/issues</url>
@@ -65,6 +65,38 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <main.basedir>${project.basedir}</main.basedir>
+        <apfloat.version>1.12.0</apfloat.version>
+        <checkstyle.version>10.12.7</checkstyle.version>
+        <commons-text.version>1.11.0</commons-text.version>
+        <dsiutils.version>2.7.3</dsiutils.version>
+        <fastutil.version>8.5.12</fastutil.version>
+        <guava.version>32.1.1-jre</guava.version>
+        <hamcrest.version>2.2</hamcrest.version>
+        <java.version>11</java.version>
+        <jgraphx.version>4.2.2</jgraphx.version>
+        <jheaps.version>0.14</jheaps.version>
+        <jmh.version>1.37</jmh.version>
+        <junit.version>5.10.1</junit.version>
+        <junit.platform.version>1.10.1</junit.platform.version>
+        <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
+        <maven-assembly-plugin.version>3.6.0</maven-assembly-plugin.version>
+        <maven-bundle-plugin.version>5.1.9</maven-bundle-plugin.version>
+        <maven-checkstyle-plugin.version>3.3.1</maven-checkstyle-plugin.version>
+        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+        <maven-deploy-plugin.version>3.1.1</maven-deploy-plugin.version>
+        <maven-gpg-plugin.version>3.1.0</maven-gpg-plugin.version>
+        <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
+        <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
+        <maven-release-plugin.version>3.0.1</maven-release-plugin.version>
+        <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
+        <maven-shade-plugin.version>3.5.1</maven-shade-plugin.version>
+        <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
+        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
+        <replacer.version>1.5.3</replacer.version>
+        <sux4j.version>5.4.1</sux4j.version>
+        <webgraph-big.version>3.7.0</webgraph-big.version>
+        <webgraph.version>3.6.10</webgraph.version>
+        <xmlunit-core.version>2.9.1</xmlunit-core.version>
     </properties>
 
     <dependencyManagement>
@@ -96,26 +128,105 @@
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
+                <artifactId>jgrapht-unimi-dsi</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
                 <artifactId>jgrapht-demo</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
+                <groupId>it.unimi.dsi</groupId>
+                <artifactId>fastutil</artifactId>
+                <version>${fastutil.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.unimi.dsi</groupId>
+                <artifactId>dsiutils</artifactId>
+                <version>${dsiutils.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.sun.mail</groupId>
+                        <artifactId>javax.mail</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>it.unimi.dsi</groupId>
+                <artifactId>sux4j</artifactId>
+                <version>${sux4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.unimi.dsi</groupId>
+                <artifactId>webgraph</artifactId>
+                <version>${webgraph.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.unimi.dsi</groupId>
+                <artifactId>webgraph-big</artifactId>
+                <version>${webgraph-big.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jheaps</groupId>
+                <artifactId>jheaps</artifactId>
+                <version>${jheaps.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apfloat</groupId>
+                <artifactId>apfloat</artifactId>
+                <version>${apfloat.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.vlsi.mxgraph</groupId>
+                <artifactId>jgraphx</artifactId>
+                <version>${jgraphx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>${commons-text.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-core</artifactId>
+                <version>${jmh.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-generator-annprocess</artifactId>
+                <version>${jmh.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
                 <groupId>org.xmlunit</groupId>
                 <artifactId>xmlunit-core</artifactId>
-                <version>2.6.3</version>
+                <version>${xmlunit-core.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.13</version>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
-                    <groupId>com.googlecode.junit-toolbox</groupId>
-                    <artifactId>junit-toolbox</artifactId>
-                    <version>2.4</version>
-                    <scope>test</scope>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-suite</artifactId>
+                <version>${junit.platform.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest</artifactId>
+                <version>${hamcrest.version}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -126,9 +237,9 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.8.1</version>
+                    <version>${maven-compiler-plugin.version}</version>
                     <configuration>
-                        <release>11</release>
+                        <release>${java.version}</release>
                         <compilerArgs>
                             <arg>--add-modules</arg>
                                 <arg>java.xml</arg>
@@ -138,9 +249,9 @@
                         <execution>
                             <id>default-compile</id>
                             <configuration>
-                                <failOnWarning>true</failOnWarning>
                                 <compilerArgs>
                                     <arg>-Xlint:all,-deprecation</arg>
+                                    <arg>-Xpkginfo:always</arg>
                                 </compilerArgs>
                             </configuration>
                         </execution>
@@ -149,21 +260,36 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M4</version>
+                    <version>${maven-surefire-plugin.version}</version>
                     <configuration>
+                        <!-- <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests> -->
                         <testFailureIgnore>false</testFailureIgnore>
+                        <properties>
+                            <configurationParameters>
+                                junit.jupiter.testinstance.lifecycle.default = per_class
+                                junit.jupiter.execution.parallel.enabled = true
+                            </configurationParameters>
+                        </properties>
                     </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-failsafe-plugin</artifactId>
-                     <version>3.0.0-M4</version>
-                     <dependencies>
-                          <dependency>
-                               <groupId>org.apache.maven.surefire</groupId>
-                               <artifactId>surefire-junit47</artifactId>
-                               <version>3.0.0-M4</version>
-                          </dependency>
-                     </dependencies>
+                    <version>${maven-surefire-plugin.version}</version>
+                    <configuration>
+                        <properties>
+                            <configurationParameters>
+                                junit.jupiter.testinstance.lifecycle.default = per_class
+                                junit.jupiter.execution.parallel.enabled = true
+                            </configurationParameters>
+                        </properties>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.maven.surefire</groupId>
+                            <artifactId>surefire-junit-platform</artifactId>
+                            <version>${maven-surefire-plugin.version}</version>
+                        </dependency>
+                    </dependencies>
                     <executions>
                         <execution>
                             <id>integration-test</id>
@@ -177,12 +303,18 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <version>${maven-jar-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-bundle-plugin</artifactId>
-                    <version>4.2.1</version>
+                    <version>${maven-bundle-plugin.version}</version>
+                    <configuration>
+                        <instructions>
+                            <!-- Suppress import of own exported packages -->
+                            <Export-Package>*;-noimport:=true</Export-Package>
+                        </instructions>
+                    </configuration>
                     <executions>
                         <execution>
                             <phase>process-classes</phase>
@@ -195,22 +327,22 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>3.3.0</version>
+                    <version>${maven-assembly-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-shade-plugin</artifactId>
-                    <version>3.2.4</version>
+                    <version>${maven-shade-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>${maven-resources-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>3.0.0-M1</version>
+                    <version>${maven-release-plugin.version}</version>
                     <configuration>
                         <mavenExecutorId>forked-path</mavenExecutorId>
                     </configuration>
@@ -218,7 +350,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
-                    <version>3.0.0-M1</version>
+                    <version>${maven-deploy-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -240,14 +372,15 @@
                         <windowtitle>JGraphT : a free Java graph library</windowtitle>
                         <additionalJOption>--allow-script-in-comments</additionalJOption>
                         <doclint>none</doclint>
-                        <source>11</source>
-                        <header>&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://jgrapht.org/mathjax/mathjaxConfig.js"&gt;&lt;/script&gt;
+                        <source>${java.version}</source>
+                        <header>&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://jgrapht.org/mathjax/mathjaxConfig.js"&gt;&lt;/script&gt;
                         &lt;img src="https://github.com/jgrapht/jgrapht/blob/master/etc/logo/jgrapht-logo-transparent-cropped-javadocheader.png?raw=true" style="height:55px;"&gt;
                         </header>
                         <doctitle>${project.name} ${project.version} API
                         &lt;img src="https://github.com/jgrapht/jgrapht/blob/master/etc/logo/jgrapht-logo-transparent-cropped.png?raw=true" style="height:100px;float:right" &gt;
                         </doctitle>
-                        <detectJavaApiLink>false</detectJavaApiLink> <!-- Temporary fix for https://stackoverflow.com/questions/58836862/jdk-11-and-javadoc -->
+                        <notimestamp>true</notimestamp>
+                        <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
                     </configuration>
                     <executions>
                         <execution>
@@ -263,7 +396,7 @@
                 <plugin>
                     <groupId>org.eclipse.m2e</groupId>
                     <artifactId>lifecycle-mapping</artifactId>
-                    <version>1.0.0</version>
+                    <version>${lifecycle-mapping.version}</version>
                     <configuration>
                         <lifecycleMappingMetadata>
                             <pluginExecutions>
@@ -291,37 +424,22 @@
                     </configuration>
                 </plugin>
                 <plugin>
-                    <groupId>org.jacoco</groupId>
-                    <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>0.8.10</version>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>prepare-agent</goal>
-                            </goals>
-                        </execution>
-                        <execution>
-                            <id>report</id>
-                            <phase>test</phase>
-                            <goals>
-                                <goal>report</goal>
-                            </goals>
-                        </execution>
-                    </executions>
+                    <groupId>com.google.code.maven-replacer-plugin</groupId>
+                    <artifactId>replacer</artifactId>
+                    <version>${replacer.version}</version>
                 </plugin>
-
             </plugins>
         </pluginManagement>
         <plugins>
                 <plugin>
                       <groupId>org.apache.maven.plugins</groupId>
                       <artifactId>maven-javadoc-plugin</artifactId>
-                      <version>3.2.0</version>
+                      <version>${maven-javadoc-plugin.version}</version>
                  </plugin>
                  <plugin>
                       <groupId>org.apache.maven.plugins</groupId>
                       <artifactId>maven-source-plugin</artifactId>
-                      <version>3.2.1</version>
+                      <version>${maven-source-plugin.version}</version>
                  </plugin>
           </plugins>
     </build>
@@ -332,6 +450,7 @@
         <module>jgrapht-opt</module>
         <module>jgrapht-ext</module>
         <module>jgrapht-guava</module>
+        <module>jgrapht-unimi-dsi</module>
         <module>jgrapht-demo</module>
         <module>jgrapht-dist</module>
     </modules>
@@ -344,12 +463,12 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-checkstyle-plugin</artifactId>
-                        <version>3.1.1</version>
+                        <version>${maven-checkstyle-plugin.version}</version>
                         <dependencies>
                             <dependency>
                                 <groupId>com.puppycrawl.tools</groupId>
                                 <artifactId>checkstyle</artifactId>
-                                <version>8.33</version>
+                                <version>${checkstyle.version}</version>
                             </dependency>
                         </dependencies>
                         <executions>
@@ -365,8 +484,9 @@
                             <configLocation>etc/jgrapht_checks.xml</configLocation>
                             <linkXRef>false</linkXRef>
                             <sourceDirectories>${project.basedir}</sourceDirectories>
-                            <includes>${project.compileSourceRoots}/**/*.java,**/*.xml</includes>
+                            <includes>src/main/**/*.java,src/test/**/*.java,**/*.xml</includes>
                             <excludes>**/target/**</excludes>
+                            <includeTestSourceDirectory>true</includeTestSourceDirectory>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -385,7 +505,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.6</version>
+                        <version>${maven-gpg-plugin.version}</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>

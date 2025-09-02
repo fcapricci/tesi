@@ -1,0 +1,6 @@
+--add-modules
+java.xml
+--patch-module
+org.jgrapht.guava=_
+--add-reads
+org.jgrapht.guava=ALL-UNNAMED

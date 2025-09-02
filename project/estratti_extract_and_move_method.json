@@ -1,0 +1,4030 @@
+{
+  "commits": [
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "fce799fb134b445bdf976193430be621eb98d72f",
+      "refactorings": [
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public getNumberOfTriangles(graph Graph<V,E>) : long in class org.jgrapht.GraphMetrics & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/GraphMetrics.java",
+              "startLine": 246,
+              "endLine": 333,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public getNumberOfTriangles(graph Graph<V,E>) : long"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/GraphMetrics.java",
+              "startLine": 276,
+              "endLine": 276,
+              "startColumn": 9,
+              "endColumn": 79,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/GraphMetrics.java",
+              "startLine": 247,
+              "endLine": 335,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public getNumberOfTriangles(graph Graph<V,E>) : long"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/GraphMetrics.java",
+              "startLine": 278,
+              "endLine": 278,
+              "startColumn": 13,
+              "endColumn": 80,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer> in class org.jgrapht.alg.clique.ChordalGraphMaxCliqueFinder & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/clique/ChordalGraphMaxCliqueFinder.java",
+              "startLine": 117,
+              "endLine": 133,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/clique/ChordalGraphMaxCliqueFinder.java",
+              "startLine": 127,
+              "endLine": 127,
+              "startColumn": 9,
+              "endColumn": 75,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/clique/ChordalGraphMaxCliqueFinder.java",
+              "startLine": 118,
+              "endLine": 135,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/clique/ChordalGraphMaxCliqueFinder.java",
+              "startLine": 129,
+              "endLine": 129,
+              "startColumn": 13,
+              "endColumn": 74,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(vertexOrder.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public BrownBacktrackColoring(graph Graph<V,E>) in class org.jgrapht.alg.color.BrownBacktrackColoring & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/BrownBacktrackColoring.java",
+              "startLine": 50,
+              "endLine": 74,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public BrownBacktrackColoring(graph Graph<V,E>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/BrownBacktrackColoring.java",
+              "startLine": 61,
+              "endLine": 61,
+              "startColumn": 9,
+              "endColumn": 47,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/BrownBacktrackColoring.java",
+              "startLine": 51,
+              "endLine": 75,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public BrownBacktrackColoring(graph Graph<V,E>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/BrownBacktrackColoring.java",
+              "startLine": 62,
+              "endLine": 62,
+              "startColumn": 20,
+              "endColumn": 74,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(numVertices)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private lazyComputeColoring() : void in class org.jgrapht.alg.color.ChordalGraphColoring & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ChordalGraphColoring.java",
+              "startLine": 88,
+              "endLine": 113,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private lazyComputeColoring() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ChordalGraphColoring.java",
+              "startLine": 96,
+              "endLine": 96,
+              "startColumn": 13,
+              "endColumn": 92,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ChordalGraphColoring.java",
+              "startLine": 89,
+              "endLine": 116,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private lazyComputeColoring() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ChordalGraphColoring.java",
+              "startLine": 98,
+              "endLine": 98,
+              "startColumn": 17,
+              "endColumn": 90,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(perfectEliminationOrder.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer> in class org.jgrapht.alg.color.ChordalGraphColoring & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ChordalGraphColoring.java",
+              "startLine": 115,
+              "endLine": 131,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ChordalGraphColoring.java",
+              "startLine": 125,
+              "endLine": 125,
+              "startColumn": 9,
+              "endColumn": 75,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ChordalGraphColoring.java",
+              "startLine": 118,
+              "endLine": 135,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ChordalGraphColoring.java",
+              "startLine": 129,
+              "endLine": 129,
+              "startColumn": 13,
+              "endColumn": 74,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(vertexOrder.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public ColoringRepresentation(graph Graph<V,E>, alpha Coloring<V>) in class org.jgrapht.alg.color.ColorRefinementAlgorithm.ColoringRepresentation & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 352,
+              "endLine": 373,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public ColoringRepresentation(graph Graph<V,E>, alpha Coloring<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 356,
+              "endLine": 356,
+              "startColumn": 13,
+              "endColumn": 64,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 353,
+              "endLine": 374,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public ColoringRepresentation(graph Graph<V,E>, alpha Coloring<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 357,
+              "endLine": 357,
+              "startColumn": 47,
+              "endColumn": 91,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 356,
+              "endLine": 356,
+              "startColumn": 33,
+              "endColumn": 77,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public ColoringRepresentation(graph Graph<V,E>, alpha Coloring<V>) in class org.jgrapht.alg.color.ColorRefinementAlgorithm.ColoringRepresentation & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 352,
+              "endLine": 373,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public ColoringRepresentation(graph Graph<V,E>, alpha Coloring<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 355,
+              "endLine": 355,
+              "startColumn": 13,
+              "endColumn": 50,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 353,
+              "endLine": 374,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public ColoringRepresentation(graph Graph<V,E>, alpha Coloring<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 357,
+              "endLine": 357,
+              "startColumn": 47,
+              "endColumn": 91,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 356,
+              "endLine": 356,
+              "startColumn": 33,
+              "endColumn": 77,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from protected getVertexOrdering() : Iterable<V> in class org.jgrapht.alg.color.LargestDegreeFirstColoring & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/LargestDegreeFirstColoring.java",
+              "startLine": 55,
+              "endLine": 106,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "protected getVertexOrdering() : Iterable<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/LargestDegreeFirstColoring.java",
+              "startLine": 65,
+              "endLine": 65,
+              "startColumn": 9,
+              "endColumn": 51,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/LargestDegreeFirstColoring.java",
+              "startLine": 56,
+              "endLine": 107,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "protected getVertexOrdering() : Iterable<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/LargestDegreeFirstColoring.java",
+              "startLine": 66,
+              "endLine": 66,
+              "startColumn": 34,
+              "endColumn": 78,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public getColoring() : Coloring<V> in class org.jgrapht.alg.color.SaturationDegreeColoring & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 75,
+              "endLine": 163,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public getColoring() : Coloring<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 95,
+              "endLine": 95,
+              "startColumn": 9,
+              "endColumn": 51,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 76,
+              "endLine": 164,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public getColoring() : Coloring<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 96,
+              "endLine": 96,
+              "startColumn": 34,
+              "endColumn": 78,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 90,
+              "endLine": 90,
+              "startColumn": 38,
+              "endColumn": 82,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 89,
+              "endLine": 89,
+              "startColumn": 36,
+              "endColumn": 80,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 88,
+              "endLine": 88,
+              "startColumn": 34,
+              "endColumn": 78,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public getColoring() : Coloring<V> in class org.jgrapht.alg.color.SaturationDegreeColoring & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 75,
+              "endLine": 163,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public getColoring() : Coloring<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 89,
+              "endLine": 89,
+              "startColumn": 9,
+              "endColumn": 55,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 76,
+              "endLine": 164,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public getColoring() : Coloring<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 96,
+              "endLine": 96,
+              "startColumn": 34,
+              "endColumn": 78,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 90,
+              "endLine": 90,
+              "startColumn": 38,
+              "endColumn": 82,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 89,
+              "endLine": 89,
+              "startColumn": 36,
+              "endColumn": 80,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 88,
+              "endLine": 88,
+              "startColumn": 34,
+              "endColumn": 78,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public getColoring() : Coloring<V> in class org.jgrapht.alg.color.SaturationDegreeColoring & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 75,
+              "endLine": 163,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public getColoring() : Coloring<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 88,
+              "endLine": 88,
+              "startColumn": 9,
+              "endColumn": 53,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 76,
+              "endLine": 164,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public getColoring() : Coloring<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 96,
+              "endLine": 96,
+              "startColumn": 34,
+              "endColumn": 78,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 90,
+              "endLine": 90,
+              "startColumn": 38,
+              "endColumn": 82,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 89,
+              "endLine": 89,
+              "startColumn": 36,
+              "endColumn": 80,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 88,
+              "endLine": 88,
+              "startColumn": 34,
+              "endColumn": 78,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public getColoring() : Coloring<V> in class org.jgrapht.alg.color.SaturationDegreeColoring & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 75,
+              "endLine": 163,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public getColoring() : Coloring<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 88,
+              "endLine": 88,
+              "startColumn": 9,
+              "endColumn": 53,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 76,
+              "endLine": 164,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public getColoring() : Coloring<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 96,
+              "endLine": 96,
+              "startColumn": 34,
+              "endColumn": 78,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 90,
+              "endLine": 90,
+              "startColumn": 38,
+              "endColumn": 82,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 89,
+              "endLine": 89,
+              "startColumn": 36,
+              "endColumn": 80,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SaturationDegreeColoring.java",
+              "startLine": 88,
+              "endLine": 88,
+              "startColumn": 34,
+              "endColumn": 78,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from protected getVertexOrdering() : Iterable<V> in class org.jgrapht.alg.color.SmallestDegreeLastColoring & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SmallestDegreeLastColoring.java",
+              "startLine": 58,
+              "endLine": 117,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "protected getVertexOrdering() : Iterable<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SmallestDegreeLastColoring.java",
+              "startLine": 68,
+              "endLine": 68,
+              "startColumn": 9,
+              "endColumn": 51,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SmallestDegreeLastColoring.java",
+              "startLine": 59,
+              "endLine": 118,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "protected getVertexOrdering() : Iterable<V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/SmallestDegreeLastColoring.java",
+              "startLine": 69,
+              "endLine": 69,
+              "startColumn": 34,
+              "endColumn": 78,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private createVertexNumber() : void in class org.jgrapht.alg.connectivity.GabowStrongConnectivityInspector & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/connectivity/GabowStrongConnectivityInspector.java",
+              "startLine": 89,
+              "endLine": 100,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private createVertexNumber() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/connectivity/GabowStrongConnectivityInspector.java",
+              "startLine": 92,
+              "endLine": 92,
+              "startColumn": 9,
+              "endColumn": 49,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/connectivity/GabowStrongConnectivityInspector.java",
+              "startLine": 90,
+              "endLine": 101,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private createVertexNumber() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/connectivity/GabowStrongConnectivityInspector.java",
+              "startLine": 93,
+              "endLine": 93,
+              "startColumn": 32,
+              "endColumn": 76,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(c)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private createVertexData() : void in class org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/connectivity/KosarajuStrongConnectivityInspector.java",
+              "startLine": 109,
+              "endLine": 116,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private createVertexData() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/connectivity/KosarajuStrongConnectivityInspector.java",
+              "startLine": 111,
+              "endLine": 111,
+              "startColumn": 9,
+              "endColumn": 86,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/connectivity/KosarajuStrongConnectivityInspector.java",
+              "startLine": 110,
+              "endLine": 117,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private createVertexData() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/connectivity/KosarajuStrongConnectivityInspector.java",
+              "startLine": 112,
+              "endLine": 112,
+              "startColumn": 30,
+              "endColumn": 97,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer> in class org.jgrapht.alg.cycle.ChordalGraphMinimalVertexSeparatorFinder & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/ChordalGraphMinimalVertexSeparatorFinder.java",
+              "startLine": 150,
+              "endLine": 166,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/ChordalGraphMinimalVertexSeparatorFinder.java",
+              "startLine": 160,
+              "endLine": 160,
+              "startColumn": 9,
+              "endColumn": 75,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/ChordalGraphMinimalVertexSeparatorFinder.java",
+              "startLine": 151,
+              "endLine": 168,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/ChordalGraphMinimalVertexSeparatorFinder.java",
+              "startLine": 162,
+              "endLine": 162,
+              "startColumn": 13,
+              "endColumn": 74,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(vertexOrder.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer> in class org.jgrapht.alg.cycle.ChordalityInspector & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/ChordalityInspector.java",
+              "startLine": 241,
+              "endLine": 257,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/ChordalityInspector.java",
+              "startLine": 251,
+              "endLine": 251,
+              "startColumn": 9,
+              "endColumn": 75,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/ChordalityInspector.java",
+              "startLine": 242,
+              "endLine": 259,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private getVertexInOrder(vertexOrder List<V>) : Map<V,Integer>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/ChordalityInspector.java",
+              "startLine": 253,
+              "endLine": 253,
+              "startColumn": 13,
+              "endColumn": 74,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(vertexOrder.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private findHole(a V, b V, c V) : void in class org.jgrapht.alg.cycle.ChordalityInspector & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/ChordalityInspector.java",
+              "startLine": 259,
+              "endLine": 290,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private findHole(a V, b V, c V) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/ChordalityInspector.java",
+              "startLine": 281,
+              "endLine": 281,
+              "startColumn": 9,
+              "endColumn": 75,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/ChordalityInspector.java",
+              "startLine": 261,
+              "endLine": 293,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private findHole(a V, b V, c V) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/ChordalityInspector.java",
+              "startLine": 284,
+              "endLine": 284,
+              "startColumn": 13,
+              "endColumn": 80,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private initMappings() : void in class org.jgrapht.alg.cycle.WeakChordalityInspector & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 120,
+              "endLine": 132,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private initMappings() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 126,
+              "endLine": 126,
+              "startColumn": 9,
+              "endColumn": 36,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 121,
+              "endLine": 133,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private initMappings() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 127,
+              "endLine": 127,
+              "startColumn": 19,
+              "endColumn": 63,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 126,
+              "endLine": 126,
+              "startColumn": 20,
+              "endColumn": 64,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private initMappings() : void in class org.jgrapht.alg.cycle.WeakChordalityInspector & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 120,
+              "endLine": 132,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private initMappings() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 125,
+              "endLine": 125,
+              "startColumn": 9,
+              "endColumn": 37,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 121,
+              "endLine": 133,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private initMappings() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 127,
+              "endLine": 127,
+              "startColumn": 19,
+              "endColumn": 63,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 126,
+              "endLine": 126,
+              "startColumn": 20,
+              "endColumn": 64,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private findHole(graph Graph<V,E>, sourceInSeparator V, source V, target V, targetInSeparator V) : GraphPath<V,E> in class org.jgrapht.alg.cycle.WeakChordalityInspector & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 583,
+              "endLine": 610,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private findHole(graph Graph<V,E>, sourceInSeparator V, source V, target V, targetInSeparator V) : GraphPath<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 597,
+              "endLine": 597,
+              "startColumn": 9,
+              "endColumn": 75,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 584,
+              "endLine": 612,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private findHole(graph Graph<V,E>, sourceInSeparator V, source V, target V, targetInSeparator V) : GraphPath<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 599,
+              "endLine": 599,
+              "startColumn": 13,
+              "endColumn": 80,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private findSeparators(graph Graph<V,E>, edge E) : List<Set<V>> in class org.jgrapht.alg.cycle.WeakChordalityInspector & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 716,
+              "endLine": 755,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private findSeparators(graph Graph<V,E>, edge E) : List<Set<V>>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 731,
+              "endLine": 731,
+              "startColumn": 9,
+              "endColumn": 71,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 718,
+              "endLine": 757,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private findSeparators(graph Graph<V,E>, edge E) : List<Set<V>>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 733,
+              "endLine": 733,
+              "startColumn": 31,
+              "endColumn": 98,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private init() : void in class org.jgrapht.alg.flow.mincost.CapacityScalingMinimumCostFlow & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/flow/mincost/CapacityScalingMinimumCostFlow.java",
+              "startLine": 283,
+              "endLine": 377,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private init() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/flow/mincost/CapacityScalingMinimumCostFlow.java",
+              "startLine": 307,
+              "endLine": 307,
+              "startColumn": 9,
+              "endColumn": 49,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/flow/mincost/CapacityScalingMinimumCostFlow.java",
+              "startLine": 283,
+              "endLine": 377,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private init() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/flow/mincost/CapacityScalingMinimumCostFlow.java",
+              "startLine": 307,
+              "endLine": 307,
+              "startColumn": 32,
+              "endColumn": 76,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private finish() : MinimumCostFlow<E> in class org.jgrapht.alg.flow.mincost.CapacityScalingMinimumCostFlow & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/flow/mincost/CapacityScalingMinimumCostFlow.java",
+              "startLine": 592,
+              "endLine": 626,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private finish() : MinimumCostFlow<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/flow/mincost/CapacityScalingMinimumCostFlow.java",
+              "startLine": 601,
+              "endLine": 601,
+              "startColumn": 9,
+              "endColumn": 51,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/flow/mincost/CapacityScalingMinimumCostFlow.java",
+              "startLine": 592,
+              "endLine": 626,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private finish() : MinimumCostFlow<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/flow/mincost/CapacityScalingMinimumCostFlow.java",
+              "startLine": 601,
+              "endLine": 601,
+              "startColumn": 34,
+              "endColumn": 78,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(m)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private matchVerticesWithSameLabel(root1 V, root2 V, canonicalName Map<V,Integer>[]) : void in class org.jgrapht.alg.isomorphism.AHURootedTreeIsomorphismInspector & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 141,
+              "endLine": 185,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private matchVerticesWithSameLabel(root1 V, root2 V, canonicalName Map<V,Integer>[]) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 154,
+              "endLine": 154,
+              "startColumn": 13,
+              "endColumn": 80,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 141,
+              "endLine": 186,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private matchVerticesWithSameLabel(root1 V, root2 V, canonicalName Map<V,Integer>[]) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 155,
+              "endLine": 155,
+              "startColumn": 17,
+              "endColumn": 77,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(tree1.degreeOf(u))"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private isomorphismExists(root1 V, root2 V) : boolean in class org.jgrapht.alg.isomorphism.AHURootedTreeIsomorphismInspector & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 187,
+              "endLine": 267,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private isomorphismExists(root1 V, root2 V) : boolean"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 200,
+              "endLine": 200,
+              "startColumn": 9,
+              "endColumn": 68,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 188,
+              "endLine": 268,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private isomorphismExists(root1 V, root2 V) : boolean"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 201,
+              "endLine": 201,
+              "startColumn": 28,
+              "endColumn": 95,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(tree2.vertexSet().size())"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 200,
+              "endLine": 200,
+              "startColumn": 28,
+              "endColumn": 95,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(tree1.vertexSet().size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private isomorphismExists(root1 V, root2 V) : boolean in class org.jgrapht.alg.isomorphism.AHURootedTreeIsomorphismInspector & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 187,
+              "endLine": 267,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private isomorphismExists(root1 V, root2 V) : boolean"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 199,
+              "endLine": 199,
+              "startColumn": 9,
+              "endColumn": 68,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 188,
+              "endLine": 268,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private isomorphismExists(root1 V, root2 V) : boolean"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 201,
+              "endLine": 201,
+              "startColumn": 28,
+              "endColumn": 95,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(tree2.vertexSet().size())"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/AHURootedTreeIsomorphismInspector.java",
+              "startLine": 200,
+              "endLine": 200,
+              "startColumn": 28,
+              "endColumn": 95,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(tree1.vertexSet().size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public compose(otherMapping IsomorphicGraphMapping<V,E>) : IsomorphicGraphMapping<V,E> in class org.jgrapht.alg.isomorphism.IsomorphicGraphMapping & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 305,
+              "endLine": 331,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public compose(otherMapping IsomorphicGraphMapping<V,E>) : IsomorphicGraphMapping<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 322,
+              "endLine": 322,
+              "startColumn": 9,
+              "endColumn": 63,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 308,
+              "endLine": 334,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public compose(otherMapping IsomorphicGraphMapping<V,E>) : IsomorphicGraphMapping<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 325,
+              "endLine": 325,
+              "startColumn": 26,
+              "endColumn": 90,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(forwardMapping.size())"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 324,
+              "endLine": 324,
+              "startColumn": 26,
+              "endColumn": 90,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(forwardMapping.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public compose(otherMapping IsomorphicGraphMapping<V,E>) : IsomorphicGraphMapping<V,E> in class org.jgrapht.alg.isomorphism.IsomorphicGraphMapping & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 305,
+              "endLine": 331,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public compose(otherMapping IsomorphicGraphMapping<V,E>) : IsomorphicGraphMapping<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 321,
+              "endLine": 321,
+              "startColumn": 9,
+              "endColumn": 63,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 308,
+              "endLine": 334,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public compose(otherMapping IsomorphicGraphMapping<V,E>) : IsomorphicGraphMapping<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 325,
+              "endLine": 325,
+              "startColumn": 26,
+              "endColumn": 90,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(forwardMapping.size())"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 324,
+              "endLine": 324,
+              "startColumn": 26,
+              "endColumn": 90,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(forwardMapping.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public identity(graph Graph<V,E>) : IsomorphicGraphMapping<V,E> in class org.jgrapht.alg.isomorphism.IsomorphicGraphMapping & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 333,
+              "endLine": 353,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public identity(graph Graph<V,E>) : IsomorphicGraphMapping<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 345,
+              "endLine": 345,
+              "startColumn": 9,
+              "endColumn": 66,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 336,
+              "endLine": 356,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public identity(graph Graph<V,E>) : IsomorphicGraphMapping<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 348,
+              "endLine": 348,
+              "startColumn": 26,
+              "endColumn": 93,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size())"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 347,
+              "endLine": 347,
+              "startColumn": 26,
+              "endColumn": 93,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public identity(graph Graph<V,E>) : IsomorphicGraphMapping<V,E> in class org.jgrapht.alg.isomorphism.IsomorphicGraphMapping & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 333,
+              "endLine": 353,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public identity(graph Graph<V,E>) : IsomorphicGraphMapping<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 344,
+              "endLine": 344,
+              "startColumn": 9,
+              "endColumn": 66,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 336,
+              "endLine": 356,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public identity(graph Graph<V,E>) : IsomorphicGraphMapping<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 348,
+              "endLine": 348,
+              "startColumn": 26,
+              "endColumn": 93,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size())"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/isomorphism/IsomorphicGraphMapping.java",
+              "startLine": 347,
+              "endLine": 347,
+              "startColumn": 26,
+              "endColumn": 93,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private initialize() : void in class org.jgrapht.alg.matching.SparseEdmondsMaximumCardinalityMatching.Algorithm & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/SparseEdmondsMaximumCardinalityMatching.java",
+              "startLine": 172,
+              "endLine": 207,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private initialize() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/SparseEdmondsMaximumCardinalityMatching.java",
+              "startLine": 177,
+              "endLine": 177,
+              "startColumn": 13,
+              "endColumn": 56,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/SparseEdmondsMaximumCardinalityMatching.java",
+              "startLine": 173,
+              "endLine": 208,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private initialize() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/SparseEdmondsMaximumCardinalityMatching.java",
+              "startLine": 178,
+              "endLine": 178,
+              "startColumn": 35,
+              "endColumn": 83,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(nodes)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from private initGraph() : double in class org.jgrapht.alg.matching.blossom.v5.BlossomVInitializer & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/BlossomVInitializer.java",
+              "startLine": 194,
+              "endLine": 232,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private initGraph() : double"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/BlossomVInitializer.java",
+              "startLine": 204,
+              "endLine": 204,
+              "startColumn": 9,
+              "endColumn": 69,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/BlossomVInitializer.java",
+              "startLine": 195,
+              "endLine": 233,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private initGraph() : double"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/blossom/v5/BlossomVInitializer.java",
+              "startLine": 205,
+              "endLine": 205,
+              "startColumn": 46,
+              "endColumn": 96,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(nodeNum)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public UnweightedSpannerAlgorithm() in class org.jgrapht.alg.spanning.GreedyMultiplicativeSpanner.UnweightedSpannerAlgorithm & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/spanning/GreedyMultiplicativeSpanner.java",
+              "startLine": 148,
+              "endLine": 160,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public UnweightedSpannerAlgorithm()"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/spanning/GreedyMultiplicativeSpanner.java",
+              "startLine": 158,
+              "endLine": 158,
+              "startColumn": 13,
+              "endColumn": 70,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/spanning/GreedyMultiplicativeSpanner.java",
+              "startLine": 149,
+              "endLine": 161,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public UnweightedSpannerAlgorithm()"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/spanning/GreedyMultiplicativeSpanner.java",
+              "startLine": 159,
+              "endLine": 159,
+              "startColumn": 30,
+              "endColumn": 97,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void in class org.jgrapht.generate.GnpRandomGraphGenerator & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomGraphGenerator.java",
+              "startLine": 115,
+              "endLine": 183,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomGraphGenerator.java",
+              "startLine": 136,
+              "endLine": 136,
+              "startColumn": 9,
+              "endColumn": 53,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomGraphGenerator.java",
+              "startLine": 116,
+              "endLine": 184,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomGraphGenerator.java",
+              "startLine": 137,
+              "endLine": 137,
+              "startColumn": 36,
+              "endColumn": 80,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from package BucketList(vertices Collection<V>) in class org.jgrapht.traverse.LexBreadthFirstIterator.BucketList & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/LexBreadthFirstIterator.java",
+              "startLine": 194,
+              "endLine": 208,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "package BucketList(vertices Collection<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/LexBreadthFirstIterator.java",
+              "startLine": 204,
+              "endLine": 204,
+              "startColumn": 13,
+              "endColumn": 56,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/LexBreadthFirstIterator.java",
+              "startLine": 195,
+              "endLine": 209,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "package BucketList(vertices Collection<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/LexBreadthFirstIterator.java",
+              "startLine": 205,
+              "endLine": 205,
+              "startColumn": 25,
+              "endColumn": 83,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(vertices.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public MaximumCardinalityIterator(graph Graph<V,E>) in class org.jgrapht.traverse.MaximumCardinalityIterator & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/MaximumCardinalityIterator.java",
+              "startLine": 71,
+              "endLine": 90,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public MaximumCardinalityIterator(graph Graph<V,E>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/MaximumCardinalityIterator.java",
+              "startLine": 84,
+              "endLine": 84,
+              "startColumn": 13,
+              "endColumn": 70,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/MaximumCardinalityIterator.java",
+              "startLine": 72,
+              "endLine": 91,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public MaximumCardinalityIterator(graph Graph<V,E>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/traverse/MaximumCardinalityIterator.java",
+              "startLine": 85,
+              "endLine": 85,
+              "startColumn": 30,
+              "endColumn": 97,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public VertexToIntegerMapping(vertices Set<V>) in class org.jgrapht.util.VertexToIntegerMapping & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/VertexToIntegerMapping.java",
+              "startLine": 40,
+              "endLine": 57,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public VertexToIntegerMapping(vertices Set<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/VertexToIntegerMapping.java",
+              "startLine": 50,
+              "endLine": 50,
+              "startColumn": 9,
+              "endColumn": 52,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/VertexToIntegerMapping.java",
+              "startLine": 40,
+              "endLine": 57,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public VertexToIntegerMapping(vertices Set<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/VertexToIntegerMapping.java",
+              "startLine": 50,
+              "endLine": 50,
+              "startColumn": 21,
+              "endColumn": 79,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(vertices.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public VertexToIntegerMapping(vertices List<V>) in class org.jgrapht.util.VertexToIntegerMapping & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/VertexToIntegerMapping.java",
+              "startLine": 59,
+              "endLine": 83,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public VertexToIntegerMapping(vertices List<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/VertexToIntegerMapping.java",
+              "startLine": 71,
+              "endLine": 71,
+              "startColumn": 9,
+              "endColumn": 52,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/VertexToIntegerMapping.java",
+              "startLine": 59,
+              "endLine": 83,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public VertexToIntegerMapping(vertices List<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/VertexToIntegerMapping.java",
+              "startLine": 71,
+              "endLine": 71,
+              "startColumn": 21,
+              "endColumn": 79,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(vertices.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public VertexToIntegerMapping(vertices Collection<V>) in class org.jgrapht.util.VertexToIntegerMapping & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/VertexToIntegerMapping.java",
+              "startLine": 85,
+              "endLine": 107,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public VertexToIntegerMapping(vertices Collection<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/VertexToIntegerMapping.java",
+              "startLine": 96,
+              "endLine": 96,
+              "startColumn": 9,
+              "endColumn": 52,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/VertexToIntegerMapping.java",
+              "startLine": 85,
+              "endLine": 107,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public VertexToIntegerMapping(vertices Collection<V>)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/VertexToIntegerMapping.java",
+              "startLine": 96,
+              "endLine": 96,
+              "startColumn": 21,
+              "endColumn": 79,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(vertices.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V> extracted from public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void in class org.jgrapht.generate.GnmRandomGraphGenerator & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomGraphGenerator.java",
+              "startLine": 137,
+              "endLine": 233,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomGraphGenerator.java",
+              "startLine": 178,
+              "endLine": 178,
+              "startColumn": 9,
+              "endColumn": 53,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 34,
+              "endLine": 54,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashMapWithExpectedSize(expectedSize int) : HashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 53,
+              "endLine": 53,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomGraphGenerator.java",
+              "startLine": 138,
+              "endLine": 234,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomGraphGenerator.java",
+              "startLine": 179,
+              "endLine": 179,
+              "startColumn": 36,
+              "endColumn": 80,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newLinkedHashMapWithExpectedSize(expectedSize int) : LinkedHashMap<K,V> extracted from public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void in class org.jgrapht.generate.GnmRandomBipartiteGraphGenerator & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomBipartiteGraphGenerator.java",
+              "startLine": 114,
+              "endLine": 193,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomBipartiteGraphGenerator.java",
+              "startLine": 135,
+              "endLine": 135,
+              "startColumn": 9,
+              "endColumn": 46,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 56,
+              "endLine": 74,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newLinkedHashMapWithExpectedSize(expectedSize int) : LinkedHashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 73,
+              "endLine": 73,
+              "startColumn": 9,
+              "endColumn": 67,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomBipartiteGraphGenerator.java",
+              "startLine": 115,
+              "endLine": 194,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomBipartiteGraphGenerator.java",
+              "startLine": 136,
+              "endLine": 136,
+              "startColumn": 22,
+              "endColumn": 73,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashMapWithExpectedSize(n2)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomBipartiteGraphGenerator.java",
+              "startLine": 131,
+              "endLine": 131,
+              "startColumn": 22,
+              "endColumn": 73,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashMapWithExpectedSize(n1)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newLinkedHashMapWithExpectedSize(expectedSize int) : LinkedHashMap<K,V> extracted from public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void in class org.jgrapht.generate.GnmRandomBipartiteGraphGenerator & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomBipartiteGraphGenerator.java",
+              "startLine": 114,
+              "endLine": 193,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomBipartiteGraphGenerator.java",
+              "startLine": 130,
+              "endLine": 130,
+              "startColumn": 9,
+              "endColumn": 46,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 56,
+              "endLine": 74,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newLinkedHashMapWithExpectedSize(expectedSize int) : LinkedHashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 73,
+              "endLine": 73,
+              "startColumn": 9,
+              "endColumn": 67,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomBipartiteGraphGenerator.java",
+              "startLine": 115,
+              "endLine": 194,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomBipartiteGraphGenerator.java",
+              "startLine": 136,
+              "endLine": 136,
+              "startColumn": 22,
+              "endColumn": 73,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashMapWithExpectedSize(n2)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnmRandomBipartiteGraphGenerator.java",
+              "startLine": 131,
+              "endLine": 131,
+              "startColumn": 22,
+              "endColumn": 73,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashMapWithExpectedSize(n1)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newLinkedHashMapWithExpectedSize(expectedSize int) : LinkedHashMap<K,V> extracted from public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void in class org.jgrapht.generate.GnpRandomBipartiteGraphGenerator & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomBipartiteGraphGenerator.java",
+              "startLine": 112,
+              "endLine": 166,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomBipartiteGraphGenerator.java",
+              "startLine": 133,
+              "endLine": 133,
+              "startColumn": 9,
+              "endColumn": 46,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 56,
+              "endLine": 74,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newLinkedHashMapWithExpectedSize(expectedSize int) : LinkedHashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 73,
+              "endLine": 73,
+              "startColumn": 9,
+              "endColumn": 67,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomBipartiteGraphGenerator.java",
+              "startLine": 113,
+              "endLine": 167,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomBipartiteGraphGenerator.java",
+              "startLine": 134,
+              "endLine": 134,
+              "startColumn": 22,
+              "endColumn": 73,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashMapWithExpectedSize(n2)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomBipartiteGraphGenerator.java",
+              "startLine": 129,
+              "endLine": 129,
+              "startColumn": 22,
+              "endColumn": 73,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashMapWithExpectedSize(n1)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newLinkedHashMapWithExpectedSize(expectedSize int) : LinkedHashMap<K,V> extracted from public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void in class org.jgrapht.generate.GnpRandomBipartiteGraphGenerator & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomBipartiteGraphGenerator.java",
+              "startLine": 112,
+              "endLine": 166,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomBipartiteGraphGenerator.java",
+              "startLine": 128,
+              "endLine": 128,
+              "startColumn": 9,
+              "endColumn": 46,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 56,
+              "endLine": 74,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newLinkedHashMapWithExpectedSize(expectedSize int) : LinkedHashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 73,
+              "endLine": 73,
+              "startColumn": 9,
+              "endColumn": 67,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomBipartiteGraphGenerator.java",
+              "startLine": 113,
+              "endLine": 167,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomBipartiteGraphGenerator.java",
+              "startLine": 134,
+              "endLine": 134,
+              "startColumn": 22,
+              "endColumn": 73,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashMapWithExpectedSize(n2)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/GnpRandomBipartiteGraphGenerator.java",
+              "startLine": 129,
+              "endLine": 129,
+              "startColumn": 22,
+              "endColumn": 73,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashMapWithExpectedSize(n1)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newLinkedHashMapWithExpectedSize(expectedSize int) : LinkedHashMap<K,V> extracted from public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void in class org.jgrapht.generate.WattsStrogatzGraphGenerator & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+              "startLine": 140,
+              "endLine": 193,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+              "startLine": 159,
+              "endLine": 159,
+              "startColumn": 9,
+              "endColumn": 54,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 56,
+              "endLine": 74,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newLinkedHashMapWithExpectedSize(expectedSize int) : LinkedHashMap<K,V>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 73,
+              "endLine": 73,
+              "startColumn": 9,
+              "endColumn": 67,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+              "startLine": 141,
+              "endLine": 194,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public generateGraph(target Graph<V,E>, resultMap Map<String,V>) : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+              "startLine": 160,
+              "endLine": 160,
+              "startColumn": 31,
+              "endColumn": 81,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashMapWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashSetWithExpectedSize(expectedSize int) : HashSet<E> extracted from private lazyComputeColoring() : void in class org.jgrapht.alg.color.ChordalGraphColoring & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ChordalGraphColoring.java",
+              "startLine": 88,
+              "endLine": 113,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private lazyComputeColoring() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ChordalGraphColoring.java",
+              "startLine": 100,
+              "endLine": 100,
+              "startColumn": 17,
+              "endColumn": 85,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 76,
+              "endLine": 93,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashSetWithExpectedSize(expectedSize int) : HashSet<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 92,
+              "endLine": 92,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ChordalGraphColoring.java",
+              "startLine": 89,
+              "endLine": 116,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private lazyComputeColoring() : void"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ChordalGraphColoring.java",
+              "startLine": 103,
+              "endLine": 103,
+              "startColumn": 21,
+              "endColumn": 83,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashSetWithExpectedSize(predecessors.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashSetWithExpectedSize(expectedSize int) : HashSet<E> extracted from private computeCoConnectedComponents(graph Graph<V,E>, separator List<Pair<Integer,Integer>>) : List<List<Integer>> in class org.jgrapht.alg.cycle.WeakChordalityInspector & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 379,
+              "endLine": 437,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private computeCoConnectedComponents(graph Graph<V,E>, separator List<Pair<Integer,Integer>>) : List<List<Integer>>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 400,
+              "endLine": 400,
+              "startColumn": 9,
+              "endColumn": 66,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 76,
+              "endLine": 93,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashSetWithExpectedSize(expectedSize int) : HashSet<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 92,
+              "endLine": 92,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 380,
+              "endLine": 438,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private computeCoConnectedComponents(graph Graph<V,E>, separator List<Pair<Integer,Integer>>) : List<List<Integer>>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/cycle/WeakChordalityInspector.java",
+              "startLine": 401,
+              "endLine": 401,
+              "startColumn": 34,
+              "endColumn": 93,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashSetWithExpectedSize(separator.size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashSetWithExpectedSize(expectedSize int) : HashSet<E> extracted from private SimpleMatching(n int) in class org.jgrapht.alg.matching.DenseEdmondsMaximumCardinalityMatching.SimpleMatching & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/DenseEdmondsMaximumCardinalityMatching.java",
+              "startLine": 629,
+              "endLine": 636,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private SimpleMatching(n int)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/DenseEdmondsMaximumCardinalityMatching.java",
+              "startLine": 632,
+              "endLine": 632,
+              "startColumn": 13,
+              "endColumn": 45,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 76,
+              "endLine": 93,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashSetWithExpectedSize(expectedSize int) : HashSet<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 92,
+              "endLine": 92,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/DenseEdmondsMaximumCardinalityMatching.java",
+              "startLine": 630,
+              "endLine": 637,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private SimpleMatching(n int)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/matching/DenseEdmondsMaximumCardinalityMatching.java",
+              "startLine": 633,
+              "endLine": 633,
+              "startColumn": 28,
+              "endColumn": 72,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashSetWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashSetWithExpectedSize(expectedSize int) : HashSet<E> extracted from public getSpanningTree() : SpanningTree<E> in class org.jgrapht.alg.spanning.PrimMinimumSpanningTree & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/spanning/PrimMinimumSpanningTree.java",
+              "startLine": 60,
+              "endLine": 124,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public getSpanningTree() : SpanningTree<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/spanning/PrimMinimumSpanningTree.java",
+              "startLine": 67,
+              "endLine": 67,
+              "startColumn": 9,
+              "endColumn": 81,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 76,
+              "endLine": 93,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashSetWithExpectedSize(expectedSize int) : HashSet<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 92,
+              "endLine": 92,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/spanning/PrimMinimumSpanningTree.java",
+              "startLine": 60,
+              "endLine": 125,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public getSpanningTree() : SpanningTree<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/spanning/PrimMinimumSpanningTree.java",
+              "startLine": 68,
+              "endLine": 68,
+              "startColumn": 13,
+              "endColumn": 76,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashSetWithExpectedSize(g.vertexSet().size())"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashSetWithExpectedSize(expectedSize int) : HashSet<E> extracted from public getTour(graph Graph<V,E>) : GraphPath<V,E> in class org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/ChristofidesThreeHalvesApproxMetricTSP.java",
+              "startLine": 87,
+              "endLine": 170,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public getTour(graph Graph<V,E>) : GraphPath<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/ChristofidesThreeHalvesApproxMetricTSP.java",
+              "startLine": 150,
+              "endLine": 150,
+              "startColumn": 9,
+              "endColumn": 43,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 76,
+              "endLine": 93,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashSetWithExpectedSize(expectedSize int) : HashSet<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 92,
+              "endLine": 92,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/ChristofidesThreeHalvesApproxMetricTSP.java",
+              "startLine": 88,
+              "endLine": 171,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public getTour(graph Graph<V,E>) : GraphPath<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/ChristofidesThreeHalvesApproxMetricTSP.java",
+              "startLine": 151,
+              "endLine": 151,
+              "startColumn": 26,
+              "endColumn": 70,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashSetWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newHashSetWithExpectedSize(expectedSize int) : HashSet<E> extracted from public getTour(graph Graph<V,E>) : GraphPath<V,E> in class org.jgrapht.alg.tour.TwoApproxMetricTSP & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoApproxMetricTSP.java",
+              "startLine": 63,
+              "endLine": 137,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public getTour(graph Graph<V,E>) : GraphPath<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoApproxMetricTSP.java",
+              "startLine": 109,
+              "endLine": 109,
+              "startColumn": 9,
+              "endColumn": 41,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 76,
+              "endLine": 93,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newHashSetWithExpectedSize(expectedSize int) : HashSet<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 92,
+              "endLine": 92,
+              "startColumn": 9,
+              "endColumn": 61,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoApproxMetricTSP.java",
+              "startLine": 64,
+              "endLine": 138,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public getTour(graph Graph<V,E>) : GraphPath<V,E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoApproxMetricTSP.java",
+              "startLine": 110,
+              "endLine": 110,
+              "startColumn": 24,
+              "endColumn": 68,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newHashSetWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newLinkedHashSetWithExpectedSize(expectedSize int) : LinkedHashSet<E> extracted from private calculateColorDegrees(refiningColor int, rep ColoringRepresentation) : Set<Integer> in class org.jgrapht.alg.color.ColorRefinementAlgorithm & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 110,
+              "endLine": 160,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "private calculateColorDegrees(refiningColor int, rep ColoringRepresentation) : Set<Integer>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 121,
+              "endLine": 121,
+              "startColumn": 9,
+              "endColumn": 62,
+              "codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 95,
+              "endLine": 112,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newLinkedHashSetWithExpectedSize(expectedSize int) : LinkedHashSet<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 111,
+              "endLine": 111,
+              "startColumn": 9,
+              "endColumn": 67,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 111,
+              "endLine": 161,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "private calculateColorDegrees(refiningColor int, rep ColoringRepresentation) : Set<Integer>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/color/ColorRefinementAlgorithm.java",
+              "startLine": 122,
+              "endLine": 122,
+              "startColumn": 39,
+              "endColumn": 89,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashSetWithExpectedSize(n)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newLinkedHashSetWithExpectedSize(expectedSize int) : LinkedHashSet<E> extracted from public CompleteBipartiteGraphGenerator(partitionA int, partitionB int) in class org.jgrapht.generate.CompleteBipartiteGraphGenerator & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/CompleteBipartiteGraphGenerator.java",
+              "startLine": 41,
+              "endLine": 56,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public CompleteBipartiteGraphGenerator(partitionA int, partitionB int)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/CompleteBipartiteGraphGenerator.java",
+              "startLine": 55,
+              "endLine": 55,
+              "startColumn": 9,
+              "endColumn": 52,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 95,
+              "endLine": 112,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newLinkedHashSetWithExpectedSize(expectedSize int) : LinkedHashSet<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 111,
+              "endLine": 111,
+              "startColumn": 9,
+              "endColumn": 67,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/CompleteBipartiteGraphGenerator.java",
+              "startLine": 42,
+              "endLine": 57,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public CompleteBipartiteGraphGenerator(partitionA int, partitionB int)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/CompleteBipartiteGraphGenerator.java",
+              "startLine": 56,
+              "endLine": 56,
+              "startColumn": 27,
+              "endColumn": 81,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashSetWithExpectedSize(sizeB)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/CompleteBipartiteGraphGenerator.java",
+              "startLine": 55,
+              "endLine": 55,
+              "startColumn": 27,
+              "endColumn": 81,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashSetWithExpectedSize(sizeA)"
+            }
+          ]
+        },
+        {
+          "type": "Extract And Move Method",
+          "description": "Extract And Move Method public newLinkedHashSetWithExpectedSize(expectedSize int) : LinkedHashSet<E> extracted from public CompleteBipartiteGraphGenerator(partitionA int, partitionB int) in class org.jgrapht.generate.CompleteBipartiteGraphGenerator & moved to class org.jgrapht.util.CollectionUtil",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/CompleteBipartiteGraphGenerator.java",
+              "startLine": 41,
+              "endLine": 56,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration before extraction",
+              "codeElement": "public CompleteBipartiteGraphGenerator(partitionA int, partitionB int)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/CompleteBipartiteGraphGenerator.java",
+              "startLine": 54,
+              "endLine": 54,
+              "startColumn": 9,
+              "endColumn": 52,
+              "codeElementType": "EXPRESSION_STATEMENT",
+              "description": "extracted code from source method declaration",
+              "codeElement": null
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 95,
+              "endLine": 112,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "extracted method declaration",
+              "codeElement": "public newLinkedHashSetWithExpectedSize(expectedSize int) : LinkedHashSet<E>"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/CollectionUtil.java",
+              "startLine": 111,
+              "endLine": 111,
+              "startColumn": 9,
+              "endColumn": 67,
+              "codeElementType": "RETURN_STATEMENT",
+              "description": "extracted code to extracted method declaration",
+              "codeElement": null
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/CompleteBipartiteGraphGenerator.java",
+              "startLine": 42,
+              "endLine": 57,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "source method declaration after extraction",
+              "codeElement": "public CompleteBipartiteGraphGenerator(partitionA int, partitionB int)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/CompleteBipartiteGraphGenerator.java",
+              "startLine": 56,
+              "endLine": 56,
+              "startColumn": 27,
+              "endColumn": 81,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashSetWithExpectedSize(sizeB)"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/generate/CompleteBipartiteGraphGenerator.java",
+              "startLine": 55,
+              "endLine": 55,
+              "startColumn": 27,
+              "endColumn": 81,
+              "codeElementType": "METHOD_INVOCATION",
+              "description": "extracted method invocation",
+              "codeElement": "CollectionUtil.newLinkedHashSetWithExpectedSize(sizeA)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

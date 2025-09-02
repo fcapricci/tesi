@@ -5,10 +5,10 @@ from collections import defaultdict
 
 # === Percorsi file ===
 JACOCO_DIR = "jacoco_reports"
-REFACTORED_METHODS = "refactored_methods.txt"
-REFACTORING_CSV = "metodo_refactoring.csv"
-OUTPUT_TESTS = "test_involved.txt"
-OUTPUT_TABLE = "tabella_metodo_refactoring_test.csv"
+REFACTORED_METHODS = "refactored_methods_extractAndMoveMethod.txt"
+REFACTORING_CSV = "metodo_refactoring_extractAndMoveMethod.csv"
+OUTPUT_TESTS = "test_involved_extractAndMoveMethod.txt"
+OUTPUT_TABLE = "tabella_metodo_refactoring_test_extractAndMoveMethod.csv"
 
 # === Skip se output già presente ===
 if os.path.exists(OUTPUT_TESTS):

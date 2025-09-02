@@ -19,7 +19,7 @@ cd "$repo_path" || exit 1
 numero_esecuzioni=2
 intervallo=100
 tempo_attesa=0
-tests_file="/home/federico/JGraphT_Test/project/test_involved.txt"
+tests_file="/home/federico/JGraphT_Test/project/test_involved_extractAndMoveMethod.txt"
 
 if [ ! -f "$tests_file" ]; then
   echo "❌ File $tests_file mancante"
@@ -29,7 +29,7 @@ fi
 # === Output ===
 mkdir -p ../grafici
 timestamp=$(date '+%Y-%m-%d_%H-%M-%S')
-file_output="../grafici/risultati_${tag}_refactoring.txt"
+file_output="../grafici/risultati_${tag}_refactoring_extractAndMoveMethod.txt"
 
 # === Monitoraggio HWMON ===
 monitor_hwmon() {
@@ -59,7 +59,15 @@ monitor_gpu_power() {
 }
 
 # === Leggi tutte le classi di test in una riga, separate da virgola ===
-test_classes=$(sed 's/^jacoco_//' "$tests_file" | sed 's/_/./g' | paste -sd, -)
+test_classes=$(
+  awk '{
+    s=$0
+    sub(/^jacoco_/,"",s)     # togli prefisso jacoco_
+    sub(/\.xml$/,"",s)       # togli eventuale .xml
+    gsub(/_/,".",s)          # _ -> .
+    print s
+  }' "$tests_file" | paste -sd, -
+)
 
 if [ -z "$test_classes" ]; then
   echo "❌ Nessuna classe di test valida trovata nel file."
@@ -78,7 +86,7 @@ for ((i = 1; i <= numero_esecuzioni; i++)); do
   sudo perf stat -I $intervallo -e power/energy-pkg/ \
     env JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64" \
     PATH="/usr/lib/jvm/java-11-openjdk-amd64/bin:$PATH" \
-    mvn -Dtest="$test_classes" -DfailIfNoTests=false test \
+    mvn -Dtest="$test_classes" -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoTests=false test \
     2>> "$file_output"
 
   kill $PID_HWMON $PID_GPU 2>/dev/null
@@ -93,6 +101,6 @@ done
 
 # === Generazione grafici (opzionale) ===
 cd .. || exit 1
-python3 grafici.py "grafici/risultati_${tag}_refactoring.txt"
+python3 grafici.py "grafici/risultati_${tag}_refactoring_extractAndMoveMethod.txt"
 
 echo -e "\n✅ Misura completata per release $tag (esecuzione unica per tutti i test)."

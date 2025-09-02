@@ -1,0 +1,674 @@
+{
+  "commits": [
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "bd2661d286f4e02ce3d67cc24642835862c29f90",
+      "refactorings": [
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Deprecated in method public addEdgeToTouchingVertices(e E) : void from class org.jgrapht.graph.specifics.DirectedSpecifics",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/DirectedSpecifics.java",
+              "startLine": 136,
+              "endLine": 147,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public addEdgeToTouchingVertices(e E) : void"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/DirectedSpecifics.java",
+              "startLine": 138,
+              "endLine": 138,
+              "startColumn": 5,
+              "endColumn": 16,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Deprecated"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/DirectedSpecifics.java",
+              "startLine": 137,
+              "endLine": 145,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public addEdgeToTouchingVertices(e E) : void"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Deprecated in method public removeEdgeFromTouchingVertices(e E) : void from class org.jgrapht.graph.specifics.DirectedSpecifics",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/DirectedSpecifics.java",
+              "startLine": 218,
+              "endLine": 229,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/DirectedSpecifics.java",
+              "startLine": 269,
+              "endLine": 269,
+              "startColumn": 5,
+              "endColumn": 16,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Deprecated"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/DirectedSpecifics.java",
+              "startLine": 264,
+              "endLine": 277,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Deprecated in method public removeEdgeFromTouchingVertices(e E) : void from class org.jgrapht.graph.specifics.FastLookupDirectedSpecifics",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 124,
+              "endLine": 148,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 137,
+              "endLine": 137,
+              "startColumn": 5,
+              "endColumn": 16,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Deprecated"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupDirectedSpecifics.java",
+              "startLine": 136,
+              "endLine": 145,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Deprecated in method public removeEdgeFromTouchingVertices(e E) : void from class org.jgrapht.graph.specifics.FastLookupUndirectedSpecifics",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 129,
+              "endLine": 154,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 139,
+              "endLine": 139,
+              "startColumn": 5,
+              "endColumn": 16,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Deprecated"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+              "startLine": 138,
+              "endLine": 147,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Deprecated in method public addEdgeToTouchingVertices(e E) : void from class org.jgrapht.graph.specifics.Specifics",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/Specifics.java",
+              "startLine": 77,
+              "endLine": 82,
+              "startColumn": 5,
+              "endColumn": 41,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public addEdgeToTouchingVertices(e E) : void"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/Specifics.java",
+              "startLine": 84,
+              "endLine": 84,
+              "startColumn": 5,
+              "endColumn": 16,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Deprecated"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/Specifics.java",
+              "startLine": 78,
+              "endLine": 85,
+              "startColumn": 5,
+              "endColumn": 41,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public addEdgeToTouchingVertices(e E) : void"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Deprecated in method public removeEdgeFromTouchingVertices(e E) : void from class org.jgrapht.graph.specifics.Specifics",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/Specifics.java",
+              "startLine": 136,
+              "endLine": 141,
+              "startColumn": 5,
+              "endColumn": 46,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/Specifics.java",
+              "startLine": 180,
+              "endLine": 180,
+              "startColumn": 5,
+              "endColumn": 16,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Deprecated"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/Specifics.java",
+              "startLine": 174,
+              "endLine": 181,
+              "startColumn": 5,
+              "endColumn": 46,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Deprecated in method public addEdgeToTouchingVertices(e E) : void from class org.jgrapht.graph.specifics.UndirectedSpecifics",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+              "startLine": 144,
+              "endLine": 158,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public addEdgeToTouchingVertices(e E) : void"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+              "startLine": 146,
+              "endLine": 146,
+              "startColumn": 5,
+              "endColumn": 16,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Deprecated"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+              "startLine": 145,
+              "endLine": 156,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public addEdgeToTouchingVertices(e E) : void"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Deprecated in method public removeEdgeFromTouchingVertices(e E) : void from class org.jgrapht.graph.specifics.UndirectedSpecifics",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+              "startLine": 232,
+              "endLine": 246,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+              "startLine": 283,
+              "endLine": 283,
+              "startColumn": 5,
+              "endColumn": 16,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Deprecated"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+              "startLine": 278,
+              "endLine": 294,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public removeEdgeFromTouchingVertices(e E) : void"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "f1074be07a554d27bda1be699b87ee031e4d0af8",
+      "refactorings": [
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @SuppressWarnings(\"unlikely-arg-type\") in method public hasElement(e E) : boolean from class org.jgrapht.alg.util.Pair",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/Pair.java",
+              "startLine": 104,
+              "endLine": 120,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public hasElement(e E) : boolean"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/Pair.java",
+              "startLine": 109,
+              "endLine": 109,
+              "startColumn": 5,
+              "endColumn": 43,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@SuppressWarnings(\"unlikely-arg-type\")"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/Pair.java",
+              "startLine": 100,
+              "endLine": 117,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public hasElement(e E) : boolean"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "c999d4d635b89601413e2ec6a4ee0c3dd24c29bb",
+      "refactorings": [
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Override in method public improveTour(tour GraphPath<V,E>) : GraphPath<V,E> from class org.jgrapht.alg.tour.TwoOptHeuristicTSP",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 149,
+              "endLine": 159,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public improveTour(tour GraphPath<V,E>) : GraphPath<V,E>"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 204,
+              "endLine": 204,
+              "startColumn": 5,
+              "endColumn": 14,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Override"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/TwoOptHeuristicTSP.java",
+              "startLine": 198,
+              "endLine": 209,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public improveTour(tour GraphPath<V,E>) : GraphPath<V,E>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jgrapht/jgrapht.git",
+      "sha1": "5462ee0943f573d9e15df423ef87dfc8f97e3cbc",
+      "refactorings": [
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Override in method public isEmpty() : boolean from class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 90,
+              "endLine": 97,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public isEmpty() : boolean"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 77,
+              "endLine": 77,
+              "startColumn": 5,
+              "endColumn": 14,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Override"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 74,
+              "endLine": 81,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public isEmpty() : boolean"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Override in method public size() : int from class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 99,
+              "endLine": 106,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public size() : int"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 86,
+              "endLine": 86,
+              "startColumn": 5,
+              "endColumn": 14,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Override"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 83,
+              "endLine": 90,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public size() : int"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Override in method public listIterator() : ListNodeIterator<E> from class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 59,
+              "endLine": 66,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public listIterator() : ListIterator<E>"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 1029,
+              "endLine": 1029,
+              "startColumn": 5,
+              "endColumn": 14,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Override"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 1026,
+              "endLine": 1033,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public listIterator() : ListNodeIterator<E>"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Override in method public addLast(e E) : void from class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 182,
+              "endLine": 199,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public addLast(value E) : ListNode<E>"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 669,
+              "endLine": 669,
+              "startColumn": 5,
+              "endColumn": 14,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Override"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 666,
+              "endLine": 673,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public addLast(e E) : void"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Override in method public addFirst(e E) : void from class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 201,
+              "endLine": 213,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public addFirst(value E) : ListNode<E>"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 660,
+              "endLine": 660,
+              "startColumn": 5,
+              "endColumn": 14,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Override"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 657,
+              "endLine": 664,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public addFirst(e E) : void"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Override in method public get(index int) : E from class org.jgrapht.util.DoublyLinkedList",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 258,
+              "endLine": 277,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public getNode(element E) : ListNode<E>"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 638,
+              "endLine": 638,
+              "startColumn": 5,
+              "endColumn": 14,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Override"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 635,
+              "endLine": 642,
+              "startColumn": 5,
+              "endColumn": 6,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public get(index int) : E"
+            }
+          ]
+        },
+        {
+          "type": "Add Method Annotation",
+          "description": "Add Method Annotation @Override in method public getValue() : V from class org.jgrapht.util.DoublyLinkedList.ListNodeImpl",
+          "leftSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 476,
+              "endLine": 483,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "original method declaration",
+              "codeElement": "public getValue() : V"
+            }
+          ],
+          "rightSideLocations": [
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 1413,
+              "endLine": 1413,
+              "startColumn": 9,
+              "endColumn": 18,
+              "codeElementType": "ANNOTATION",
+              "description": "added annotation",
+              "codeElement": "@Override"
+            },
+            {
+              "filePath": "jgrapht-core/src/main/java/org/jgrapht/util/DoublyLinkedList.java",
+              "startLine": 1410,
+              "endLine": 1417,
+              "startColumn": 9,
+              "endColumn": 10,
+              "codeElementType": "METHOD_DECLARATION",
+              "description": "method declaration with added annotation",
+              "codeElement": "public getValue() : V"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

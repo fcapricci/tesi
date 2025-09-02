@@ -1,5 +1,5 @@
 /*
- * (C) Copyright 2017-2020, by Joris Kinable and Contributors.
+ * (C) Copyright 2017-2023, by Joris Kinable and Contributors.
  *
  * JGraphT : a free Java graph-theory library
  *
@@ -17,15 +17,35 @@
  */
 package org.jgrapht;
 
-import org.jgrapht.alg.cycle.*;
-import org.jgrapht.generate.*;
-import org.jgrapht.graph.*;
-import org.jgrapht.util.*;
-import org.junit.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Random;
 
-import static org.junit.Assert.assertEquals;
+import org.jgrapht.alg.cycle.TarjanSimpleCycles;
+import org.jgrapht.generate.BarabasiAlbertGraphGenerator;
+import org.jgrapht.generate.CompleteGraphGenerator;
+import org.jgrapht.generate.GnpRandomGraphGenerator;
+import org.jgrapht.generate.GraphGenerator;
+import org.jgrapht.generate.GridGraphGenerator;
+import org.jgrapht.generate.NamedGraphGenerator;
+import org.jgrapht.generate.RingGraphGenerator;
+import org.jgrapht.generate.WheelGraphGenerator;
+import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.DefaultWeightedEdge;
+import org.jgrapht.graph.DirectedMultigraph;
+import org.jgrapht.graph.DirectedPseudograph;
+import org.jgrapht.graph.Multigraph;
+import org.jgrapht.graph.Pseudograph;
+import org.jgrapht.graph.SimpleDirectedGraph;
+import org.jgrapht.graph.SimpleDirectedWeightedGraph;
+import org.jgrapht.graph.SimpleGraph;
+import org.jgrapht.graph.builder.GraphTypeBuilder;
+import org.jgrapht.util.SupplierUtil;
+import org.junit.jupiter.api.Test;
 
 /**
  * Tests for GraphMetrics
@@ -244,45 +264,43 @@ public class GraphMetricsTest
     @Test
     public void testCountTriangles()
     {
-        final int NUM_TESTS = 300;
+        final int numTests = 300;
         Random random = new Random(0x88_88);
 
-        for (int test = 0; test < NUM_TESTS; test++) {
-            final int N = 20 + random.nextInt(100);
+        for (int test = 0; test < numTests; test++) {
+            final int n = 20 + random.nextInt(100);
 
             Graph<Integer, DefaultEdge> graph = new SimpleGraph<>(
                 SupplierUtil.createIntegerSupplier(), SupplierUtil.DEFAULT_EDGE_SUPPLIER, false);
 
             BarabasiAlbertGraphGenerator<Integer, DefaultEdge> generator =
                 new BarabasiAlbertGraphGenerator<>(
-                    10 + random.nextInt(10), 1 + random.nextInt(7), N, random);
+                    10 + random.nextInt(10), 1 + random.nextInt(7), n, random);
 
             generator.generateGraph(graph);
 
-            Assert
-                .assertEquals(naiveCountTriangles(graph), GraphMetrics.getNumberOfTriangles(graph));
+            assertEquals(naiveCountTriangles(graph), GraphMetrics.getNumberOfTriangles(graph));
         }
     }
 
     @Test
     public void testCountTriangles2()
     {
-        final int NUM_TESTS = 100;
+        final int numTests = 100;
         Random random = new Random(0x88_88);
 
-        for (int test = 0; test < NUM_TESTS; test++) {
-            final int N = 1 + random.nextInt(100);
+        for (int test = 0; test < numTests; test++) {
+            final int n = 1 + random.nextInt(100);
 
             Graph<Integer, DefaultEdge> graph = new SimpleGraph<>(
                 SupplierUtil.createIntegerSupplier(), SupplierUtil.DEFAULT_EDGE_SUPPLIER, false);
 
             GraphGenerator<Integer, DefaultEdge, Integer> generator =
-                new GnpRandomGraphGenerator<>(N, .55, random.nextInt());
+                new GnpRandomGraphGenerator<>(n, .55, random.nextInt());
 
             generator.generateGraph(graph);
 
-            Assert
-                .assertEquals(naiveCountTriangles(graph), GraphMetrics.getNumberOfTriangles(graph));
+            assertEquals(naiveCountTriangles(graph), GraphMetrics.getNumberOfTriangles(graph));
         }
     }
 
@@ -297,8 +315,8 @@ public class GraphMetricsTest
         GraphGenerator<Integer, DefaultEdge, Integer> generator = new CompleteGraphGenerator<>(50);
         generator.generateGraph(graph);
 
-        Assert.assertEquals(50 * 49 * 48 / 6, GraphMetrics.getNumberOfTriangles(graph));
-        Assert.assertEquals(50 * 49 * 48 / 6, naiveCountTriangles(graph));
+        assertEquals(50 * 49 * 48 / 6, GraphMetrics.getNumberOfTriangles(graph));
+        assertEquals(50 * 49 * 48 / 6, naiveCountTriangles(graph));
 
         // Wheel graph: expected |V|-1 triangles
 
@@ -306,8 +324,8 @@ public class GraphMetricsTest
         generator = new WheelGraphGenerator<>(50);
         generator.generateGraph(graph);
 
-        Assert.assertEquals(49, GraphMetrics.getNumberOfTriangles(graph));
-        Assert.assertEquals(49, naiveCountTriangles(graph));
+        assertEquals(49, GraphMetrics.getNumberOfTriangles(graph));
+        assertEquals(49, naiveCountTriangles(graph));
 
         // Named graphs
 
@@ -316,25 +334,90 @@ public class GraphMetricsTest
         graph.removeAllVertices(new HashSet<>(graph.vertexSet()));
         gen.generatePetersenGraph(graph);
 
-        Assert.assertEquals(0, GraphMetrics.getNumberOfTriangles(graph));
-        Assert.assertEquals(0, naiveCountTriangles(graph));
+        assertEquals(0, GraphMetrics.getNumberOfTriangles(graph));
+        assertEquals(0, naiveCountTriangles(graph));
 
         graph.removeAllVertices(new HashSet<>(graph.vertexSet()));
         gen.generateDiamondGraph(graph);
 
-        Assert.assertEquals(2, GraphMetrics.getNumberOfTriangles(graph));
-        Assert.assertEquals(2, naiveCountTriangles(graph));
+        assertEquals(2, GraphMetrics.getNumberOfTriangles(graph));
+        assertEquals(2, naiveCountTriangles(graph));
 
         graph.removeAllVertices(new HashSet<>(graph.vertexSet()));
         gen.generateGoldnerHararyGraph(graph);
 
-        Assert.assertEquals(25, GraphMetrics.getNumberOfTriangles(graph));
-        Assert.assertEquals(25, naiveCountTriangles(graph));
+        assertEquals(25, GraphMetrics.getNumberOfTriangles(graph));
+        assertEquals(25, naiveCountTriangles(graph));
 
         graph.removeAllVertices(new HashSet<>(graph.vertexSet()));
         gen.generateKlein7RegularGraph(graph);
 
-        Assert.assertEquals(56, GraphMetrics.getNumberOfTriangles(graph));
-        Assert.assertEquals(56, naiveCountTriangles(graph));
+        assertEquals(56, GraphMetrics.getNumberOfTriangles(graph));
+        assertEquals(56, naiveCountTriangles(graph));
     }
+
+    @Test
+    public void testCountTriangles4()
+    {
+        Graph<Integer,
+            DefaultEdge> g = GraphTypeBuilder
+                .undirected().allowingMultipleEdges(true).allowingSelfLoops(true).weighted(false)
+                .edgeSupplier(SupplierUtil.DEFAULT_EDGE_SUPPLIER)
+                .vertexSupplier(SupplierUtil.createIntegerSupplier()).buildGraph();
+
+        for (int i = 0; i < 25; i++) {
+            g.addVertex(i);
+        }
+
+        int[][] edges = { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 1, 3 }, { 2, 5 }, { 3, 5 }, { 4, 5 },
+            { 1, 6 }, { 2, 6 }, { 1, 7 }, { 2, 7 }, { 3, 7 }, { 4, 7 }, { 1, 8 }, { 2, 8 },
+            { 2, 9 }, { 1, 10 }, { 7, 10 }, { 1, 11 }, { 2, 11 }, { 2, 12 }, { 3, 13 }, { 4, 13 },
+            { 1, 15 }, { 6, 15 }, { 9, 15 }, { 1, 16 }, { 4, 16 }, { 11, 16 }, { 1, 18 }, { 2, 18 },
+            { 1, 19 }, { 3, 19 }, { 6, 19 }, { 1, 20 }, { 2, 20 }, { 2, 21 }, { 3, 21 }, { 3, 22 },
+            { 5, 22 }, { 10, 22 }, { 3, 23 }, { 19, 23 }, { 1, 24 }, { 2, 24 } };
+
+        for (int[] e : edges) {
+            g.addEdge(e[0], e[1]);
+        }
+
+        long t1 = GraphMetrics.getNumberOfTriangles(g);
+        List<Integer> allVertices = new ArrayList<>(g.vertexSet());
+        long t2 = GraphMetrics.naiveCountTriangles(g, allVertices);
+
+        assertEquals(t1, t2);
+    }
+
+    @Test
+    public void testMultipleEdges()
+    {
+        Graph<Integer,
+            DefaultEdge> g = GraphTypeBuilder
+                .undirected().allowingMultipleEdges(true).allowingSelfLoops(true).weighted(false)
+                .edgeSupplier(SupplierUtil.DEFAULT_EDGE_SUPPLIER)
+                .vertexSupplier(SupplierUtil.createIntegerSupplier()).buildGraph();
+
+        int[][] edges = { { 0, 1 }, { 1, 2 }, { 2, 0 }, { 1, 3 }, { 2, 3 }, { 2, 1 } };
+        for (int[] e : edges) {
+            Graphs.addEdgeWithVertices(g, e[0], e[1]);
+        }
+        assertEquals(4, GraphMetrics.getNumberOfTriangles(g));
+    }
+
+    @Test
+    public void testMultipleEdges2()
+    {
+        Graph<Integer,
+            DefaultEdge> g = GraphTypeBuilder
+                .undirected().allowingMultipleEdges(true).allowingSelfLoops(true).weighted(false)
+                .edgeSupplier(SupplierUtil.DEFAULT_EDGE_SUPPLIER)
+                .vertexSupplier(SupplierUtil.createIntegerSupplier()).buildGraph();
+
+        int[][] edges =
+            { { 0, 1 }, { 1, 2 }, { 2, 0 }, { 1, 3 }, { 2, 3 }, { 2, 1 }, { 0, 2 }, { 0, 2 } };
+        for (int[] e : edges) {
+            Graphs.addEdgeWithVertices(g, e[0], e[1]);
+        }
+        assertEquals(8, GraphMetrics.getNumberOfTriangles(g));
+    }
+
 }

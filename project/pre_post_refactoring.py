@@ -9,9 +9,9 @@ if len(sys.argv) != 3:
     sys.exit(1)
 
 tag_old, tag_new = sys.argv[1], sys.argv[2]
-file_pre = os.path.join("grafici", f"risultati_{tag_old}_refactoring.txt")
-file_post = os.path.join("grafici", f"risultati_{tag_new}_refactoring.txt")
-output_csv = "confronto_consumo_cpu.csv"
+file_pre = os.path.join("grafici", f"risultati_{tag_old}_refactoring_extractAndMoveMethod.txt")
+file_post = os.path.join("grafici", f"risultati_{tag_new}_refactoring_extractAndMoveMethod.txt")
+output_csv = "confronto_consumo_cpu_extractAndMoveMethod.csv"
 
 # === Salta se il file CSV esiste già ===
 if os.path.exists(output_csv):

@@ -1,0 +1,12 @@
+TargetClass,TargetMethod,Refactoring,TestIdentifier
+org.jgrapht.alg.matching.blossom.v5.BlossomVState,BlossomVState,Add Parameter,org.jgrapht.alg.cycle.ChinesePostmanTest
+org.jgrapht.alg.matching.blossom.v5.BlossomVState,BlossomVState,Add Parameter,org.jgrapht.alg.matching.blossom.v5.BlossomVDualUpdaterTest
+org.jgrapht.alg.matching.blossom.v5.BlossomVState,BlossomVState,Add Parameter,org.jgrapht.alg.matching.blossom.v5.BlossomVInitializerTest
+org.jgrapht.alg.matching.blossom.v5.BlossomVState,BlossomVState,Add Parameter,org.jgrapht.alg.matching.blossom.v5.BlossomVNodeTest
+org.jgrapht.alg.matching.blossom.v5.BlossomVState,BlossomVState,Add Parameter,org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdaterTest
+org.jgrapht.alg.matching.blossom.v5.BlossomVState,BlossomVState,Add Parameter,org.jgrapht.alg.matching.blossom.v5.BlossomVStateTest
+org.jgrapht.alg.matching.blossom.v5.BlossomVState,BlossomVState,Add Parameter,org.jgrapht.alg.matching.blossom.v5.BlossomVTreeEdgeTest
+org.jgrapht.alg.matching.blossom.v5.BlossomVState,BlossomVState,Add Parameter,org.jgrapht.alg.matching.blossom.v5.BlossomVTreeTest
+org.jgrapht.alg.matching.blossom.v5.BlossomVState,BlossomVState,Add Parameter,org.jgrapht.alg.matching.blossom.v5.KolmogorovWeightedMatchingTest
+org.jgrapht.alg.matching.blossom.v5.BlossomVState,BlossomVState,Add Parameter,org.jgrapht.alg.matching.blossom.v5.KolmogorovWeightedPerfectMatchingTest
+org.jgrapht.alg.matching.blossom.v5.BlossomVState,BlossomVState,Add Parameter,org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest

@@ -1,0 +1,17 @@
+org.jgrapht.alg.tour.TwoOptHeuristicTSP.improveTour
+org.jgrapht.alg.util.Pair.hasElement
+org.jgrapht.graph.specifics.DirectedSpecifics.addEdgeToTouchingVertices
+org.jgrapht.graph.specifics.DirectedSpecifics.removeEdgeFromTouchingVertices
+org.jgrapht.graph.specifics.FastLookupDirectedSpecifics.removeEdgeFromTouchingVertices
+org.jgrapht.graph.specifics.FastLookupUndirectedSpecifics.removeEdgeFromTouchingVertices
+org.jgrapht.graph.specifics.Specifics.addEdgeToTouchingVertices
+org.jgrapht.graph.specifics.Specifics.removeEdgeFromTouchingVertices
+org.jgrapht.graph.specifics.UndirectedSpecifics.addEdgeToTouchingVertices
+org.jgrapht.graph.specifics.UndirectedSpecifics.removeEdgeFromTouchingVertices
+org.jgrapht.util.DoublyLinkedList.addFirst
+org.jgrapht.util.DoublyLinkedList.addLast
+org.jgrapht.util.DoublyLinkedList.get
+org.jgrapht.util.DoublyLinkedList.getValue
+org.jgrapht.util.DoublyLinkedList.isEmpty
+org.jgrapht.util.DoublyLinkedList.listIterator
+org.jgrapht.util.DoublyLinkedList.size
